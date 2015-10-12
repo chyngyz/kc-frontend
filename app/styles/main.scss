@@ -5,3 +5,15 @@ $icon-font-path: '../fonts/';
 // endbower
 
 
+@import "bourbon/bourbon";
+
+// General styles
+@import "base/vars";
+@import "base/responsive";
+@import "base/general";
+
+// Modules
+@import "modules/base";
+
+// Page specific styles
+@import "themes/home";

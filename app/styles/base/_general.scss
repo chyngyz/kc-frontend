@@ -1,0 +1,25 @@
+body {
+	font-family: $font;
+	font-size: 16px;
+	
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: $blue;
+
+	&::hover, &::active, &::visited {
+		color: darken($blue, 1%);
+	}
+}
+
+.padding-xs {
+	@media only screen and (max-width : 480px) {
+		padding-left: 5px;
+		padding-right: 5px;
+    }
+}
