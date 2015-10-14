@@ -1,5 +1,9 @@
 .kc-hero {
-
+	.container {
+		@include MQ(LG) {
+			width: 1000px;
+		}
+	}
 
 
 
@@ -7,6 +11,7 @@
 		width: 100%;
 		height: 490px;
 		overflow: hidden;
+		position: relative;
 
 		.item {
 			position: relative;
@@ -23,5 +28,110 @@
 		}
 	}
 
+	&--ticket-search-form {
+		position: static;
+		top: 280px;
+		height: auto;
+		padding-bottom: 5px;
+		width: 100%;
+		background-color: rgba(0,0,0,.7);
+		text-align: center;
+
+
+		@include MQ(SM) {
+			height: 200px;
+			position: absolute;
+			padding-bottom: 0;
+		}
+
+		h2 {
+			color: #fff;
+			font-size: 27px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.search-form-iframe {
+			width: 100%;
+			height: 117px;
+			background-color: $blue;
+		}
+	}
 
 }
+
+.hot-tickets--block {
+	position: relative;
+	
+	.flaggy {
+		position: absolute;
+	}
+}
+
+.flaggy {
+	font-size: 16px;
+	color: #fff;
+	width: 200px;
+	height: 27px;
+	line-height: 27px;
+	font-weight: 300;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		right: -4px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 13px 4px 0 0;
+		border-color: #ED471F transparent transparent transparent;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 14px;
+		right: -4px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 13px 0 0 4px;
+		border-color: transparent transparent transparent #ED471F;
+		
+	}
+
+	&-orange {
+		background-color: #ED471F;
+	}
+}
+
+.running-text {
+	margin-top: 4px;
+	height: 27px;
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+	
+	ul {
+		width: 200%;
+	}
+
+	li {
+		display: inline-block;
+		padding-left: 10px;
+
+		&:after {
+			content: "//";
+			color: #3E3E3E;
+			margin-left: 10px;
+		}
+
+		a {
+			color: #fff;
+			line-height: 27px;
+			font-weight: 300;
+		}
+	}
+}
+

@@ -13,11 +13,20 @@
 
  
 	  	$("#hero-slider").owlCarousel({
-	 
-		    navigation : false, // Show next and prev buttons
+			loop : true,
+			autoplay : true,
+			autoplayHoverPause : true,
+			fluidSpeed : 600,
+			autoplaySpeed : 600,
+			dotsSpeed : 600,
+			dragEndSpeed : 60,
 		    slideSpeed : 300,
 		    paginationSpeed : 400,
-		    singleItem:true
+		    singleItem:true,
+		    autoPlay : true,
+    		stopOnHover : false,
+    		autoHeight : true,
+    		transitionStyle: "fade"
 		 
 		    // "singleItem:true" is a shortcut for:
 		    // items : 1, 
@@ -27,6 +36,28 @@
 		    // itemsMobile : false
 	 
 	  	});
+
+
+	  	$('.marquee').marquee({
+			//If you wish to always animate using jQuery
+			allowCss3Support: true,
+			//works when allowCss3Support is set to true - for full list see http://www.w3.org/TR/2013/WD-css3-transitions-20131119/#transition-timing-function
+			css3easing: 'linear',
+			//pause time before the next animation turn in milliseconds
+			delayBeforeStart: 0,
+			//'left', 'right', 'up' or 'down'
+			direction: 'left',
+			//true or false - should the marquee be duplicated to show an effect of continues flow
+			duplicated: false,
+			//speed in milliseconds of the marquee in milliseconds
+			duration: 15000,
+			//gap in pixels between the tickers
+			gap: 20,
+			//on cycle pause the marquee
+			pauseOnCycle: false,
+			//on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
+			pauseOnHover: true
+		});
 	 
 	});
 
