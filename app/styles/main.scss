@@ -7,9 +7,12 @@ $icon-font-path: '../fonts/';
 
 @import "bourbon/bourbon";
 
+// Utils
+@import "utils/gradients-mixin";
+@import "utils/responsive";
+
 // General styles
 @import "base/vars";
-@import "base/responsive";
 @import "base/general";
 
 // Modules
@@ -17,3 +20,9 @@ $icon-font-path: '../fonts/';
 
 // Page specific styles
 @import "themes/home";
+
+
+// Custom vendor libs
+@import "vendor/owl.carousel";
+@import "vendor/owl.transitions";
+@import "vendor/owl.theme"; 

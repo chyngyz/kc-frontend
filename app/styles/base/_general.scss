@@ -9,9 +9,12 @@ ul {
 	padding: 0;
 }
 
+li {
+	list-style: none;
+}
+
 a {
 	color: $blue;
-
 	&::hover, &::active, &::visited {
 		color: darken($blue, 1%);
 	}

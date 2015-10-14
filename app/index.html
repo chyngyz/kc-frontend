@@ -43,12 +43,12 @@
                       <nav class="kc-header-top--nav-sm">
                         <ul>
                           <li>
-                            <a href="#" class="burger-menu">Информация</a>
+                            <a href="#" class="burger-menu" id="topmenu-trigger">Информация</a>
                           </li>
                           <li><a href="#">Контакты</a></li>
                         </ul>
                       </nav>
-                      <nav class="kc-header-top--nav">
+                      <nav class="kc-header-top--nav" id="top-menu">
                         <ul>
                           <li><a href="#">Расписание вылетов</a></li>
                           <li><a href="#">Коммерческий курс</a></li>
@@ -118,11 +118,186 @@
 
       <!-- Begin  kc-header-mainnav -->
       <div class="kc-header-mainnav">
-          
+          <div class="container">
+            <!-- Icon sprite -->
+            <img src="images/header-top/main-menu.svg" alt="" style="display:none;">
+            <nav class="kc-header-mainnav--wrapper">
+              <ul class="kc-header-mainnav--sm hidden-lg hidden-md clearfix">
+                <li class="col-sm-6 col-xs-6 kc-header-mainnav--sm-logo">
+                  <img src="images/header-top/kyrgyz-concept-logo.svg" alt="Kyrgyz Concept Logo">
+                </li>
+                <li class="col-sm-6 col-xs-6 kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item pull-right" id="menu-trigger">
+                    <span class="icon-wrap menu">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#menu"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Список<br>услуг</span>
+                  </a>
+                </li>
+              </ul>
+
+              <ul id="main-menu" class="kc-header-mainnav--lg clearfix">
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap tickets">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#plane"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Авиабилеты</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap outbound-tours">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#paris"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Туры<br>за рубеж</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap education">
+                    <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#education"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Учеба<br>за границей</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap inbound-tours">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#mountains"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Туры по<br>Центральной<br>Азии</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap visa">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#visa"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Визы</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->
+
+
+                <!-- Main logo  -->
+                <li class="col-md-2 visible-lg-inline-block visible-md-inline-block kc-header-mainnav--item-logo">
+                  <img src="images/header-top/kyrgyz-concept-logo.svg" alt="Kyrgyz Concept Logo">
+                </li>
+                <!-- end of main logo -->
+
+                
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap transport">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#car"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Транспорт</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap conf">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#mic"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Организация<br>конференций</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap hotels">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#bed"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Отели</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap menu">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#menu"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Другие<br>услуги</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->
+                <!-- begin nav item -->
+                <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
+                  <a href="#" class="kc-header-mainnav--item">
+                    <span class="icon-wrap search">
+                      <svg class="icon">
+                        <use xlink:href="images/header-top/main-menu.svg#search"></use>
+                      <svg>
+                    </span>
+                    <span class="title">Поиск</span>
+                  </a>
+                </li>
+                <!-- end of nav item -->                
+              </ul>
+            </nav>
+          </div>
       </div>
       <!-- End of kc-header-mainnav -->
     </header>
 
+
+    
+    <section class="kc-hero">
+      <!-- Begin  kc-hero-slider -->
+      <div class="kc-hero--slider">
+          <div id="hero-slider" class="owl-carousel owl-theme">
+ 
+            <div class="item"><img src="images/slide/slide.jpg" alt=""></div>
+            <div class="item"><img src="images/slide/slide2.jpg" alt=""></div>
+            <div class="item"><img src="images/slide/slide3.jpg" alt=""></div>
+            <div class="item"><img src="images/slide/slide4.jpg" alt=""></div>
+           
+          </div>
+      </div>
+      <!-- End of kc-hero-slider -->
+
+      <!-- Begin  kc-hero-overlay -->
+      <div class="kc-hero--overlay">
+          
+      </div>
+      <!-- End of kc-hero-overlay -->
+
+    </section>
 
 
     
@@ -148,6 +323,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/OwlCarousel/owl-carousel/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
