@@ -6,9 +6,16 @@
 
 .kc-home-1 {
 	text-align: center;
+
+	.container {
+		@include MQ(LG) {
+			width: 1000px;
+		}
+	}
 	h1 {
 		margin-top: 54px;
 		margin-bottom: 32px;
+		color: $blue;
 
 		@include MQM(SM) {
 			font-size: 26px;
