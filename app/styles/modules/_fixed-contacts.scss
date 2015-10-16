@@ -1,0 +1,160 @@
+.kc-fixed-contacts-block {
+	
+	opacity: 0;
+	height: 50px;
+	background-color: #1a242d;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 14px;
+	line-height: 50px;
+	@include transition(all, 0.4s ease-in-out);
+
+	@include MQM(MD) {
+		display: none;
+	}
+
+	@include MQ(MD) {
+		//display: none;
+
+		&.shown {
+			//display: block;
+			opacity: 1;
+		}
+	}
+
+	.container {
+		@include MQ(LG) {
+			width: 1000px;
+		}
+	}
+
+	&--l {
+		border-right: none; 
+		padding-right: 20px;
+		
+		@include MQ(MD){
+			border-right: 1px solid #3f4449;
+		}
+	}
+
+	&--r {
+		.input-group-btn {
+			line-height: normal;
+		}
+	}
+}
+.kc-contacts {
+	
+	&--online {
+		line-height: 25px;
+		background-color: #00b63a;
+	    padding: 0 10px 0 20px;
+		-webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	    border-radius: 10px;
+	    height: 25px;
+	    color: #ffffff;
+	    margin-right: 10px;
+	    position: relative;
+	    display: inline-block;
+
+	    &:after {
+			content: "";
+			height: 6px;
+			width: 6px;
+			position: absolute;
+			top: 10px;
+			left: 8px;
+			background-color: #39FF4A;
+			border-radius: 50%;
+	    }
+	}
+
+	&--item {
+		text-decoration: none;
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
+			color: #a2a5aa;
+		}
+
+		&-code {
+			color: #a2a5aa;
+		}
+		&:after {
+			content: "//";
+		    color: #3E3E3E;
+		    margin-left: 6px;
+		}
+
+		&:last-of-type:after {
+			content: "";
+		}
+	}
+
+}
+
+
+.kc-order-call {
+	width: 273px;
+	padding: 8px 0 8px;
+
+	input.form-control {
+		padding: 6px;
+	}
+}
+
+.shown .kc-goto-top {
+	display: block;
+}
+
+.kc-goto-top {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	bottom: 65px;
+    right: 50px;
+    width: 74px;
+    height: 74px;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(0, 145,212, 0.3);
+    opacity: .7;
+    @include transition(all .2s ease-in-out);
+
+
+    &:hover {
+    	opacity: 1;
+    }
+
+    &--in {
+    	background-color: $blue;
+    	border-radius: 50%;
+    	height: 46px;
+    	width: 46px; 
+    	padding: 3px 13px 0;
+    	position: relative;
+
+    	&:after {
+    		content: "";
+    		height: 16px;
+		    width: 16px;
+		    top: 19px;
+		    left: 15px;
+			position: absolute;
+			border-top: 2px solid;
+			border-left: 2px solid;
+			border-color: #fff;
+			@include transform(rotate(45deg));
+    	}
+
+    	svg {
+    		width: 20px;
+    		height: 20px;
+    		fill: #fff;
+    	}
+    }
+}

@@ -9,10 +9,12 @@
 
 	&--slider {
 		width: 100%;
-		height: 490px;
+		height: auto;
 		overflow: hidden;
 		position: relative;
-
+		@include MQ(MD) {
+			height: 490px;
+		}
 		.item {
 			position: relative;
 			height: 490px;

@@ -58,6 +58,24 @@
 			//on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
 			pauseOnHover: true
 		});
+
+
+		// Go top!
+	    $('#goto-top').on('click', function () {
+	        $('html, body').animate({scrollTop: 0}, 'slow');
+	    });
+
+	    $(window).on("scroll", function () {
+	        if ($(window).scrollTop() > 200){
+	            $('#fixed-contacts').addClass('shown');
+	        }
+	        else if($(window).scrollTop() < 200) {
+	            $('#fixed-contacts').removeClass('shown');
+	        }
+	    });
+
+	    // Contact input mask
+	    $("#order-call-num").mask("+996 (###) ##-##-##");
 	 
 	});
 
