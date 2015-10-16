@@ -1,0 +1,33 @@
+@include MQM(SM) {
+	.btn-lg, .btn-group-lg > .btn {
+		padding: 10px 13px;
+	}
+}
+
+.kc-home-1 {
+	text-align: center;
+	h1 {
+		margin-top: 54px;
+		margin-bottom: 32px;
+
+		@include MQM(SM) {
+			font-size: 26px;
+		}
+	}
+
+	i {
+		margin-left: 10px;
+	}
+
+	.btn-group {
+		margin-bottom: 25px;
+
+		a {
+			width: 200px;
+
+			@include MQM(SM) {
+				width: auto;
+			}
+		}
+	}
+}

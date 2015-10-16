@@ -37,3 +37,32 @@ a {
 	padding-right: 0;
 }
 
+%arrow {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	border-top: 2px solid;
+	border-left: 2px solid;
+	border-color: $blue;
+}
+
+.cs-arrow-right {
+	@extend %arrow;
+	@include transform(rotate(135deg));
+}
+
+.cs-arrow-up {
+	@extend %arrow;
+	@include transform(rotate(45deg));
+}
+
+.cs-arrow-down {
+	@extend %arrow;
+	@include transform(rotate(225deg));
+}
+.cs-arrow-left {
+	@extend %arrow;
+	@include transform(rotate(-45deg));
+}
+
+

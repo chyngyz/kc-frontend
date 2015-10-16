@@ -40,7 +40,6 @@
   &.active {
     outline: 0;
     background-image: none;
-    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
   }
 
   &.disabled,
@@ -86,6 +85,113 @@ a.btn {
 // Danger and error appear as red
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+
+// Custom Buttons
+.btn-outline-pr {
+  color: #1A1A1A;
+  background-color: #fff;
+  border-color: $brand-primary;
+
+  &:focus,
+  &.focus,
+  &:hover {
+    color: #fff;
+    background-color: $brand-primary;
+        border-color: $brand-primary;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: #fff;
+    background-color: $brand-primary;
+        border-color: $brand-primary;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: #fff;
+      background-color: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: $brand-primary;
+  }
+}
+
+.btn-outline-default {
+  color: $brand-primary;
+  background-color: #fff;
+  border-color: #ccc;
+
+  &:focus,
+  &.focus,
+  &:hover {
+    color: $brand-primary;
+    background-color: #fff;
+        border-color: #ccc;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $brand-primary;
+    background-color: #fff;
+        border-color: #ccc;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $brand-primary;
+      background-color: #fff;
+      border-color: #ccc;
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: #fff;
+      border-color: #ccc;
+    }
+  }
+
+  .badge {
+    color: $brand-primary;
+    background-color: #ccc;
+  }
 }
 
 
@@ -134,7 +240,7 @@ a.btn {
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $line-height-large, $btn-border-radius-large);
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input

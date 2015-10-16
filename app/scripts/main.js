@@ -76,6 +76,14 @@
 
 	    // Contact input mask
 	    $("#order-call-num").mask("+996 (###) ##-##-##");
+
+
+	    // Tabs on section home-1
+	    $('#popular-tabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).siblings().removeClass('active');
+		  $(this).addClass('active').tab('show');
+		})
 	 
 	});
 
