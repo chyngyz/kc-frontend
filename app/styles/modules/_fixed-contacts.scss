@@ -8,7 +8,8 @@
 	width: 100%;
 	font-size: 14px;
 	line-height: 50px;
-	@include transition(all, 0.4s ease-in-out);
+	z-index: 9998;
+	@include transition(all 0.4s ease-in-out);
 
 	@include MQM(MD) {
 		display: none;

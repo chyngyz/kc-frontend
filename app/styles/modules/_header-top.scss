@@ -94,11 +94,13 @@
 
 	&--social {
 		display: inline-block;
+		padding-top: 6px;
+		vertical-align: middle;
 
 		svg {
 			width: 100%;
 			fill: #fff;
-			padding-top: 7px;
+			
 		}
 
 		& > a {
@@ -115,8 +117,9 @@
 
 	&--langswitcher {
 		display: inline-block;
-		vertical-align: top;
+		//vertical-align: top;
 		height: 30px;
+		float: right;
 	}
 }
 
@@ -139,6 +142,9 @@
 			width: 15px;
 			fill: #fff;
 			margin-right: 5px;
+			-webkit-transform-origin-x: 0;
+			-webkit-transform-origin-y: 0;
+			-webkit-transform-origin-z: initial;
 		}
 
 		span {

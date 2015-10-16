@@ -18,8 +18,10 @@
     color: #fff;
     text-align: left;
     border: none;
+    z-index: 1;
+    -webkit-font-smoothing: antialiased; 
     
-    @include transition(all, 0.2s, ease-in-out);
+    @include transition(all 0.2s ease-in-out);
 
     
 	&:before {
@@ -31,7 +33,7 @@
 		bottom: 0;
 		background-color: rgba(0,0,0, .5);
 		opacity: 0;
-		@include transition(opacity, 0.2s, ease-in-out);
+		@include transition(opacity 0.2s ease-in-out);
 	}
 
 	&:hover {
@@ -82,7 +84,7 @@
 	    text-overflow: ellipsis;
 	    overflow: hidden;
 	    opacity: 0;
-	    @include transition(opacity, 0.2s, ease-in-out);
+	    @include transition(opacity 0.2s ease-in-out);
 	    @include animation-delay(0.2s);
 
     }
@@ -94,7 +96,7 @@
 		height: 115px;
 		width: 100%;
 		background-color: rgba(0,145,212, 0.7);
-		@include transition(opacity, 0.2s, ease-in-out);
+		@include transition(opacity 0.2s ease-in-out);
 
     }
 
@@ -103,7 +105,7 @@
     	text-align: center;
 
     	hr {
-    		margin-top: 10px;
+    		margin-top: 12px;
 		    margin-bottom: 0;
 		    border: 0;
 		    border-top: 1px solid rgba(255, 255, 255, 0.3);
