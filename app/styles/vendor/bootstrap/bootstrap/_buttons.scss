@@ -194,6 +194,60 @@ a.btn {
   }
 }
 
+.btn-outline-wh {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+
+  &:focus,
+  &.focus,
+  &:hover {
+    color: #000;
+    background-color: #fff;
+        border-color: #fff;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: #000;
+    background-color: #fff;
+        border-color: #fff;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: #000;
+      background-color: #fff;
+      border-color: #fff;
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: #fff;
+      border-color: #ccc;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: #ccc;
+  }
+}
+
+
 
 // Link buttons
 // -------------------------
@@ -232,6 +286,65 @@ a.btn {
       text-decoration: none;
     }
   }
+}
+
+// Oval btns
+// --------------------------------------------------
+
+.btn-oval {
+  border-radius: 35px;
+}
+
+.btn-oval-transparent-bl-nb {
+  color: #fff;
+  border:none;
+  background-color: rgba(0,0,0,0.6);
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.btn-oval-transparent-bl {
+  color: #fff;
+  border-color: #fff;
+  background-color: rgba(0,0,0,0.5);
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.btn-oval-transparent-wh-nb {
+  color: #fff;
+  border:none;
+  background-color: rgba(255,255,255,0.5);
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.btn-oval-transparent-wh {
+  color: #fff;
+  border-color: #fff;
+  background-color: rgba(255,255,255,0.5);
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.btn-oval-success {
+  color: #fff;
+  border: none;
+  background-color: #00b63a;
+}
+
+.btn-oval-default {
+  color: #000;
+  border: none;
+  background-color: #ccc;
 }
 
 

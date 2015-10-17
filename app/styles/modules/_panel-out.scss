@@ -36,6 +36,10 @@
 		@include transition(opacity 0.2s ease-in-out);
 	}
 
+	@include MQM(XS) {
+		height: 260px;
+	}
+
 	&:hover {
 		height: 260px;
 

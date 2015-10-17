@@ -4,8 +4,28 @@
 	}
 }
 
+.kc-home-1, 
+.kc-home-3, 
+.kc-home-4, 
+.kc-home-5, 
+.kc-home-6 { 
+	.container {
+		@include MQ(LG) {
+			width: 1000px;
+		}
+	}
+}
+
+// ===============================================
+//
+// Section 1 - Outbound tours
+//
+// ===============================================		
+
+
 .kc-home-1 {
 	text-align: center;
+	padding-bottom: 30px;
 
 	.container {
 		@include MQ(LG) {
@@ -38,3 +58,433 @@
 		}
 	}
 }
+
+// ===============================================
+//
+// Section 2 - Visa
+//
+// ===============================================		
+
+
+
+.kc-home-2 {
+	background-image: url("../images/bg/section-search.jpg");
+	background-size: cover;
+	position: relative;
+	padding: 10px 0 15px;
+
+	h1 {
+		color: #fff;
+		margin-bottom: 25px;
+
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #250F47;
+		opacity: 0.8;
+	}
+
+
+	.search-input-label {
+		text-align: center;
+		line-height: 40px;
+		color: #fff;
+		font-weight: 300;
+
+
+		@include MQ(SM) {
+			text-align: right;
+		}
+	}
+
+	.search-input {
+		width: 100%;
+		height: 42px;
+		color: #fff;
+		background-color: rgba(0,0,0,.5);
+
+		@include MQ(MD){
+			width: 390px;
+		}
+
+	}
+
+	.search-meta {
+		font-size: 12px;
+		color: #fff;
+		text-align: center;
+		font-weight: 300;
+		margin: 5px 0 15px 10px;
+	
+
+		@include MQ(SM) {
+			text-align: left;
+		}
+
+		span {
+			border-bottom: 1px dashed red;
+		}
+	}
+
+	.btn[type="submit"] {
+		vertical-align: top;
+		height: 42px;
+		padding: 10px 20px;
+		border: none;
+		width: 100%;
+
+		@include MQ(SM) {
+			width: auto;
+		}
+
+
+		@include MQ(MD) {
+			padding: 10px 60px;
+		}
+	}
+
+	.btn-oval {
+		font-size: 10px;
+		margin: 4px;
+		font-weight: 300;
+
+		@include MQ(SM) {
+			margin: 10px;
+			font-size: 14px;
+		}
+	}
+
+	.learn-more-link {
+		color: #fff;
+		font-size: 14px;
+		font-weight: 300;
+		@include transition(all 0.1s ease-in-out);
+
+		&:hover {
+			color: #fff;
+			background-color: rgba(0,0,0,0.5);
+		}
+
+		.cs-arrow-right {
+			border-color: #fff;
+		}
+	}
+}
+
+// ===============================================
+//
+// Section 3 - Features
+//
+// ===============================================		
+
+
+
+
+.kc-home-3 {
+	padding-bottom: 20px;
+
+	.banner-place {
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 10px;
+		display: block;
+		img {
+			width: 100%;
+
+		}
+	}
+}
+
+// ===============================================
+//
+// Section 4 - Education
+//
+// ===============================================		
+
+
+.kc-home-4 {
+	padding-bottom: 20px;
+
+	
+
+	h1 {
+		color: #1AB7AC;
+	}
+
+	.btn-group {
+		margin-bottom: 25px;
+
+		a {
+			width: 200px;
+
+			@include MQM(SM) {
+				width: auto;
+			}
+		}
+	}
+
+	.main-tabs-control {
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction:row;
+
+		display: -webkit-flex;
+		-webkit-flex-direction: row;
+		-webkit-justify-content: space-around;
+		-webit-flex-wrap: wrap;
+		
+		width: 100%;
+		margin: 37px 25px;
+
+		a {
+			text-transform: capitalize;
+			font-size: 14px;
+			font-weight: 300;
+			&:hover {
+				color: #0091d4;
+			}
+		}
+	}
+}
+
+// ===============================================
+//
+// Section 5 - subscribe
+//
+// ===============================================		
+
+
+.kc-home-5 {
+	background-color: $blue;
+	background-image: url('../images/bg/section-subscribe.jpg');
+	background-size: cover;
+	min-height: 235px;
+	padding-bottom: 20px;
+
+	h2 {
+		color: #fff;
+		font-weight: 300;
+		font-size: 28px;
+	}
+
+	h4 {
+		font-size: 18px;
+		color: #fff;
+		font-weight: 300;
+	}
+
+	form {
+		width: 260px;
+		display: inline-block;
+		margin: 22px 0;
+	}
+
+	input.form-control {
+		height: 38px;
+	}
+	
+	button {
+		height: 38px;
+		width: 50px;
+		background-color: #00D6CC;
+
+		svg {
+			fill: #ffffff;
+		}
+	}
+
+	.social-icons {
+		text-align: left;
+
+		@include MQ(XS) {
+			text-align: center;
+
+			a {
+				margin-top: 10px;
+			}
+		}
+		
+		a {
+			color: #fff;
+			display: inline-block;
+			height: 35px;
+			margin-right: 50px;
+			margin-top: 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			@include MQ(XS) {
+				margin-top: 0;
+			}
+
+		}
+
+		img {
+			height: 100%;
+			margin-right: 10px;
+		}
+	}
+
+}
+
+
+// ===============================================
+//
+// Section 6 -  Logistics
+//
+// ===============================================		
+
+
+
+.kc-home-6 {
+	padding-top: 25px;
+	padding-bottom: 20px;
+
+	h1 {
+		color: #39B54A;
+	}
+
+	.intro-text {
+		max-width: 70%;
+		margin: 0 auto 25px;
+	}
+	
+	.radio-btns {
+		text-align: center;
+		margin-bottom: 10px;
+
+		@include MQ(MD) {
+			text-align: left;
+		}
+	}
+
+	.form-group {
+
+	}
+
+
+
+	.btn-radio {
+		margin-top: 10px;
+		font-size: 12px;
+		margin-right: 10px;
+		background-color: rgba(57, 181,74, 0.08);
+		@include transition(all 0.1s ease-in-out);
+
+		@include MQ(SM) {
+			font-size: 14px;
+			margin-top: 0;
+		}
+
+
+		&.active, &:hover {
+			color: #fff;
+			background-color: #00b63a;
+		}
+	}
+
+	.checkbox label {
+		font-size: 16px;
+	}
+
+	.other-route {
+		display: inline-block;
+		margin-top: 10px;
+		border-bottom: 1px dashed $blue;
+
+		&:hover {
+			text-decoration: none;
+			color: $blue;
+			border-bottom-style: solid;
+		}
+	}
+
+	.btn-success {
+		padding: 14px 45px;
+		border: none;
+		float: left;
+		margin-right: 10px;
+		margin-top: 20px;
+
+		@include MQM(SM) {
+			width: 100%;
+			float: none;
+
+		}
+	}
+
+	.desc {
+		margin-top: 23px;
+		@include MQM(SM) {
+			margin-top: 10px;
+			font-size: 14px;
+			text-align: center;
+		}
+	} 
+}
+
+
+// ===============================================
+//
+// Section 7 - Inbound tours
+//
+// ===============================================		
+
+.kc-home-7 {
+	position: relative;
+	background-image: url(../images/bg/section-inbound.jpg);
+	background-size: cover;
+	display: block;
+	padding: 10px 0 20px;
+
+	h1 {
+		color: #fff;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #00828F;
+		opacity: 0.6;
+	}
+
+	.btn-group {
+		margin-top: 30px;
+		margin-bottom: 25px;
+
+		a {
+			width: 200px;
+
+			@include MQM(SM) {
+				width: auto;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

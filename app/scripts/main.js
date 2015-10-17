@@ -78,13 +78,27 @@
 	    $("#order-call-num").mask("+996 (###) ##-##-##");
 
 
-	    // Tabs on section home-1
-	    $('#popular-tabs a').click(function (e) {
+	    // Tabs on section home-1 and home-7
+	    $('#popular-tabs a, #inbound-tours-tabs a ').click(function (e) {
+		  e.preventDefault()
+		  $(this).siblings().removeClass('active');
+		  $(this).addClass('active').tab('show');
+		});
+
+		// Tabs on section home-4
+	    $('#popular-edu-tabs a').click(function (e) {
 		  e.preventDefault()
 		  $(this).siblings().removeClass('active');
 		  $(this).addClass('active').tab('show');
 		})
-	 
+
+		// radio buttons on section 6
+		$('.btn-radio').click(function() {
+			var target = '#' + $(this).data('target');
+			$(target).prop("checked", true);
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
+		}); 
 	});
 
 })(jQuery);
