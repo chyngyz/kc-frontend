@@ -8,7 +8,8 @@
 .kc-home-3, 
 .kc-home-4, 
 .kc-home-5, 
-.kc-home-6 { 
+.kc-home-6,
+.kc-home-7 { 
 	.container {
 		@include MQ(LG) {
 			width: 1000px;

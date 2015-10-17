@@ -1,8 +1,5 @@
 $icon-font-path: '../fonts/';
 
-// bower:scss
-// endbower
-
 @import "vendor/bootstrap/_bootstrap.scss";
 
 @import "bourbon/bourbon";
@@ -23,6 +20,9 @@ $icon-font-path: '../fonts/';
 
 
 // Custom vendor libs
-@import "vendor/owl.carousel";
-@import "vendor/owl.transitions";
-@import "vendor/owl.theme"; 
+@import "vendor/owl/owl.carousel";
+@import "vendor/owl/owl.transitions";
+@import "vendor/owl/owl.theme"; 
+
+
+@import "vendor/jquery-ui/datepicker-slider";
