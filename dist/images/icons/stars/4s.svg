@@ -1,0 +1,15 @@
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="30px" height="30px" viewBox="-2 -4 30 30" enable-background="new -2 -4 30 30" xml:space="preserve">
+<defs>
+</defs>
+<circle opacity="0.21" cx="11" cy="11" r="11"/>
+<g>
+	<g>
+		<path fill="#FFFFFF" d="M5.352,12.822l5.026-7.347h2.881v7.219h1.649v2.081h-1.649V17H10.73v-2.225H5.352V12.822z M10.73,12.694
+			V8.517l-2.865,4.178H10.73z"/>
+	</g>
+</g>
+<polygon fill="#FFD900" points="20.686,1.665 22.207,4.749 25.608,5.241 23.148,7.642 23.728,11.028 20.686,9.43 17.643,11.028 
+	18.224,7.642 15.763,5.241 19.164,4.749 "/>
+</svg>
