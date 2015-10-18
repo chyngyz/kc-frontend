@@ -10,7 +10,10 @@
 .kc-home-5, 
 .kc-home-6,
 .kc-home-7,
-.kc-home-8 { 
+.kc-home-8,
+.kc-home-10,
+.kc-home-11,
+.kc-home-12 { 
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -29,11 +32,6 @@
 	text-align: center;
 	padding-bottom: 30px;
 
-	.container {
-		@include MQ(LG) {
-			width: 1000px;
-		}
-	}
 	h1 {
 		margin-top: 54px;
 		margin-bottom: 32px;
@@ -533,35 +531,36 @@
 		font-weight: 300;
 		line-height: 21px;
 		margin-bottom: 20px;
-		width: 70%;
 	}
 
 	.mice-item {
 		min-height: 165px;
-	}
 
-	.mice-desc {
-		text-align: center;
-		font-weight: 300;
-		width: 70%;
-		margin: 10px auto 15px;
+		&--desc {
+			text-align: center;
+			font-weight: 300;
+			width: 70%;
+			margin: 10px auto 15px;
 
-		@include MQM(XS) {
-			font-size: 14px;
+			@include MQM(XS) {
+				font-size: 14px;
+			}
+		}
+
+		&--icon {
+			text-align: center;
+			width: 80px;
+			height: 80px;
+			margin: 0 auto;
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
 
-	.mice-icon {
-		text-align: center;
-		width: 80px;
-		height: 80px;
-		margin: 0 auto;
-
-		img {
-			height: 100%;
-			width: 100%;
-		}
-	}
+	
 
 	.btn-yellow {
 		padding: 13px 55px;
@@ -570,9 +569,244 @@
 }
 
 
+// ===============================================
+//
+// Section 10 - Tourist guide
+//
+// ===============================================		
 
 
+.kc-home-10 {
+	padding: 20px 0 30px;
 
+	h1 {
+		margin-bottom: 20px;
+		line-height: 48px;
+
+	}
+
+	.tguide-item {
+		min-height: 165px;
+
+		&--link {
+			text-align: center;
+			font-weight: 300;
+			width: 70%;
+			margin: 10px auto 15px;
+			display: block;
+
+			@include MQM(XS) {
+				font-size: 14px;
+			}
+		}
+
+		&--icon {
+			text-align: center;
+			width: 80px;
+			height: 80px;
+			margin: 0 auto;
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+	.btn-outline-default {
+		margin-top: 20px;
+	}
+
+	.cs-arrow-right {
+		margin-left: 15px;
+	}
+
+}
+
+
+// ===============================================
+//
+// Section 11 - KC Features
+//
+// ===============================================		
+
+.kc-home-11 {
+	position: relative;
+	background-image: url(../images/bg/kc-features.jpg);
+	background-size: cover;
+	color: #fff;
+	padding: 20px 0;
+
+	@include MQ(MD) {
+		padding-bottom: 125px;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,145, 212, .8);
+	}
+	
+	h1 {
+		width: 70%;
+		margin: 20px auto 20px;
+		line-height: 48px;
+	}
+
+	h4 {
+		font-weight: 300;
+		line-height: 21px;
+		margin-bottom: 20px;
+	}
+
+	.kconcept-feature {
+		min-height: 165px;
+
+		&--desc {
+			text-align: center;
+			font-weight: 300;
+			width: 70%;
+			margin: 10px auto 15px;
+
+			@include MQM(XS) {
+				font-size: 14px;
+			}
+		}
+
+		&--icon {
+			text-align: center;
+			width: 80px;
+			height: 80px;
+			margin: 0 auto;
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+
+	
+
+	.btn-oval {
+		margin: 20px 10px;
+	}
+}
+
+
+// ===============================================
+//
+// Section 12 - About KC
+//
+// ===============================================		
+
+.kc-home-12 {
+	padding-bottom: 30px;
+
+	.info-block {
+		border-radius: 4px;
+		padding: 15px;
+		height: 365px;
+		margin-top: 20px;
+		position: relative;
+		font-weight: 300;
+		overflow: hidden;
+
+		@include MQ(MD) {
+			margin-top: -90px;
+		}
+
+		&.orange {
+			background-color: #FF801E;
+		}
+
+		&.green {
+			background-color: #8ED631;
+			background-image: url(../images/icons/panelbg/icn-acad.svg);
+	        background-position: 100% 100%;
+	        background-repeat: no-repeat;
+	        background-size: inherit;
+		}
+
+		&--title {
+			color: #fff;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		
+		.read-more {
+			position: absolute;
+			bottom: 15px;
+
+			a {
+				color: #fff;
+				font-size: 14px;
+			}
+
+			.cs-arrow-right {
+				margin-left: 10px;
+				border-color: #fff;
+			}
+		}
+
+		.article {
+			color: #fff;
+			line-height: 21px;
+		}
+	}
+
+	.subscribe-link {
+		display: inline-block;
+		font-size: 12px;
+		text-decoration: none;
+		border-bottom: 1px dashed $blue;
+		margin:15px 30px 30px;
+
+
+		&:hover {
+			text-decoration: none;
+			border-bottom-style: solid;
+		}
+	}
+
+	.vacancy-block {
+		position: relative;
+		text-align: center;
+		padding: 50px 40px;
+		background-image: url(../images/bg/vacancy.jpg);
+		background-position: center center;
+		border-radius: 4px;
+		overflow: hidden;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: 4px;
+			background-color: rgba(150,92, 219, .8);
+		}
+
+		h1 {
+			position: relative;
+			z-index: 2;
+			color: #fff;
+		}
+
+		.btn-oval {
+			margin-top: 35px;
+			position: relative;
+			z-index: 2;
+			font-size: 14px;
+			padding: 15px 20px;
+		}
+	}
+}
 
 
 
