@@ -11,9 +11,12 @@
 .kc-home-6,
 .kc-home-7,
 .kc-home-8,
+.kc-home-9,
 .kc-home-10,
 .kc-home-11,
-.kc-home-12 { 
+.kc-home-12,
+.kc-home-13,
+.kc-home-14 { 
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -808,10 +811,220 @@
 	}
 }
 
+// ===============================================
+//
+// Section 13 - Why us
+//
+// ===============================================	
 
 
 
+.kc-home-13 {
+	position: relative;
+	background-image: url('../images/bg/pattern.png');
+	background-repeat: repeat;
+	background-size: initial;
+	background-color: #FFAD1E;
+	color: #fff;
+	padding: 20px 0;
+	
+	h1 {
+		width: 70%;
+		margin: 20px auto 20px;
+		line-height: 48px;
+	}
 
+	h4 {
+		font-weight: 300;
+		line-height: 21px;
+		margin-bottom: 20px;
+	}
+
+	.whyus-item {
+		min-height: 165px;
+
+		&--desc {
+			text-align: center;
+			font-weight: 300;
+			margin: 10px auto 15px;
+
+			@include MQM(XS) {
+				font-size: 14px;
+			}
+		}
+
+		&--icon {
+			text-align: center;
+			width: 80px;
+			height: 80px;
+			margin: 0 auto;
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+
+	.btn-oval {
+		margin: 20px 10px;
+		padding: 12px 20px;
+		font-size: 14px;
+
+		.cs-arrow-right {
+			margin-left: 10px;
+			border-color:#fff;
+		}
+	}
+}
+
+// ===============================================
+//
+// Section 14 - Partners
+//
+// ===============================================	
+
+.kc-home-14 {
+	padding: 20px 0;
+
+	h1 {
+		margin-bottom: 30px;
+	}
+	
+	.partners--icon {
+		height: 62px;
+		width: 62px;
+		margin:0 auto 25px;
+
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+// ===============================================
+//
+// Section 15 - Footer
+//
+// ===============================================	
+
+.kc-footer {
+	background-color: #E6E6E6;
+	padding: 40px 0 15px;
+
+	&--logo {
+		text-align: center;
+	}
+
+	&--social {
+		margin-top: 30px;
+		margin-bottom: 20px;
+
+		@include MQ(MD) {
+			margin-bottom: 0;
+		}
+		a {
+			display: inline-block;
+			text-align: center;
+			margin-right: 15px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:hover {
+				img {
+					opacity: 1;
+				}
+			}
+
+			img {
+				height: 38px;
+				width: 38px;
+				opacity: 0.6;
+				@include transition(opacity 0.2s ease-in-out);
+			}
+		}
+	}
+
+	&--nav {
+		text-align: center;
+
+		@include MQ(SM) {
+			text-align: left;
+		}
+		a {
+			color: #333;
+			font-size: 15px;
+			line-height: 23px;
+			font-weight: 600;
+		}
+
+	}
+	
+	&-subscribe-message {
+		font-size: 13px;
+		font-weight: 600;
+		margin-top: 22px;
+
+		@include MQM(SM) {
+			text-align: center;
+		}
+	}
+
+	&--copy{
+		font-size: 14px;
+		color: #333;
+		margin-left: 30px;
+
+		@include MQM(SM) {
+			text-align: center;
+		}
+
+		@include MQM(MD) {
+			margin-left: 0;
+		}
+	}
+
+	&--madeby{
+		@include MQM(SM) {
+			text-align: center;
+		}
+		a {
+			font-size: 14px;
+			color: #333;
+		}
+	}
+
+
+	form {
+		width: 260px;
+		display: inline-block;
+		margin: 0;
+
+		@include MQM(SM) {
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	input.form-control {
+		height: 38px;
+	}
+	
+	button {
+		height: 38px;
+		width: 50px;
+		background-color: #00D6CC;
+
+		svg {
+			fill: #ffffff;
+		}
+	}
+
+
+}
 
 
 

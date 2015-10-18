@@ -1,6 +1,7 @@
 $icon-font-path: '../fonts/';
 
-@import "vendor/bootstrap/_bootstrap.scss";
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/bootstrap/bootstrap-5th-grid";
 
 @import "bourbon/bourbon";
 
