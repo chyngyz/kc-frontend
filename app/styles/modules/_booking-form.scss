@@ -1,0 +1,177 @@
+.booking-form {
+	p {
+		font-size: 14px;
+		font-weight: 300;
+	}
+
+	&--counter {
+		position: relative;
+		width: 62px;
+		display: inline-block;
+		margin-right: 40px;
+		margin-bottom: 22px;
+
+		&::-webkit-input-placeholder {color:#555;}
+		&::-moz-placeholder          {color:#555;}/* Firefox 19+ */
+		&:-moz-placeholder           {color:#555;}/* Firefox 18- */
+		&:-ms-input-placeholder      {color:#555;}
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+
+		p {
+			margin-top: 3px;
+			color: #808080;
+			text-transform: capitalize;
+		}
+
+		.counter-inc {
+			position: absolute;
+			top: 5px;
+			right: 0;
+			color: $blue;
+			height: 15px;
+			width: 28px;
+			text-align: center;
+			line-height: 16px;
+			cursor: pointer;
+
+		    -webkit-user-select: none;
+		    -khtml-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		}
+		.counter-dec {
+			position: absolute;
+			top: 20px;
+			line-height: 13px;
+			right: 0;
+			color: $blue;
+			height: 15px;
+			width: 28px;
+			text-align: center;
+			cursor: pointer;
+
+			-webkit-user-select: none;
+		    -khtml-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		}
+
+		input {
+			padding-right: 28px;
+		}
+	}
+
+	&--datepicker {
+		position: relative;
+		input.form-control {
+			width: 100%;
+			padding-right: 30px;
+
+
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 7px;
+			right: 4px;
+			height: 23px;
+			width: 23px;
+			background-image: url(../images/icons/form-icons/icn-datepick.svg);
+
+		}
+	}
+
+	.form-control {
+		border-color: #999;
+	}
+
+	&--range {
+		.range-values {
+			margin-top: 20px;
+
+			p {
+				color: $blue;
+				font-size: 12px;
+			}
+
+			input {
+				width: 43px;
+				border: none;
+				color: $blue;
+				font-size: 12px;
+			}
+		}
+
+		.start {
+			float: left;
+		}
+
+		.end {
+			float: right;
+		}
+	}
+
+	.checkbox {
+		margin-bottom: 20px;
+	}
+
+	.btn-success {
+		padding: 8px 60px;
+		border: none;
+
+		@include MQM(SM) {
+			width: 100%;
+		}
+	}
+
+	.select-wrap {
+		position: relative;
+	  	.form-control {
+		  	-webkit-appearance: none;
+			padding-right: 30px;
+	  	}
+
+	  	&:after {
+		    content: "";
+		    position: absolute;
+		    right: 12px;
+		    top: 12px;
+		    width: 9px;
+		    height: 9px;
+		    border-top: 2px solid;
+		    border-left: 2px solid;
+		    border-color: #0091d4;
+		    -moz-transform: rotate(225deg); /* Для Firefox */
+		    -ms-transform: rotate(225deg); /* Для IE */
+		    -webkit-transform: rotate(225deg); /* Для Safari, Chrome, iOS */
+		    -o-transform: rotate(225deg); /* Для Opera */
+		    transform: rotate(225deg);
+	  	}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

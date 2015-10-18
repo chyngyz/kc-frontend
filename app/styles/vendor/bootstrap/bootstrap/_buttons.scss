@@ -87,6 +87,10 @@ a.btn {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
+.btn-yellow {
+  @include button-variant(#000000, #FFC400, transparent);
+}
+
 // Custom Buttons
 .btn-outline-pr {
   color: #1A1A1A;

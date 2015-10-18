@@ -92,6 +92,84 @@
 			$(this).siblings().removeClass('active');
 			$(this).addClass('active');
 		}); 
+
+
+		// Booking form
+		$('.counter-inc').click(function(){
+			var input = $(this).siblings('input.form-control');
+			var value = $(input).val();
+
+			$(input).mask("#");
+			$(input).val(+value + 1);
+		});
+
+		$('.counter-dec').click(function(){
+			var input = $(this).siblings('input.form-control');
+			var value = $(input).val();
+
+			$(input).mask("#");
+			if(value == 0) {
+
+			} else {
+				$(input).val(+value - 1);
+			}
+		});
+
+		var dates = $("#from, #to").datepicker({
+		  	defaultDate: "+1w",
+		  	changeMonth: true,
+		  	numberOfMonths: 1,
+		  	onSelect: function(selectedDate){
+		    	var option = this.id == "from" ? "minDate" : "maxDate",
+		    	instance = $( this ).data( "datepicker" ),
+		    	date = $.datepicker.parseDate(
+		      		instance.settings.dateFormat || $.datepicker._defaults.dateFormat,
+		      		selectedDate, instance.settings);
+		    	dates.not(this).datepicker("option", option, date);
+		  	}
+		});
+
+
+		$("#booking-form-slider").slider({
+		  range: true,
+		  min: 15,
+		  max: 3600,
+		  values: [ 75, 2000 ],
+		  step: 20,
+		  slide: function( event, ui ) {
+		    $( "#range-start-amount" ).val( "$" + ui.values[ 0 ]);
+		    $( "#range-end-amount" ).val( "$" + ui.values[ 1 ] );
+		  }
+		});
+		$( "#range-start-amount" ).val( "$" + $( "#booking-form-slider" ).slider( "values", 0 ));
+		$( "#range-end-amount" ).val("$" + $( "#booking-form-slider" ).slider( "values", 1 ))
+
 	});
 
 })(jQuery);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

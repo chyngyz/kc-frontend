@@ -9,7 +9,8 @@
 .kc-home-4, 
 .kc-home-5, 
 .kc-home-6,
-.kc-home-7 { 
+.kc-home-7,
+.kc-home-8 { 
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -481,6 +482,106 @@
 		}
 	}
 }
+
+
+// ===============================================
+//
+// Section 8 - Booking form
+//
+// ===============================================		
+
+.kc-home-8 {
+	padding: 20px 0;
+	h1 {
+		color: #00D6CC;
+		margin-bottom: 35px;
+	}
+}
+
+
+
+// ===============================================
+//
+// Section 9 - Mice
+//
+// ===============================================		
+
+.kc-home-9 {
+	position: relative;
+	background-image: url(../images/bg/mice.jpg);
+	background-size: cover;
+	color: #fff;
+	padding: 20px 0;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(102,45, 145, .7);
+	}
+	
+	h1 {
+		width: 70%;
+		margin: 20px auto 20px;
+		line-height: 48px;
+	}
+
+	h4 {
+		font-weight: 300;
+		line-height: 21px;
+		margin-bottom: 20px;
+		width: 70%;
+	}
+
+	.mice-item {
+		min-height: 165px;
+	}
+
+	.mice-desc {
+		text-align: center;
+		font-weight: 300;
+		width: 70%;
+		margin: 10px auto 15px;
+
+		@include MQM(XS) {
+			font-size: 14px;
+		}
+	}
+
+	.mice-icon {
+		text-align: center;
+		width: 80px;
+		height: 80px;
+		margin: 0 auto;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.btn-yellow {
+		padding: 13px 55px;
+		margin-top: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

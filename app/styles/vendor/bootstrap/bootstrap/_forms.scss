@@ -153,6 +153,8 @@ output {
   // [converter] extracted textarea& to textarea.form-control
 }
 
+
+
 // Reset height for `textarea`s
 textarea.form-control {
   height: auto;
@@ -225,19 +227,84 @@ input[type="search"] {
 
   label {
     min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
-    padding-left: 20px;
+    padding-left: 25px;
     margin-bottom: 0;
     font-weight: normal;
     cursor: pointer;
   }
 }
 .radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
+.radio-inline input[type="radio"] {
   position: absolute;
   margin-left: -20px;
   margin-top: 4px \9;
+
+}
+
+.checkbox {
+  label {
+    cursor: default;
+  }
+
+  input[type="checkbox"]:not(:checked) + label:before,
+  input[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; 
+    top: 3px;
+    width: 17px; height: 17px;
+    border: 1px solid #aaa;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    background-image: none;
+  }
+
+  input[type="checkbox"]:not(:checked) + label:after,
+  input[type="checkbox"]:checked + label:after {
+    font-family: serif;
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    transition: all .2s;
+    display: block;
+    height: 17px;
+    width: 17px;
+    background-image: url(../images/icons/form-icons/tick.svg);
+    background-repeat: no-repeat;
+  }
+
+  /* checked mark aspect changes */
+  input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    border-color:#0091d4;
+  }
+
+  input[type="checkbox"]:disabled:not(:checked) + label:before,
+  input[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+  }
+
+}
+
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: 1px;
+  z-index: 4;
+  outline: none;
+  opacity: 0;
 }
 
 .radio + .radio,
