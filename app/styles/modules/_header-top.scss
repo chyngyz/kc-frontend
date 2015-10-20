@@ -92,10 +92,12 @@
 		}
 	}
 
-	&--social {
-		display: inline-block;
-		padding-top: 6px;
-		vertical-align: middle;
+	&--right {
+		
+		li {
+			display: inline-block;
+			vertical-align: middle;
+		}
 
 		svg {
 			width: 100%;
@@ -103,9 +105,9 @@
 			
 		}
 
-		& > a {
-			display: inline-block;
-		    height: 30px;
+		.social-icon{
+			display: block;
+		    height: 18px;
 		    width: 16px;
 		    margin-right: 8px;   
 
@@ -117,7 +119,6 @@
 
 	&--langswitcher {
 		display: inline-block;
-		//vertical-align: top;
 		height: 30px;
 		float: right;
 	}
@@ -130,7 +131,7 @@
 	&--active {
 		border-right: 1px solid #a1aeb7;
 		border-left: 1px solid #a1aeb7;
-		padding: 7px 6px 0;
+		padding: 7px 6px 7px;
 		cursor: pointer;
 		height: 30px;
 
@@ -188,21 +189,27 @@
 		position: absolute;
 		top: 30px;
 		background-color: $header_dark_grey;
-		padding: 7px 12px;
 		right: 1px; 
 		z-index: 20;
 
 		li {
 			list-style-type: none;
 			font-size: 12px;
+			width: 100%;
 		}
 
 		a {
+			padding: 7px 12px;
+			width: 100%;
 			color: #fff;
-			line-height: 40px;
 			display: block;
 			height: 100%;
 			width: 100%;
+
+			&:hover {
+				background-color: #8e9fa9;
+				text-decoration: none;
+			}
 		}
 	}
 }

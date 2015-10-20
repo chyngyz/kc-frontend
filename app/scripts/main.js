@@ -93,6 +93,11 @@
 			$(this).addClass('active');
 		}); 
 
+		// Checkbox on label click, checkbox assigns checked
+		$('.checkbox label').click(function(){
+			$(this).siblings('input').prop("checked", !$(this).siblings('input').prop("checked"));
+		})
+
 
 		// Booking form
 		$('.counter-inc').click(function(){

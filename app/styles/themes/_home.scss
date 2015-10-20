@@ -135,7 +135,7 @@
 		}
 
 		span {
-			border-bottom: 1px dashed red;
+			border-bottom: 1px dashed #fff;
 		}
 	}
 
@@ -238,23 +238,25 @@
 
 	.main-tabs-control {
 		text-align: center;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		flex-direction:row;
-
-		display: -webkit-flex;
-		-webkit-flex-direction: row;
-		-webkit-justify-content: space-around;
-		-webit-flex-wrap: wrap;
+		@include display(flex);
+		@include flex-wrap(wrap);
+		@include justify-content(space-around);
+		@include flex-direction(row);
+		
 		
 		width: 100%;
 		margin: 37px 25px;
+
+		@include MQM(XS) {
+			margin: 15px 0;
+		}
 
 		a {
 			text-transform: capitalize;
 			font-size: 14px;
 			font-weight: 300;
+			@include flex-basis(125px);
+			display: inline-block;
 			&:hover {
 				color: #0091d4;
 			}
@@ -657,6 +659,11 @@
 		width: 70%;
 		margin: 20px auto 20px;
 		line-height: 48px;
+
+		@include MQM(SM) {
+			width: 100%;
+			margin: 20px 0 10px;
+		}
 	}
 
 	h4 {
@@ -784,6 +791,10 @@
 		border-radius: 4px;
 		overflow: hidden;
 
+		@include MQM(SM) {
+			padding: 50px 0;
+		}
+
 		&:before {
 			content: "";
 			position: absolute;
@@ -832,6 +843,11 @@
 		width: 70%;
 		margin: 20px auto 20px;
 		line-height: 48px;
+
+		@include MQM(SM) {
+			width: 100%;
+			margin: 20px 0 20px;
+		}
 	}
 
 	h4 {
@@ -958,15 +974,15 @@
 			color: #333;
 			font-size: 15px;
 			line-height: 23px;
-			font-weight: 600;
+			font-weight: 400;
 		}
 
 	}
 	
 	&-subscribe-message {
-		font-size: 13px;
-		font-weight: 600;
-		margin-top: 22px;
+		font-size: 15px;
+		font-weight: 400;
+		margin-top: 10px;
 
 		@include MQM(SM) {
 			text-align: center;

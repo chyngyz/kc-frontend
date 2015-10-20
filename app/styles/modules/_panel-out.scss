@@ -53,6 +53,14 @@
 		.panel-outbound--footer {
 			background-color: rgba(0,145,212, 1);
 		}
+
+		.footer-r {
+			background-color: rgba(0,145,212, 0);
+		}
+
+		.panel-outbound--extra-info {
+			display: none;
+		}
 	}
 
     &--meta {
@@ -73,7 +81,7 @@
     &--info {
     	display: block;
     	padding: 0 12px;
-    	font-weight: 300;
+    	font-weight: 400;
     	margin-top: 0;
     }
 
@@ -81,7 +89,7 @@
     	margin-top: 10px;
     	padding: 0 12px;
     	display: block;
-    	font-weight: 300;
+    	font-weight: 400;
     	font-size: 14px;
 	    line-height: 19px;
 	    max-height: 57px;
@@ -91,6 +99,19 @@
 	    @include transition(opacity 0.2s ease-in-out);
 	    @include animation-delay(0.2s);
 
+    }
+
+    &--extra-info {
+    	position: absolute;
+    	right: 5px;
+    	top: 75px;
+    	width: 100px;
+    	height: 65px;
+    	@include display(flex);
+    	@include align-content(flex-end);
+    	@include flex-direction(column);
+    	@include align-items(flex-end);
+    	@include justify-content(flex-end);
     }
 
     &--footer {
@@ -117,7 +138,7 @@
 
     	a {
     		color: #fff;
-    		font-weight: 300;
+    		font-weight: 400;
     		font-size: 14px;
     		line-height: 40px;
     		width: 100%;
@@ -134,9 +155,9 @@
 		.footer-title {
 			text-transform: uppercase;
 			display: inline-block;
-			font-weight: 300;
+			font-weight: 600;
 			margin-top: 0;
-			max-width: 70%;
+			max-width: 80%;
 			text-overflow: ellipsis;
 		    white-space: nowrap;
 		    overflow: hidden;
@@ -174,14 +195,18 @@
 
 	.footer-r {
 		display: inline-block;
-		width: 29%;
+		width: 30%;
 		padding: 5px 12px 0;
 		vertical-align: top;
 		text-align: center;
+		float: right;
+		background-color: $blue;
+		height: 75px;
+		@include transition(background-color 0.1s ease-in-out 0.2s);
 
 		span {
 			font-size: 16px;
-			font-weight: 300;
+			font-weight: 600;
 
 			&:first-of-type {
 				margin-top: 3px;
@@ -190,7 +215,7 @@
 
 		.min-price, .currency-icon {
 			font-size: 25px;
-			font-weight: 300;
+			font-weight: 600;
 			margin-left: -5px;
 
 		}
