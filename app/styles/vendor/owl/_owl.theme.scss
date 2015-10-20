@@ -57,7 +57,12 @@
 	position: absolute;
 	top: 250px;
 	left: 50%;
+	width: 100%;
 	@include transform(translateX(-50%));
+
+	@include MQM(MD) {
+		display: none !important;
+	}
 }
 
 /* Styling Next and Prev buttons */
@@ -67,15 +72,55 @@
 	display: inline-block;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
-	margin: 5px;
-	padding: 3px 10px;
-	font-size: 12px;
+	height: 70px;
+	width: 70px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
+	border-radius: 50%;
+	background: rgba(0, 145, 212, 0.1);
+	border: 1px solid #0091D4;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
+	text-indent: -99999px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+	position: absolute;
+	left: 0;
+	@include transform(translateX(-100%));
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 24px;
+	    left: 27px;
+	    width: 20px;
+	    height: 20px;
+		border-top: 2px solid;
+		border-left: 2px solid;
+		border-color: $blue;
+		@include transform(rotate(315deg));
+	}
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+	position: absolute;
+	right: 0;
+	@include transform(translateX(100%));
+
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 24px;
+	    right: 27px;
+	    width: 20px;
+	    height: 20px;
+		border-top: 2px solid;
+		border-left: 2px solid;
+		border-color: $blue;
+		@include transform(rotate(135deg));
+	}
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */

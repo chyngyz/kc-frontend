@@ -37,6 +37,36 @@
 	 
 	  	});
 
+	  	$("#panel-slider").owlCarousel({
+			loop : true,
+			autoplay : true,
+			autoplayHoverPause : true,
+			fluidSpeed : 600,
+			autoplaySpeed : 600,
+			dotsSpeed : 600,
+			dragEndSpeed : 60,
+		    slideSpeed : 300,
+		    paginationSpeed : 400,
+		    autoPlay : true,
+    		stopOnHover : false,
+    		autoHeight : true,
+    		transitionStyle: "fade",
+
+    		autoHeight :true,
+		 
+		    // "singleItem:true" is a shortcut for:
+		    items : 3, 
+		    itemsDesktop : [1000, 3],
+		    itemsDesktopSmall : [979,3],
+		    itemsTablet: [768,2],
+		    itemsMobile : [479,1],
+		    navigation : true,
+		    navigationText : ["prev","next"],
+		    rewindNav : true,
+		    pagination : false
+	 
+	  	});
+
 
 	  	$('.marquee').marquee({
 			//If you wish to always animate using jQuery

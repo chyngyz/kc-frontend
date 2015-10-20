@@ -1,0 +1,285 @@
+.kc-outbound-tours,
+.kc-outbound-recommended { 
+	.container {
+		@include MQ(LG) {
+			width: 1000px;
+		}
+	}
+}
+
+// ===============================================
+//
+// Outbound hero
+//
+// ===============================================	
+
+.kc-outbound-hero {
+	height: 245px;
+	background-color: #0091d4;
+	color: #fff;
+	background-image:url('../images/demo/bg/out_pic.jpg');
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+
+	h1 {
+		margin-top: 67px;
+		font-size: 40px;
+	}
+
+	p {
+		font-size: 28px;
+
+	}
+}
+
+
+// ===============================================
+//
+// Outbound Ticket Search form
+//
+// ===============================================	
+
+.kc-outbound-tours {
+	text-align: center;
+	padding-bottom: 30px;
+
+
+	h1 {
+		margin-top: 54px;
+		margin-bottom: 32px;
+		color: $blue;
+
+		@include MQM(SM) {
+			font-size: 26px;
+		}
+	}
+
+	i {
+		margin-left: 10px;
+	}
+
+	.btn-group {
+		margin-bottom: 25px;
+
+		a {
+			width: 200px;
+
+			@include MQM(SM) {
+				width: auto;
+			}
+		}
+	}
+
+
+	&--search-form {
+		background-color: $blue;
+		padding: 20px 15px; 
+		border-radius: 4px;
+		margin-top: -40px;
+		position: relative;
+		z-index: 2;
+	}
+	.tours-types-wrap {
+		text-align: left;
+
+		@include MQM(MD) {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+
+	.tour-types {
+		font-size: 14px;
+		color: rgba(255, 255, 255, 0.6);
+		margin-right: 4px;
+		text-decoration: underline;
+	}
+
+	.search-extra {
+		margin-top: 14px;
+		a {
+			font-size: 14px;
+			color: rgba(255, 255, 255, 0.6);
+			margin-right: 4px;
+			text-decoration: underline;
+		}
+	}
+
+	.btn-orange {
+		padding: 7px 65px; 
+		font-size: 16px;
+
+		@include MQM(XS) {
+			width: 100%;
+		}
+	}
+
+	.flaggy {
+		font-weight: 400;
+	}
+
+	.running-text {
+		background-color: rgba(255, 255, 255, 0.2);
+		
+		li {
+
+			&:after {
+				color: rgba(255, 255, 255, 0.25);
+			}
+			a {
+				font-weight: 400;
+			}
+		}
+	}
+
+	.booking-form--range .range-values {
+		margin-top: 7px;
+		.start, .end {
+			margin-bottom: 4px;
+		}
+	}
+	.booking-form--range-item {
+		margin-left: 6px;
+
+
+	}
+}
+
+
+// ===============================================
+//
+//  Outbound tours panels
+//
+// ===============================================	
+
+.kc-outbound-tours {
+	text-align: center;
+	padding-bottom: 30px;
+
+	h1 {
+		margin-top: 54px;
+		margin-bottom: 32px;
+		color: $blue;
+
+		@include MQM(SM) {
+			font-size: 26px;
+		}
+	}
+
+	i {
+		margin-left: 10px;
+	}
+
+	.btn-group {
+		margin-bottom: 25px;
+
+		a {
+			width: 200px;
+
+			@include MQM(SM) {
+				width: auto;
+			}
+		}
+	}
+}
+
+
+
+
+
+// ===============================================
+//
+// Section - Tourist guide
+//
+// ===============================================	
+
+
+.kc-outbound-tguide {
+	padding: 20px 0 30px;
+
+	h1 {
+		margin-bottom: 30px;
+		line-height: 48px;
+
+	}
+
+	.tguide-item {
+		min-height: 165px;
+
+		&--link {
+			text-align: center;
+			font-weight: 300;
+			width: 70%;
+			margin: 10px auto 15px;
+			display: block;
+
+			@include MQM(XS) {
+				font-size: 14px;
+			}
+		}
+
+		&--icon {
+			text-align: center;
+			width: 80px;
+			height: 80px;
+			margin: 35px auto 0;
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+	.btn-outline-default {
+		margin-top: 20px;
+	}
+
+	.cs-arrow-right {
+		margin-left: 15px;
+	}
+
+}
+
+// ===============================================
+//
+// Suggestion Block
+//
+// ===============================================	
+
+.kc-outbound-suggest {
+	height: 292px;
+	background:transparent url('../images/bg/section-search.jpg');
+	background-size: cover;
+	position: relative;
+
+	@include MQM(SM) {
+		height: 250px;
+	}
+
+	@include MQM(XS) {
+		height: 220px;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(237, 54,43,0.8);
+	}
+}
+
+// ===============================================
+//
+// Recommend Slider block
+//
+// ===============================================	
+
+.kc-outbound-recommended {
+	.panel-slider-out {
+		margin-top: 20px;
+	}
+}

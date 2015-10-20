@@ -1,0 +1,48 @@
+.suggestion-block {
+	position: relative;
+	height: 100%;
+
+	&:before {
+		content: "";
+		position:absolute;
+		left: 0;
+		top: -1px;
+		height: 94px;
+		width: 100%;
+		background:transparent url('../images/bg/suggest-top.svg');
+		background-size: center top;
+		background-repeat: no-repeat;
+	}
+
+	&:after {
+		content: "";
+		position:absolute;
+		left: 0;
+		bottom: -1px;
+		height: 94px;
+		width: 100%;
+		background:transparent url('../images/bg/suggest-bottom.svg');
+		background-position: center bottom;
+		background-repeat: no-repeat;
+	}
+
+	&--content {
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+
+		@include MQM(MD) {
+			top: 50%;
+		}
+
+		h1 {
+			color: #fff;
+			font-size: 40px;
+		}
+		p {
+			color: #fff;
+			font-size: 18px;
+		}
+	}
+}

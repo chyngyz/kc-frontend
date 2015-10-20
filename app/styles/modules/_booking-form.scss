@@ -130,36 +130,71 @@
 		}
 	}
 
-	.select-wrap {
-		position: relative;
-	  	.form-control {
-		  	-webkit-appearance: none;
-			padding-right: 30px;
-	  	}
+}
 
-	  	&:after {
-		    content: "";
-		    position: absolute;
-		    right: 12px;
-		    top: 12px;
-		    width: 9px;
-		    height: 9px;
-		    border-top: 2px solid;
-		    border-left: 2px solid;
-		    border-color: #0091d4;
-		    -moz-transform: rotate(225deg); /* Для Firefox */
-		    -ms-transform: rotate(225deg); /* Для IE */
-		    -webkit-transform: rotate(225deg); /* Для Safari, Chrome, iOS */
-		    -o-transform: rotate(225deg); /* Для Opera */
-		    transform: rotate(225deg);
-	  	}
-	}
+.select-wrap {
+	position: relative;
+  	.form-control {
+	  	-webkit-appearance: none;
+		padding-right: 30px;
+  	}
 
-
+  	&:after {
+	    content: "";
+	    position: absolute;
+	    right: 12px;
+	    top: 12px;
+	    width: 9px;
+	    height: 9px;
+	    border-top: 2px solid;
+	    border-left: 2px solid;
+	    border-color: #0091d4;
+	    -moz-transform: rotate(225deg); /* Для Firefox */
+	    -ms-transform: rotate(225deg); /* Для IE */
+	    -webkit-transform: rotate(225deg); /* Для Safari, Chrome, iOS */
+	    -o-transform: rotate(225deg); /* Для Opera */
+	    transform: rotate(225deg);
+  	}
 }
 
 
+.booking-form--range.white {
+	text-align: left;
+	p {
+		font-size: 16px;
+		color: #fff;
+	}
 
+	.start, .end {
+		font-size: 12px;
+	}
+
+	input {
+		background:$blue;
+		color: #fff;
+	}
+
+	// Range
+
+	.ui-slider-horizontal .ui-slider-handle {
+		background-color: #fff;
+
+		&:after {
+			background-color: $blue;
+		}
+	}
+
+	.ui-widget-header {
+		background-color: #fff;
+	}
+
+	.ui-widget-content {
+		background-color: rgba(255,255, 255, 0.5);
+	}
+
+
+
+}
 
 
 

@@ -91,6 +91,10 @@ a.btn {
   @include button-variant(#000000, #FFC400, transparent);
 }
 
+.btn-orange {
+  @include button-variant(#fff, #FF931E, transparent);
+}
+
 // Custom Buttons
 .btn-outline-pr {
   color: #1A1A1A;
