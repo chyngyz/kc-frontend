@@ -202,7 +202,11 @@
 		float: right;
 		background-color: $blue;
 		height: 75px;
-		@include transition(background-color 0.1s ease-in-out 0.2s);
+		@include transition(background-color 0.1s ease-in-out);
+
+		@include MQM(XS) {
+			background-color: transparent;
+		}
 
 		span {
 			font-size: 16px;
