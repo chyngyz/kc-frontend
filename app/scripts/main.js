@@ -1,17 +1,19 @@
 (function($){
 	$(document).ready(function() {
 
+		// Main menu mobile trigger
 		$('#menu-trigger').click(function(e){
 			e.preventDefault();
 			$('#main-menu').toggleClass('show');
 		});
 
+		// Top menu mobile trigger
 		$('#topmenu-trigger').click(function(e){
 			e.preventDefault();
 			$('#top-menu').toggleClass('show');
 		})
 
- 
+ 		// Home page hero slider
 	  	$("#hero-slider").owlCarousel({
 			loop : true,
 			autoplay : true,
@@ -37,6 +39,7 @@
 	 
 	  	});
 
+	  	// Outbound panels slider
 	  	$("#panel-slider").owlCarousel({
 			loop : true,
 			autoplay : true,
@@ -67,7 +70,38 @@
 	 
 	  	});
 
+	  	// Outbound testimonials slider
+	  	$("#testimonials").owlCarousel({
+			loop : true,
+			autoplay : true,
+			autoplayHoverPause : true,
+			fluidSpeed : 600,
+			autoplaySpeed : 600,
+			dotsSpeed : 600,
+			dragEndSpeed : 60,
+		    slideSpeed : 300,
+		    paginationSpeed : 400,
+		    autoPlay : true,
+    		stopOnHover : false,
+    		autoHeight : true,
+    		singleItem: true,
 
+    		autoHeight :true,
+		 
+		    // "singleItem:true" is a shortcut for:
+		    // items : 3, 
+		    // itemsDesktop : [1000, 3],
+		    // itemsDesktopSmall : [979,3],
+		    // itemsTablet: [768,2],
+		    // itemsMobile : [479,1],
+		    navigation : true,
+		    navigationText : ["prev","next"],
+		    rewindNav : true,
+		    pagination : false
+	 
+	  	});
+
+	  	// Running text
 	  	$('.marquee').marquee({
 			//If you wish to always animate using jQuery
 			allowCss3Support: true,
@@ -95,6 +129,7 @@
 	        $('html, body').animate({scrollTop: 0}, 'slow');
 	    });
 
+	    // Show fixed footer
 	    $(window).on("scroll", function () {
 	        if ($(window).scrollTop() > 200){
 	            $('#fixed-contacts').addClass('shown');
@@ -129,7 +164,7 @@
 		})
 
 
-		// Booking form
+		// Booking form increment desc form
 		$('.counter-inc').click(function(){
 			var input = $(this).siblings('input.form-control');
 			var value = $(input).val();
@@ -149,7 +184,7 @@
 				$(input).val(+value - 1);
 			}
 		});
-
+		// Date picker
 		var dates = $("#from, #to").datepicker({
 		  	defaultDate: "+1w",
 		  	changeMonth: true,
@@ -164,7 +199,7 @@
 		  	}
 		});
 
-
+		// Range slider
 		$("#booking-form-slider").slider({
 		  range: true,
 		  min: 15,
@@ -177,7 +212,9 @@
 		  }
 		});
 		$( "#range-start-amount" ).val( "$" + $( "#booking-form-slider" ).slider( "values", 0 ));
-		$( "#range-end-amount" ).val("$" + $( "#booking-form-slider" ).slider( "values", 1 ))
+		$( "#range-end-amount" ).val("$" + $( "#booking-form-slider" ).slider( "values", 1 ));
+
+
 
 	});
 

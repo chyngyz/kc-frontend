@@ -1,5 +1,6 @@
 .kc-outbound-tours,
-.kc-outbound-recommended { 
+.kc-outbound-recommended,
+.kc-outbound-testimonials { 
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -248,7 +249,7 @@
 // ===============================================	
 
 .kc-outbound-suggest {
-	height: 292px;
+	height: 300px;
 	background:transparent url('../images/bg/section-search.jpg');
 	background-size: cover;
 	position: relative;
@@ -283,3 +284,66 @@
 		margin-top: 20px;
 	}
 }
+
+// ===============================================
+//
+// Testimonials Section
+//
+// ===============================================		
+
+
+.kc-outbound-testimonials {
+	background-color: #F4FBF6;
+	border-top: 1px solid #ccc;
+	padding: 20px 0 35px;
+
+	h1 {
+		color: #39B54A;
+	}
+
+	.testimonials-wrapper {
+		margin-top: 30px;
+	}
+
+	.cs-arrow-right {
+		margin-left: 15px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

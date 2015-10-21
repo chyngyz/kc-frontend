@@ -1,0 +1,96 @@
+.testimonials-wrapper {
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.testimonial {
+	position: relative;
+	text-align: center;
+
+	&--img {
+		height: 97px;
+		width: 97px;
+		display: inline-block;
+		border-radius: 50%;
+		overflow: hidden;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	&--author {
+		font-size: 18px;
+		font-weight: 600;
+		color: #4D4D4D;
+		display: inline-block;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	&--occupation {
+		font-size: 18px;
+		font-weight: 300;
+		color: #808080;
+		display: inline-block;
+		width: 100%;
+	}
+
+	&--text {
+		font-size: 28px;
+		line-height: 1.2;
+		color: #4D4D4D;
+		font-weight: 300;
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 15px;
+		height: 100px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 78px;
+			width: 88px;
+			background-image: url('../images/icons/icn-quotation.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			@include transform(translate(-50%, -50%));
+		}
+	}
+
+	&--tripadvisor {
+		width: 180px;
+		height: 30px;
+		display: inline-block;
+		margin: 20px 10px;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

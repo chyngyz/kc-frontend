@@ -171,7 +171,9 @@
 
 	input {
 		background:$blue;
-		color: #fff;
+		-webkit-text-fill-color: rgba(255, 255, 255, 1); 
+   		-webkit-opacity: 1; 
+   		color: rgba(255, 255, 255, 1); 
 	}
 
 	// Range
