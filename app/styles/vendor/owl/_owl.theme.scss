@@ -73,17 +73,15 @@
 	color: #FFF;
 	display: inline-block;
 	zoom: 1;
-	*display: inline;/*IE7 life-saver */
 	height: 70px;
 	width: 70px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
 	border-radius: 50%;
 	background: rgba(0, 145, 212, 0.1);
 	border: 1px solid #0091D4;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
 	text-indent: -99999px;
+	border-collapse: separate;
+	overflow: hidden;
 }
 
 .owl-theme .owl-controls .owl-buttons .owl-prev {
@@ -91,6 +89,7 @@
 	left: 0;
 	outline: none;
 	@include transform(translate(-130%, 0));
+	border-radius: 50%;
 
 	&:after {
 		content: "";
@@ -111,7 +110,7 @@
 	right: 0;
 	outline: none;
 	@include transform(translate(130%, 0));
-
+	border-radius: 50%;
 
 	&:after {
 		content: "";
@@ -129,9 +128,7 @@
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
 .owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
 	opacity: 1;
-	text-decoration: none;
 }
 
 /* Styling Pagination*/
