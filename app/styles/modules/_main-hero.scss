@@ -40,10 +40,12 @@
 		text-align: center;
 
 
+
 		@include MQ(SM) {
 			height: 200px;
 			position: absolute;
 			padding-bottom: 0;
+			z-index: 20;
 		}
 
 		h2 {

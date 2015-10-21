@@ -1,0 +1,43 @@
+.kc-tour-hero-slider {
+	height: 100%;
+	width: 100%;
+
+	.item {
+		position: relative;
+		display: block;
+		height: 405px;
+		width: 100%;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.owl-controls .owl-buttons {
+		.owl-prev {
+			-webkit-transform: translate(100%, 0) !important;
+		    -moz-transform: translate(100%, 0) !important;
+		    -ms-transform: translate(100%, 0) !important;
+		    -o-transform: translate(100%, 0) !important;
+		    transform: translate(100%, 0) !important;
+		    background: rgba(0, 0, 0, 0.3);
+		    border: 1px solid #fff;
+
+		    &:after {
+		    	border-color: #fff !important;
+		    }
+		}
+
+		.owl-next {
+			-webkit-transform: translate(-100%, 0) !important;
+		    -moz-transform: translate(-100%, 0) !important;
+		    -ms-transform: translate(-100%, 0) !important;
+		    -o-transform: translate(-100%, 0) !important;
+		    transform: translate(-100%, 0) !important;
+		    background: rgba(0, 0, 0, 0.3);
+		    border: 1px solid #fff;
+
+		    &:after {
+		    	border-color: #fff !important;
+		    }
+		}
+	}
+}
