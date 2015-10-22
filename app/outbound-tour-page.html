@@ -295,7 +295,7 @@
     <!-- End of slider -->
     
 
-    <section class="kc-outbound-tour-info">
+    <section class="kc-outbound-tour-detail">
       <div class="container">
         <div class="row">
 
@@ -303,28 +303,44 @@
           <div class="col-md-8 col-sm-6 col-xs-12">
             <h2>Париж + Дисней – Ленд</h2>
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-xs-12">
                 <p>В стоимость включено</p>
                 <div class="whats-included-icons">
-                  <ul>
-                    <li><img src="images/icons/packs/icn-breakf.svg" alt="icon"></li>
-                    <li><img src="images/icons/packs/icn-flight.svg" alt="icon"></li>
-                    <li><img src="images/icons/packs/icn-med-ins.svg" alt="icon"></li>
-                    <li><img src="images/icons/packs/icn-room.svg" alt="icon"></li>
-                    <li><img src="images/icons/packs/icn-transfet.svg" alt="icon"></li>
+                  <ul class="clearfix">
+                    <li><img src="images/icons/packs-blue/icn-breakf.svg" alt="icon"></li>
+                    <li><img src="images/icons/packs-blue/icn-flight.svg" alt="icon"></li>
+                    <li><img src="images/icons/packs-blue/icn-med-ins.svg" alt="icon"></li>
+                    <li><img src="images/icons/packs-blue/icn-room.svg" alt="icon"></li>
+                    <li><img src="images/icons/packs-blue/icn-transfet.svg" alt="icon"></li>
                   </ul>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-xs-12">
                 <p>Сезоность: </p>
+                <div class="seasons-marker clearfix">
+                  <ul>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li class="active"><span></span></li>
+                    <li class="active"><span></span></li>
+                    <li class="active"><span></span></li>
+                    <li class="active"><span></span></li>
+                    <li class="active"><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li class="active"><span></span></li>
+                  </ul>
+                </div>
                 <p>май - сентябрь, декабрь</p>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-xs-12">
                 <p>Отзывы</p>
-                <a href="#" class="testimonials">14</a>
+                <a href="#" class="testimonials-count">14</a>
               </div>
             </div>
-            <p>То основное мини описание которое было при наведении на карточку.  Милан- Венеция- Сиена-Флорен</p>
+            <p class="tour-desc">То основное мини описание которое было при наведении на карточку.  Милан- Венеция- Сиена-Флорен</p>
           </div>
 
 
@@ -334,23 +350,179 @@
               <div class="panel-tour-info--head">
                 <span>от</span>
                 <span class="panel-tour--price">&euro;2400</span>
-                <span>за 2х</span>  
+                <span class="panel-tour--count-per">за 2х</span>  
               </div>
               <div class="panel-tour-info--foot">
                 <div class="hot">ГОРЯЩИЙ</div>
                 <div class="best-price">ЛУЧШАЯ ЦЕНА</div>
-                <p>6 ночей  /  7 дней</p>
+                <p class="tour-duration">6 ночей  /  7 дней</p>
                 <a href="#" class="btn-success btn">Бронировать тур</a>
               </div>
             </div>
-
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <a href="#" class="download-tour-details">Скачать предложение в PDF</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     
+    
+    <section class="kc-outbound-tour-tabs">
+      <div class="container">
+        <!-- Begin Tab navs -->
+        <div class="row">
+          <div class="col-xs-12">
 
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="tab navigation" class="active">
+                <a href="#program" aria-controls="program" role="tab" data-toggle="tab">Программа</a>
+              </li>
+              <li role="tab navigation">
+                <a href="#in-room" aria-controls="in-room" role="tab" data-toggle="tab">В номере</a>
+              </li>
+              <li role="tab navigation">
+                <a href="#price" aria-controls="price" role="tab" data-toggle="tab">Стоимость</a>
+              </li>
+              <li role="tab navigation">
+                <a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Фото / видео</a>
+              </li>
+              <li role="tab navigation">
+                <a href="#extra" aria-controls="extra" role="tab" data-toggle="tab">Дополнительно</a>
+              </li>
+              <li role="tab navigation">
+                <a href="#testimonials-tab" aria-controls="testimonials-tab" role="tab" data-toggle="tab">Отзывы</a>
+              </li>
+            </ul>
 
+          </div>
+        </div>
+        <!-- end of tab nav -->
+
+        <!-- Begin tab content -->
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- Tab panes -->
+            <div class="tab-content tab-custom">
+              <!-- Begin program tab content -->
+              <div role="tabpanel" class="tab-pane fade in active" id="program">
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Прибытие в отель
+                        </a>
+                        <span class="tabular-count">1</span>
+                        <span class="tabular-arrow"></span>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Отдых отдых
+                        </a>
+                        <span class="tabular-count">2</span>
+                        <span class="tabular-arrow"></span>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Сборы чемоданов
+                        </a>
+                        <span class="tabular-count">3</span>
+                        <span class="tabular-arrow"></span>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Трансфер в аэропорт
+                        </a>
+                        <span class="tabular-count">4</span>
+                        <span class="tabular-arrow"></span>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                
+              </div> 
+
+              <!-- end of tab content -->
+
+              <!-- Begin in room tab content -->
+              <div role="tabpanel" class="tab-pane fade" id="in-room">
+                
+
+              </div>
+              <!-- end of tab content -->
+
+              <!-- Begin price tab content -->
+              <div role="tabpanel" class="tab-pane fade" id="price">
+                
+
+              </div>
+              <!-- end of tab content -->
+
+              <!-- Begin gallery tab content -->
+              <div role="tabpanel" class="tab-pane fade" id="gallery">
+                
+
+              </div>
+              <!-- end of tab content -->
+
+              <!-- Begin extra tab content -->
+              <div role="tabpanel" class="tab-pane fade" id="extra">
+                
+
+              </div>
+              <!-- end of tab content -->
+
+              <!-- Begin testimonials tab content -->
+              <div role="tabpanel" class="tab-pane fade" id="testimonials-tab">
+                
+
+              </div>
+              <!-- end of tab content -->
+            </div>
+          </div>
+        </div>
+        <!-- End of tab content -->
+      </div>
+    </section>
 
 
     

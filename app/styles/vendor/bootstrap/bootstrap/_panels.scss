@@ -14,13 +14,16 @@
 
 // Panel contents
 .panel-body {
-  padding: $panel-body-padding;
+  padding: 0 25px 15px 50px;
+  color: #4D4D4D;
+  font-weight: 600;
+  font-size: 14px;
   @include clearfix;
 }
 
 // Optional heading
 .panel-heading {
-  padding: $panel-heading-padding;
+  padding: 15px 25px 15px 50px;
   border-bottom: 1px solid transparent;
   @include border-top-radius(($panel-border-radius - 1));
 
@@ -35,13 +38,80 @@
   margin-bottom: 0;
   font-size: ceil(($font-size-base * 1.125));
   color: inherit;
+  position: relative;
+
+  > a {
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+
+    &.collapsed {
+      color: #333333;
+    }
+
+    &:not(.collapsed) {
+      color: #0091D4;
+
+      & ~ .tabular-arrow {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
 
   > a,
   > small,
   > .small,
   > small > a,
   > .small > a {
-    color: inherit;
+    color: #333;
+  }
+
+  .tabular-count {
+    position: absolute;
+    top: -3px;
+    left: -37px;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    line-height: 24px;
+    font-size: 17px;
+    background-color: #0091D4;
+    border-radius: 50%;
+    color: #fff;
+    -webkit-transition: background-color 0.1s ease-out;
+    -moz-transition: background-color 0.1s ease-out;
+    transition: background-color 0.1s ease-out;
+
+  }
+
+  .tabular-arrow {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-color: #0091D4;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
 }
 
@@ -237,7 +307,7 @@
 
     + .panel-collapse > .panel-body,
     + .panel-collapse > .list-group {
-      border-top: 1px solid $panel-inner-border;
+      border-top: none;
     }
   }
 
@@ -252,7 +322,7 @@
 
 // Contextual variations
 .panel-default {
-  @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
+  @include panel-variant($panel-default-border, $panel-default-text, #fff, $panel-default-border);
 }
 .panel-primary {
   @include panel-variant($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);

@@ -1,4 +1,5 @@
-.kc-outbound-tour-info { 
+.kc-outbound-tour-detail,
+.kc-outbound-tour-tabs { 
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -19,8 +20,81 @@
 
 }
 
-.kc-outbound-tour-info {
-	
+.kc-outbound-tour-detail {
+	h2 {
+		font-size: 28px;
+		color: $blue;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-size: 14px;
+		color: 	#4D4D4D;
+		font-weight: 600;
+	}
+
+	.tour-desc {
+		font-size: 19px;
+		font-weight: 400;
+
+	}
+
+	.whats-included-icons {
+
+		li {
+			display: inline-block;
+			float: left;
+		}
+	}
+
+	.testimonials-count {
+		font-size: 28px;
+	    line-height: 28px;
+	    display: inline-block;
+	    height: 30px;
+	    font-weight: bold;
+	    text-decoration: none;
+	    border-bottom: 1px dashed #0091d4;
+
+		&:hover {
+			text-decoration: none;
+			border-bottom-style: solid;
+		}
+	}
+
+	.panel-tour-info {
+		margin-top: 20px;
+		position: relative;
+		z-index: 10;
+
+		@include MQ(MD) {
+			margin-top: -83px;
+		}
+	}
+
+	.download-tour-details {
+		font-size: 14px;
+		display: inline-block;
+		margin-top: 15px;
+	}
 }
 
 
+// ===============================================
+//
+// outbound-tour-tabs
+//
+// ===============================================	
+
+
+
+.kc-outbound-tour-tabs {
+	padding: 40px 0 20px;
+	.tab-custom {
+		padding: 30px 0;
+
+		@include MQ(MD) {
+			width: 80%;
+		}
+	}
+}

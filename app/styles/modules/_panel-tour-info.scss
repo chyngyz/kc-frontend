@@ -1,0 +1,51 @@
+.panel-tour-info {
+	border-radius: 6px;
+    border: 3px solid #0091d4;
+    height: 200px;
+
+    &--head {
+    	position: relative;
+	    background: rgba(0, 145, 212, 0.6);
+	    padding: 15px 0 25px;
+	    color: #ffffff;
+	    height: 80px;
+	    text-align: center;
+
+	    span:first-of-type {
+	    	margin-right: 5px;
+	    }
+
+	    .panel-tour--price {
+	    	font-size: 38px;
+	    	font-weight: 400;
+	    	line-height: 1;
+	    	margin-right: 10px;
+	    }
+
+
+	    .panel-tour--count-per {
+	    	border-bottom: 1px dashed #fff;
+	    }
+
+    }
+
+    &--foot {
+    	text-align: center;
+
+    	.hot, .best-price {
+    		color: #fff;
+
+    		@include transform(translateY(-18px));
+    	}
+
+    	.tour-duration {
+    		margin-top: -10px;
+    	}
+
+    	.btn-success {
+    		border:none;
+    		border-radius: 2px;
+    		padding: 12px 25px;
+    	}
+    }
+}
