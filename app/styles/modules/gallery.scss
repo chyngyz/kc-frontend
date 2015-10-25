@@ -1,0 +1,20 @@
+.kc-gallery {
+	width: 100%;
+
+	a {
+		width: 24%;
+		display: inline-block;
+		margin-top: 5px;
+		@include MQ(SM) {
+			width: 49%;
+		}
+
+		@include MQ(MD) {
+			width: 33%;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}

@@ -12,8 +12,9 @@ caption {
   color: $text-muted;
   text-align: left;
 }
-th {
+th, td {
   text-align: left;
+  font-size: 14px;
 }
 
 
@@ -30,7 +31,7 @@ th {
     > tr {
       > th,
       > td {
-        padding: $table-cell-padding;
+        padding:15px 0 $table-cell-padding 0 ;
         line-height: $line-height-base;
         vertical-align: top;
         border-top: 1px solid $table-border-color;
@@ -40,7 +41,7 @@ th {
   // Bottom align for column headings
   > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid $table-border-color;
+    border-bottom: 2px solid #0091d4;
   }
   // Remove top border from thead by default
   > caption + thead,

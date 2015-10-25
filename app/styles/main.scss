@@ -12,6 +12,7 @@ $icon-font-path: '../fonts/';
 // General styles
 @import "base/vars";
 @import "base/icon-font";
+@import "base/custom-icons";
 @import "base/general";
 
 // Modules
@@ -27,6 +28,7 @@ $icon-font-path: '../fonts/';
 @import "vendor/owl/owl.carousel";
 @import "vendor/owl/owl.transitions";
 @import "vendor/owl/owl.theme"; 
+@import "vendor/lightgallery/lightgallery";
 
 
 @import "vendor/jquery-ui/datepicker-slider";

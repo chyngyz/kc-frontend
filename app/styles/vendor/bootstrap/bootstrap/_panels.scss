@@ -23,7 +23,6 @@
 
 // Optional heading
 .panel-heading {
-  padding: 15px 25px 15px 50px;
   border-bottom: 1px solid transparent;
   @include border-top-radius(($panel-border-radius - 1));
 
@@ -41,8 +40,12 @@
   position: relative;
 
   > a {
+    display: block;
     font-size: 20px;
     text-decoration: none;
+    position: relative;
+    width: 100%;
+    padding: 15px 25px 15px 50px;
 
     &:hover,
     &:focus,
@@ -77,8 +80,8 @@
 
   .tabular-count {
     position: absolute;
-    top: -3px;
-    left: -37px;
+    top: 13px;
+    left: 12px;
     text-align: center;
     height: 25px;
     width: 25px;
@@ -95,8 +98,8 @@
 
   .tabular-arrow {
     position: absolute;
-    right: 0;
-    top: 5px;
+    right: 15px;
+    top: 20px;
     display: inline-block;
     width: 9px;
     height: 9px;

@@ -230,6 +230,9 @@
 
 
 
+		// Hotel Gallery
+		$("#hotel-gallery").lightGallery(); 
+
 	});
 
 })(jQuery);

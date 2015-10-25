@@ -90,11 +90,189 @@
 
 .kc-outbound-tour-tabs {
 	padding: 40px 0 20px;
-	.tab-custom {
-		padding: 30px 0;
 
+	h1,h2, h3,h4 {
+		color: $blue;
+	}
+
+	.tab-pane {
+
+		&--program, &--extra	{
+			padding: 30px 0;
+
+			@include MQ(MD) {
+				width: 80%;
+			}
+
+			h3 {
+				color: #000;
+			}
+
+			.tour-type-link {
+				padding: 4px 6px;
+				background-color: rgba(0, 145, 212, 0.1);
+				border-radius: 3px;
+				margin-right: 5px;
+				font-size: 14px;
+			}
+		}
+
+		&--hoteltype {
+			h3 {
+				font-size: 20px;
+			}
+
+			.hotel-desc {
+				font-size: 12px;
+				color: #4D4D4D;
+				font-weight: 600;
+			}
+		}
+
+		&--testimonials {
+			h3 {
+				font-size: 20px;
+				margin: 20px 0;
+			}
+			p {
+				color: #4D4D4D;
+				margin-bottom: 20px;
+			}
+		}
+
+	}
+
+	.room-type-wrapper {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $blue;
+
+		h1,h2,h3,h4 {
+			margin-top: 0;
+			margin-bottom: 20px; 
+		}
+
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	.room-image-slider {
+		img {
+			width: 100%;
+		}
+	}
+
+	.room-type {
+		border: 1px solid #B3B3B3;
+		border-radius: 20px;
+		padding: 4px 12px;
+		margin-left: 25px;
+		font-size: 14px;
+
+		.icon-user {
+			position: relative;
+			top: 2px;
+			margin-right: 5px;
+		}
+	}
+
+	.room-services {
+		margin-bottom: 15px;
+		.icon-rooms {
+			color: #0091d4;
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+
+		&--type {
+			font-size: 14px;
+			color: #4D4D4D;
+			vertical-align: middle;
+		}
+	}
+
+	.price-block {
+		color: $blue;
+		font-weight: 600;
+		margin-bottom: 8px;
+
+		span {
+			display: block;
+		}
+
+		.price {
+			font-size: 40px;
+			line-height: 1.2;
+			font-weight: 400;
+		}
+	}
+
+	.duration {
+		font-size: 14px;
+		color: #333333;
+	}
+
+	.btn-success {
+		border:none;
+		width: 100%;
+		border-radius: 3px;
+    	padding: 8px 10px;
+	}
+
+	.table {
 		@include MQ(MD) {
-			width: 80%;
+			max-width: 70%;
+		}
+	}
+
+	.price-block {
+		h3 {
+			font-size: 20px;
+			margin: 30px 0 20px;
+		}
+	}
+
+	.add-testimonial-form {
+		.btn-success {
+			width: auto;
+			margin-top: 18px;
+			padding: 10px 20px;
+		}
+	}
+
+	.media {
+		margin-bottom: 20px;
+	}
+
+	.media-object {
+		border-radius: 50%;
+	}
+
+	.media-heading {
+		margin-bottom: 0;
+	}
+
+	.media-text {
+		margin-top: 10px;
+		margin-bottom: 0 !important;
+	}
+
+	.media-city, .media-date {
+		font-size: 12px;
+		color: #ccc;
+	}
+
+	.testimonials-wrapper {
+		position: relative;
+
+		.tripadvisor {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 180px;
+			height: 30px;
 		}
 	}
 }

@@ -406,9 +406,9 @@
         <div class="row">
           <div class="col-xs-12">
             <!-- Tab panes -->
-            <div class="tab-content tab-custom">
+            <div class="tab-content">
               <!-- Begin program tab content -->
-              <div role="tabpanel" class="tab-pane fade in active" id="program">
+              <div role="tabpanel" class="tab-pane tab-pane--program fade in active" id="program">
 
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
@@ -417,9 +417,10 @@
                       <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           Прибытие в отель
+                          <span class="tabular-count">1</span>
+                          <span class="tabular-arrow"></span>
                         </a>
-                        <span class="tabular-count">1</span>
-                        <span class="tabular-arrow"></span>
+                        
                       </h4>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
@@ -461,7 +462,7 @@
                     </div>
                   </div>
                   <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
+                    <div class="panel-heading" role="tab" id="headingFour">
                       <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                           Трансфер в аэропорт
@@ -470,7 +471,7 @@
                         <span class="tabular-arrow"></span>
                       </h4>
                     </div>
-                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                       <div class="panel-body">
                         Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.
                       </div>
@@ -478,13 +479,290 @@
                   </div>
 
                 </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Тип тура</h3>
+                    <a href="#" class="tour-type-link">Пляжный отдых</a>
+                    <a href="#" class="tour-type-link">С детьми</a>
+                    <a href="#" class="tour-type-link">Алко</a>
+                    <a href="#" class="tour-type-link">Шоппинг</a>
+                  </div>
+                </div>
                 
               </div> 
-
               <!-- end of tab content -->
 
               <!-- Begin in room tab content -->
-              <div role="tabpanel" class="tab-pane fade" id="in-room">
+              <div role="tabpanel" class="tab-pane tab-pane--hoteltype fade" id="in-room">
+                <!-- Hotel Info -->
+                <div class="hotel-info">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <h3>Silk Road Hotel</h3>
+                      <p class="hotel-desc">Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Rooms info in hotel  -->
+                  <div class="row room-type-wrapper">
+                    <div class="col-md-3 col-xs-12">
+                      <div class="room-image-slider">
+                        <img src="http://lorempixel.com/235/160/city" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                      <h3>
+                        Standard Room
+                        <span class="room-type">
+                          <span class="kc-icon icon-user"></span>2
+                        </span>
+                      </h3>
+                      <div class="row">
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-wifi"></span>
+                          <span class="room-services--type">Free Wi-Fi</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-mowen"></span>
+                          <span class="room-services--type">Microwave</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-aircond"></span>
+                          <span class="room-services--type">Air Conditioning</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-spoon"></span>
+                          <span class="room-services--type">Kitchen silverware and dishes</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-tv"></span>
+                          <span class="room-services--type">Flat Screen Satelite TV</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-iron"></span>
+                          <span class="room-services--type">Pressing Iron</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12 text-center">
+                      <div class="price-block">
+                        <span>от</span>
+                        <span class="price">€2400</span>
+                        <span>за номер</span>
+                      </div>
+                      <p class="duration">6 ночей / 7 дней</p>
+                      <a href="#" class="btn btn-success">Бронировать номер</a>
+                    </div>
+                  </div>
+
+                  <!-- Rooms info in hotel  -->
+                  <div class="row room-type-wrapper">
+                    <div class="col-md-3 col-xs-12">
+                      <div class="room-image-slider">
+                        <img src="http://lorempixel.com/235/160/city" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                      <h3>
+                        Standard Room
+                        <span class="room-type">
+                          <span class="kc-icon icon-user"></span>2+1
+                        </span>
+                      </h3>
+                      <div class="row">
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-wifi"></span>
+                          <span class="room-services--type">Free Wi-Fi</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-mowen"></span>
+                          <span class="room-services--type">Microwave</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-aircond"></span>
+                          <span class="room-services--type">Air Conditioning</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-spoon"></span>
+                          <span class="room-services--type">Kitchen silverware and dishes</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-tv"></span>
+                          <span class="room-services--type">Flat Screen Satelite TV</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-iron"></span>
+                          <span class="room-services--type">Pressing Iron</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-aircond"></span>
+                          <span class="room-services--type">Air Conditioning</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-spoon"></span>
+                          <span class="room-services--type">Kitchen silverware and dishes</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-tv"></span>
+                          <span class="room-services--type">Flat Screen Satelite TV</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-iron"></span>
+                          <span class="room-services--type">Pressing Iron</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12 text-center">
+                      <div class="price-block">
+                        <span>от</span>
+                        <span class="price">€8000</span>
+                        <span>за номер</span>
+                      </div>
+                      <p class="duration">6 ночей / 7 дней</p>
+                      <a href="#" class="btn btn-success">Бронировать номер</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Hotel Info -->
+                <div class="hotel-info">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <h3>Silk Road Hotel</h3>
+                      <p class="hotel-desc">Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Rooms info in hotel  -->
+                  <div class="row room-type-wrapper">
+                    <div class="col-md-3 col-xs-12">
+                      <div class="room-image-slider">
+                        <img src="http://lorempixel.com/235/160/city" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                      <h3>
+                        Standard Room
+                        <span class="room-type">
+                          <span class="kc-icon icon-user"></span>2
+                        </span>
+                      </h3>
+                      <div class="row">
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-wifi"></span>
+                          <span class="room-services--type">Free Wi-Fi</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-mowen"></span>
+                          <span class="room-services--type">Microwave</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-aircond"></span>
+                          <span class="room-services--type">Air Conditioning</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-spoon"></span>
+                          <span class="room-services--type">Kitchen silverware and dishes</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-tv"></span>
+                          <span class="room-services--type">Flat Screen Satelite TV</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-iron"></span>
+                          <span class="room-services--type">Pressing Iron</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12 text-center">
+                      <div class="price-block">
+                        <span>от</span>
+                        <span class="price">€2400</span>
+                        <span>за номер</span>
+                      </div>
+                      <p class="duration">6 ночей / 7 дней</p>
+                      <a href="#" class="btn btn-success">Бронировать номер</a>
+                    </div>
+                  </div>
+
+                  <!-- Rooms info in hotel  -->
+                  <div class="row room-type-wrapper">
+                    <div class="col-md-3 col-xs-12">
+                      <div class="room-image-slider">
+                        <img src="http://lorempixel.com/235/160/city" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                      <h3>
+                        Standard Room
+                        <span class="room-type">
+                          <span class="kc-icon icon-user"></span>2+1
+                        </span>
+                      </h3>
+                      <div class="row">
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-wifi"></span>
+                          <span class="room-services--type">Free Wi-Fi</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-mowen"></span>
+                          <span class="room-services--type">Microwave</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-aircond"></span>
+                          <span class="room-services--type">Air Conditioning</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-spoon"></span>
+                          <span class="room-services--type">Kitchen silverware and dishes</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-tv"></span>
+                          <span class="room-services--type">Flat Screen Satelite TV</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-iron"></span>
+                          <span class="room-services--type">Pressing Iron</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-aircond"></span>
+                          <span class="room-services--type">Air Conditioning</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-spoon"></span>
+                          <span class="room-services--type">Kitchen silverware and dishes</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-tv"></span>
+                          <span class="room-services--type">Flat Screen Satelite TV</span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 room-services no-paddings">
+                          <span class="icon-rooms icon-iron"></span>
+                          <span class="room-services--type">Pressing Iron</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12 text-center">
+                      <div class="price-block">
+                        <span>от</span>
+                        <span class="price">€8000</span>
+                        <span>за номер</span>
+                      </div>
+                      <p class="duration">6 ночей / 7 дней</p>
+                      <a href="#" class="btn btn-success">Бронировать номер</a>
+                    </div>
+                  </div>
+                </div>
+
                 
 
               </div>
@@ -492,7 +770,70 @@
 
               <!-- Begin price tab content -->
               <div role="tabpanel" class="tab-pane fade" id="price">
-                
+                <div class="row">
+                  <div class="col-xs-12 price-block">
+                    <h3>Размещение</h3>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Отель</th>
+                          <th>Lux</th>
+                          <th>Polu-lux</th>
+                          <th>President</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Silk Road Hotel 4*</td>
+                          <td>$650</td>
+                          <td>$850</td>
+                          <td>$1500</td>
+                        </tr>
+                        <tr>
+                          <td>Silk Road Hotel 4*</td>
+                          <td>$650</td>
+                          <td>$850</td>
+                          <td>$1500</td>
+                        </tr>
+                        <tr>
+                          <td>Silk Road Hotel 4*</td>
+                          <td>$650</td>
+                          <td>$850</td>
+                          <td>$1500</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-xs-12 price-block">
+                    <h3>Размещение</h3>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Отель</th>
+                          <th>Lux</th>
+                          <th>Polu-lux</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Silk Road Hotel 4*</td>
+                          <td>$650</td>
+                          <td>$850</td>
+                        </tr>
+                        <tr>
+                          <td>Silk Road Hotel 4*</td>
+                          <td>$650</td>
+                          <td>$850</td>
+                        </tr>
+                        <tr>
+                          <td>Silk Road Hotel 4*</td>
+                          <td>$650</td>
+                          <td>$850</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
 
               </div>
               <!-- end of tab content -->
@@ -500,21 +841,190 @@
               <!-- Begin gallery tab content -->
               <div role="tabpanel" class="tab-pane fade" id="gallery">
                 
-
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Территория</h3>
+                    <div id="hotel-gallery" class="kc-gallery">
+                      <a href="images/demo/hotel-gallery/img.jpg">
+                          <img src="images/demo/hotel-gallery/img1.jpg" />
+                      </a>
+                      <a href="images/demo/hotel-gallery/img.jpg">
+                          <img src="images/demo/hotel-gallery/img2.jpg" />
+                      </a>
+                      <a href="images/demo/hotel-gallery/img.jpg">
+                          <img src="images/demo/hotel-gallery/img3.jpg" />
+                      </a>
+                      <a href="images/demo/hotel-gallery/img.jpg">
+                          <img src="images/demo/hotel-gallery/img2.jpg" />
+                      </a>
+                      <a href="images/demo/hotel-gallery/img.jpg">
+                          <img src="images/demo/hotel-gallery/img3.jpg" />
+                      </a>
+                      <a href="images/demo/hotel-gallery/img.jpg">
+                          <img src="images/demo/hotel-gallery/img1.jpg" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-xs-12 col-md-10">
+                    <h3>Территория</h3>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_idXnxDTN8Q" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- end of tab content -->
 
               <!-- Begin extra tab content -->
-              <div role="tabpanel" class="tab-pane fade" id="extra">
+              <div role="tabpanel" class="tab-pane tab-pane--extra fade" id="extra">
                 
+                <div class="panel-group" id="accordionExtra" role="tablist" aria-multiselectable="true">
+
+                  <div class="panel panel-default">
+                    <div id="headingExtraOne" class="panel-heading" role="tab">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordionExtra" href="#collapseExtraOne" aria-expanded="true" aria-controls="collapseExtraOne">
+                          Условия тура
+                          <span class="tabular-count">1</span>
+                          <span class="tabular-arrow"></span>
+                        </a>
+                        
+                      </h4>
+                    </div>
+                    <div id="collapseExtraOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingExtraOne">
+                      <div class="panel-body">
+                        Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingExtraTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionExtra" href="#collapseExtraTwo" aria-expanded="false" aria-controls="collapseExtraTwo">
+                          Советы КС 
+                        </a>
+                        <span class="tabular-count">2</span>
+                        <span class="tabular-arrow"></span>
+                      </h4>
+                    </div>
+                    <div id="collapseExtraTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingExtraTwo">
+                      <div class="panel-body">
+                        Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingExtraThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionExtra" href="#collapseExtraThree" aria-expanded="false" aria-controls="collapseExtraThree">
+                          Развлечение и спорт 
+                        </a>
+                        <span class="tabular-count">3</span>
+                        <span class="tabular-arrow"></span>
+                      </h4>
+                    </div>
+                    <div id="collapseExtraThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingExtraThree">
+                      <div class="panel-body">
+                        Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingExtraFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionExtra" href="#collapseExtraFour" aria-expanded="false" aria-controls="collapseExtraFour">
+                          Для детей 
+                        </a>
+                        <span class="tabular-count">4</span>
+                        <span class="tabular-arrow"></span>
+                      </h4>
+                    </div>
+                    <div id="collapseExtraFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingExtraFour">
+                      <div class="panel-body">
+                        Сдаю уютную светлую красивую квартиру на территории ЦО Карвен 4 сезона , рассчитана на 3-4 человек. Есть все необходимое для комфортного отдыха . Мебель + бытовая техника. Не цоколь!!! 1 этаж. Без посредников. В теме пожалуйста не пишите . Цена от 130 $ и выше . Фотографии можем выслать по востап. СКИДКИ.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
 
               </div>
               <!-- end of tab content -->
 
               <!-- Begin testimonials tab content -->
-              <div role="tabpanel" class="tab-pane fade" id="testimonials-tab">
+              <div role="tabpanel" class="tab-pane tab-pane--testimonials fade" id="testimonials-tab">
                 
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Помогите нам стать лучше!</h3>
+                    <p>Написать проникновенный текст про то как важно ваше мнение.</p>
+                  </div>
+                  <div class="col-xs-10">
+                    <form action="" id="testimonail-form" class="add-testimonial-form">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="Ваши имя и фамилия">
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                          <div class="custom-input">
+                            <label for="img" id="custom-input-label">+ Добавить фото</label>
+                            <input id="img" type="file" name="img" accept="image/jpeg,image/png,image/gif" style="display:none;">
+                          </div>
+                        </div>
+                        <div class="col-md-10">
+                          <textarea class="form-control" rows="5" placeholder="Текст отзыва"></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12"><button class="btn btn-success">Отправить отзыв</button></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
 
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Другие отзывы</h3>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="testimonials-wrapper">
+                      <img class="tripadvisor" src="images/icons/tripadvisor.svg" alt="">
+                      <div class="media">
+                        <div class="media-left">
+                          
+                          <img class="media-object" src="http://lorempixel.com/45/45/people" alt="">
+                          
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading">Бакыт Курманбеков</h5>
+                          <span class="media-city">г. Ош</span>
+                          <p class="media-text">И по отзывам, кроме trip advisor - я про отзывы наших клиентов писала. Как можно это организовать? Чтобы пользователи видели, что можно оставить отзыв, что это наши клиенты оставили отзыв... Можно сделать так, чтобы нашему клиенту, после покупки  выдавался определенный код - при вводе которого, он может оставить отзыв? Это скорее вопрос к программистам.</p>
+                          <span class="media-date">25 СЕН 2013</span>
+                        </div>
+                      </div>
+
+                      <div class="media">
+                        <div class="media-left">
+                          
+                          <img class="media-object" src="http://lorempixel.com/45/45/people" alt="">
+                          
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading">Бакыт Курманбеков</h5>
+                          <span class="media-city">г. Ош</span>
+                          <p class="media-text">И по отзывам, кроме trip advisor - я про отзывы наших клиентов писала. Как можно это организовать? Чтобы пользователи видели, что можно оставить отзыв, что это наши клиенты оставили отзыв... Можно сделать так, чтобы нашему клиенту, после покупки  выдавался определенный код - при вводе которого, он может оставить отзыв? Это скорее вопрос к программистам.</p>
+                          <span class="media-date">25 СЕН 2013</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
               </div>
               <!-- end of tab content -->
             </div>
@@ -957,6 +1467,7 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/bower_components/lightgallery/dist/js/lightgallery.js"></script>
 
     <script src="scripts/jquery.maskedinput.js"></script>
     <script src="scripts/owl.carousel.js"></script>

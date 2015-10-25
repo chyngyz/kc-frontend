@@ -75,6 +75,13 @@ a {
 	@include transform(rotate(-45deg));
 }
 
+.custom-input {
+	label {
+		color: $blue;
+		line-height: 38px;
 
-
-
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
