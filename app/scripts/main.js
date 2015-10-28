@@ -154,7 +154,7 @@
 	    });
 
 	    // Contact input mask
-	    $("#order-call-num").mask("+996 (###) ##-##-##");
+	    $("#order-call-num, #order-call-num-mobile").mask("+996 (###) ##-##-##");
 
 
 	    // Tabs on section home-1, home-4 and home-7

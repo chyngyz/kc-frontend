@@ -1043,7 +1043,30 @@
 }
 
 
+// ===============================================
+//
+// 	Mobile-call-back
+//
+// ===============================================	
 
+.kc-mobile-call-back {
+	padding: 	20px;
+
+	.kc-contacts--online {
+		margin-bottom: 15px;	
+	}
+	a {
+		color: 	$blue;
+	}
+
+	.row {
+		margin-bottom: 15px;	
+	}
+
+	form {
+		width: auto;	
+	}
+}
 
 
 

@@ -36,6 +36,12 @@
 			margin-bottom: 0;
 		}
 	}
+
+	&--item-wrap {
+		a:last-child {
+			margin-right: 5px;
+		}
+	}
 	
 
 	&--item {
