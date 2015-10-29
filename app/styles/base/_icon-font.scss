@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+.icon-rooms {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -21,9 +21,7 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
 
-.icon-rooms {
 	height: 26px;
     width: 26px;
     display: inline-block;
@@ -72,4 +70,127 @@
 .icon-wifi:before {
 	content: "\e80c";
 }
+
+
+
+
+@font-face {
+	font-family: 'icomoon-hotel';
+	src:url('../fonts/icomoon-hotel.eot?gbpmgr');
+	src:url('../fonts/icomoon-hotel.eot?gbpmgr#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon-hotel.ttf?gbpmgr') format('truetype'),
+		url('../fonts/icomoon-hotel.woff?gbpmgr') format('woff'),
+		url('../fonts/icomoon-hotel.svg?gbpmgr#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-hotel {
+	font-family: 'icomoon-hotel';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 24px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	height: 26px;
+    width: 26px;
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icon-palm:before {
+	content: "\e900";
+}
+.icon-beach:before {
+	content: "\e901";
+}
+.icon-diving:before {
+	content: "\e902";
+}
+.icon-star:before {
+	content: "\e903";
+}
+.icon-firstaid:before {
+	content: "\e904";
+}
+.icon-family:before {
+	content: "\e905";
+}
+.icon-coffee:before {
+	content: "\e907";
+}
+.icon-visa:before {
+	content: "\e908";
+}
+.icon-wifi-hotel:before {
+	content: "\e909";
+}
+.icon-diamond:before {
+	content: "\e90a";
+}
+.icon-money-box:before {
+	content: "\e90b";
+}
+.icon-heart:before {
+	content: "\e90c";
+}
+.icon-skiing:before {
+	content: "\e90d";
+}
+.icon-ballons:before {
+	content: "\e90e";
+}
+.icon-2x:before {
+	content: "\e90f";
+}
+.icon-timer:before {
+	content: "\e910";
+}
+.icon-sea:before {
+	content: "\e911";
+}
+.icon-pool:before {
+	content: "\e912";
+}
+.icon-romantic:before {
+	content: "\e913";
+}
+.icon-no-meal:before {
+	content: "\e914";
+}
+.icon-teapot:before {
+	content: "\e915";
+}
+.icon-pets:before {
+	content: "\e916";
+}
+.icon-meal:before {
+	content: "\e917";
+}
+.icon-bus:before {
+	content: "\e918";
+}
+.icon-airplane:before {
+	content: "\e919";
+}
+.icon-bed:before {
+	content: "\e91a";
+}
+.icon-historical:before {
+	content: "\e91b";
+}
+.icon-guide:before {
+	content: "\e91c";
+}
+
 
