@@ -231,7 +231,9 @@
 
 
 		// Hotel Gallery
-		$("#hotel-gallery").lightGallery(); 
+		$("#hotel-gallery").lightGallery({
+			download: 'false'
+		}); 
 
 	});
 

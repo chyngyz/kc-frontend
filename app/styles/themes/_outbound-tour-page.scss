@@ -89,10 +89,23 @@
 
 
 .kc-outbound-tour-tabs {
-	padding: 40px 0 20px;
+	padding: 20px 0 20px;
 
 	h1,h2, h3,h4 {
 		color: $blue;
+	}
+
+	.nav {
+		@include MQM(SM) {
+			text-align: center;
+
+			& > li {
+				display: inline-block;
+				float: none;
+			}
+		}
+
+		
 	}
 
 	.tab-pane {
@@ -114,6 +127,15 @@
 				border-radius: 3px;
 				margin-right: 5px;
 				font-size: 14px;
+				margin-bottom: 5px;
+				display: inline-block;
+				@include transition(all 0.2s ease-in);
+
+				&:hover {
+					text-decoration: none;
+					color: #fff;
+					background-color: rgba(0, 145, 212, 1);
+				}
 			}
 		}
 
@@ -149,7 +171,11 @@
 
 		h1,h2,h3,h4 {
 			margin-top: 0;
-			margin-bottom: 20px; 
+			margin-bottom: 20px;
+
+			@include MQM(MD) {
+				margin-top: 15px;
+			}
 		}
 
 		.row {
@@ -205,7 +231,7 @@
 		.price {
 			font-size: 40px;
 			line-height: 1.2;
-			font-weight: 400;
+			font-weight: 600;
 		}
 	}
 
@@ -276,3 +302,44 @@
 		}
 	}
 }
+
+.lg-download {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

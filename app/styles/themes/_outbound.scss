@@ -157,7 +157,7 @@
 
 .kc-outbound-tours {
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: 0;
 
 	h1 {
 		margin-top: 54px;
@@ -213,7 +213,7 @@
 			text-align: center;
 			font-weight: 300;
 			width: 70%;
-			margin: 10px auto 15px;
+			margin: 0 auto 15px;
 			display: block;
 
 			@include MQM(XS) {
@@ -225,7 +225,7 @@
 			text-align: center;
 			width: 80px;
 			height: 80px;
-			margin: 35px auto 0;
+			margin: 35px auto 10px;
 
 			img {
 				height: 100%;
@@ -254,6 +254,7 @@
 	background:transparent url('../images/bg/section-search.jpg');
 	background-size: cover;
 	position: relative;
+	margin-top: 10px;
 
 	@include MQM(SM) {
 		height: 250px;
@@ -281,6 +282,7 @@
 // ===============================================	
 
 .kc-outbound-recommended {
+	padding-bottom: 30px;
 	.panel-slider-out {
 		margin-top: 20px;
 	}
@@ -295,7 +297,6 @@
 
 .kc-outbound-testimonials {
 	background-color: #F4FBF6;
-	border-top: 1px solid #ccc;
 	padding: 20px 0 35px;
 
 	h1 {
