@@ -1,10 +1,10 @@
 .kc-header-mainnav {
-	padding-top: 18px;
+	
 	background-color: #F2F2F2;
 
 	@include MQ(MD) {
 		background-color: #fff;
-
+		padding-top: 18px;
 	}
 
 	&--item-logo {
@@ -39,7 +39,7 @@
 
 	&--item-wrap {
 		a:last-child {
-			margin-right: 5px;
+			margin-left: 8px;
 		}
 	}
 	
