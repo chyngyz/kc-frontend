@@ -125,7 +125,10 @@
 		    height: 18px;
 		    width: 16px;
 		    margin-right: 10px; 
-		    margin-top: 2px;  
+		    
+		    @include MQM(SM) {
+		    	margin-top: 2px;
+		    }  
 
 		    &:hover svg {
 				fill: #DBE0E3
