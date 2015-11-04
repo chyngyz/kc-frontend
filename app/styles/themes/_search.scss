@@ -1,0 +1,118 @@
+.kc-search { 
+	.container {
+		@include MQ(LG) {
+			width: 1000px;
+		}
+	}
+}
+
+
+
+.kc-search {
+	background-color: #fafafa;
+	border-top: 1px solid #CCCCCC;
+	padding-top: 40px;
+	padding-bottom: 30px;
+
+	&--form-wrap {
+		background-color: $blue;
+		padding: 20px 15px; 
+		border-radius: 4px;
+		position: relative;
+		z-index: 2;
+	}
+
+	.price-stats {
+		margin-bottom: 20px;
+		margin-top: -10px;
+		a {
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+
+	.search-days-range input {
+		width: 18px;
+	}
+
+	.search-clear {
+		display: inline-block;
+		float: right;
+		position: relative;
+		top: 5px;
+		margin-right: 10px;
+
+		a {
+			color: #fff;
+			font-size: 14px;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.btn-orange {
+		padding: 8px 30px;
+	}
+
+	.extra-options {
+		p {
+			font-size: 16px;
+    		color: #fff;
+    		margin-bottom: 0;
+		}
+	}
+
+	.checkbox {
+		display: inline-block;
+		padding: 4px 8px;
+		background-color: rgba(0,0,0, 0.1);
+
+		label {
+			color: #fff;
+			position: relative;
+
+			&:before {
+				background: transparent !important;
+				top: 1px !important;
+				border-color: rgba(0,0,0,0.2) !important;
+
+			}
+
+			&:after {
+				top: 1px !important;
+				background-image: url(../images/icons/form-icons/tick-white.svg) !important;
+			}
+		}
+
+		input[type="checkbox"]:checked + label:before {
+			border-color: #ccc !important;
+		}
+	}
+
+	.more-options {
+		display: inline-block;
+		padding: 4px;
+		margin-left: 10clearpx;
+
+		a {
+			color: #fff;
+			font-size: 14px;
+			line-height: 1.2;
+			text-decoration: none;
+			border-bottom: 1px dashed #fff;
+		}
+	}
+
+	h3 {
+		color: #333;
+		margin-top: 0;
+
+		@include MQM(SM) {
+			margin-top: 20px;
+		}
+	}
+
+}

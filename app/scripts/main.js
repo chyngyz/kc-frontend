@@ -228,6 +228,21 @@
 		$( "#range-start-amount" ).val( "$" + $( "#booking-form-slider" ).slider( "values", 0 ));
 		$( "#range-end-amount" ).val("$" + $( "#booking-form-slider" ).slider( "values", 1 ));
 
+		// Days Range slider
+		$("#search-days-slider").slider({
+		  range: true,
+		  min: 1,
+		  max: 90,
+		  values: [ 10, 30 ],
+		  step: 1,
+		  slide: function( event, ui ) {
+		    $( "#search-days-start-amount" ).val(ui.values[ 0 ]);
+		    $( "#search-days-end-amount" ).val(ui.values[ 1 ] );
+		  }
+		});
+		$( "#search-days-start-amount" ).val( $( "#search-days-slider" ).slider( "values", 0 ));
+		$( "#search-days-end-amount" ).val($( "#search-days-slider" ).slider( "values", 1 ));
+
 
 
 		// Hotel Gallery
