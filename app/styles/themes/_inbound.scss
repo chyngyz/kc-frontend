@@ -1,0 +1,35 @@
+.kc-inbound-suggest {
+	height: 300px;
+	background:transparent url('../images/bg/inbound-wide.jpg');
+	background-size: cover;
+	position: relative;
+	margin-top: 10px;
+
+	@include MQM(SM) {
+		height: 250px;
+	}
+
+	@include MQM(XS) {
+		height: 220px;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(57, 181,74, 0.8);
+	}
+}
+
+.kc-inbound-tours {
+	.inbound-tabs {
+		margin-top: 25px;
+	}
+}
+
+.kc-inbound-tours .search-extra {
+	margin-top: 0;
+}
