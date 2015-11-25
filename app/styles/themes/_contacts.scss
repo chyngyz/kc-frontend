@@ -1,0 +1,105 @@
+.kc-contacts, 
+.kc-contacts-map-details { 
+	.container {
+		@include MQ(LG) {
+			width: 1000px;
+		}
+	}
+}
+
+.kc-contacts {
+	height: 600px;
+	background-image: url('../images/bg/contacts.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-top: 40px;
+
+	@include MQM(MD) {
+		height: auto;
+		padding-bottom: 15px;
+	}
+
+	h1 {
+		color: #fff;
+		margin-bottom: 	45px;
+	}
+
+	p, a {
+		color: 	#fff;
+		text-decoration: none;
+	}
+
+	.contact-icon {
+		height: 39px;
+		width: 39px;
+		margin-right: 5px;
+	}
+
+	.tels {
+		margin-left: 44px;
+
+		a:after {
+			color: 	#a2a5aa;
+		}
+
+		.kc-contacts--item {
+			@include MQM(XS) {
+				display: block;
+				&:after {
+					content: "";
+				}
+			}
+		}
+
+		a:nth-child(2):after {
+			content: "";
+		}
+	}
+
+	.btn-outline-pr {
+		color:#1A242D; 
+		border-color: #fff;
+		padding: 16px 45px;
+
+
+		@include MQM(MD) {
+			padding: 10px 15px;
+		}
+
+
+		&:hover, &:focus, &:active {
+			background-color: #1A242D;
+			color: 	#fff;
+			border-color: transparent;
+		}
+
+		&.active {
+			background-color: #1A242D;
+			color: 	#fff;
+			border-color: transparent;
+
+		}
+		
+	}
+}
+
+.kc-contacts-map-details {
+	padding-bottom: 30px;
+	
+	.kc-contacts-map {
+		height: 460px;
+	}
+
+	.panel-contact-info {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.contact-details {
+		
+		p {
+			padding-left: 10px;
+		}
+	}
+}

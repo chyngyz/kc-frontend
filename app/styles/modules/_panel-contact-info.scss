@@ -1,0 +1,33 @@
+.panel-contact-info {
+	height: 195px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 4px;
+	z-index: 1;
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		@include transform(translate(-50%, -50%));
+
+	}
+
+	.address-title {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		height: 50px;
+		background-color: rgba(0, 145, 212, 0.8);
+		@include display(flex);
+		@include align-items(center);
+
+		span {
+			color: #fff;
+			font-weight: bold;
+			padding-left: 10px;
+		}
+	}
+}
