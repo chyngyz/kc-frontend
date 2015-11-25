@@ -250,6 +250,19 @@
 			download: 'false'
 		}); 
 
+
+
+		// Blurred image in news page
+		$('#blurred-image').blurjs({
+	        source: '#kc-news--hero',
+	        radius: 30,
+	        overlay: 'rgba(255, 255, 255, .2)',
+	        offset: {
+				x: 50,
+				y: 50
+			}
+	    });
+
 	});
 
 })(jQuery);

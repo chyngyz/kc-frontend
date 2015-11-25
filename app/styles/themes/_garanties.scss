@@ -1,0 +1,54 @@
+.kc-garanties { 
+	.container {
+		@include MQ(LG) {
+			width: 1000px;
+		}
+	}
+}
+
+.kc-garanties-hero {
+	position: relative;
+    background-image: url("../images/bg/pattern.png");
+    background-repeat: repeat;
+    background-size: initial;
+    background-color: #FFAD1E;
+    color: #fff;
+    padding: 100px 0;
+    
+
+    h1 {
+    	width: 70%;
+		margin: 20px auto 20px;
+    	line-height: 48px;
+    }
+}
+
+.kc-garanties {
+	padding: 70px 0 50px;
+
+	.garanty-icon {
+		height: 190px;
+		width: 190px;	
+	}
+
+	h3 {
+		font-size: 	28px;
+	}
+
+	p {
+		font-size: 18px;	
+	}
+		
+	.row {
+		margin-bottom:40px;
+	}
+
+	hr {
+	    border-top-color: $blue;
+	}
+
+	.download-pdf {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+}

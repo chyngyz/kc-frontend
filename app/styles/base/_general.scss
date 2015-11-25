@@ -85,3 +85,18 @@ a {
 		}
 	}
 }
+
+.pagination {
+	a {
+		&:hover {
+			.cs-arrow-left,
+			.cs-arrow-right {
+				border-color: $blue;
+			}
+		}
+		.cs-arrow-left,
+		.cs-arrow-right {
+			border-color: #fff;
+		}
+	}
+}

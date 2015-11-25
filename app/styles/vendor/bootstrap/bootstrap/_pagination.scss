@@ -5,7 +5,7 @@
   display: inline-block;
   padding-left: 0;
   margin: $line-height-computed 0;
-  border-radius: $border-radius-base;
+  border-radius: 3px;
 
   > li {
     display: inline; // Remove list-style and block-level defaults
@@ -13,25 +13,37 @@
     > span {
       position: relative;
       float: left; // Collapse white-space
-      padding: $padding-base-vertical $padding-base-horizontal;
+      padding: 8px 20px;
       line-height: $line-height-base;
       text-decoration: none;
       color: $pagination-color;
       background-color: $pagination-bg;
       border: 1px solid $pagination-border;
       margin-left: -1px;
+      border-radius: 3px;
+
+      @media only screen and (max-width : 480px) {
+        padding: 6px 12px;
+      }
     }
     &:first-child {
+      
       > a,
       > span {
         margin-left: 0;
-        @include border-left-radius($border-radius-base);
+        background-color: $pagination-color;
+        color: #fff;
+        border-radius: 3px;
+        
       }
     }
     &:last-child {
+      
       > a,
       > span {
-        @include border-right-radius($border-radius-base);
+        background-color: $pagination-color;
+        color: #fff;
+        border-radius: 3px;
       }
     }
   }
