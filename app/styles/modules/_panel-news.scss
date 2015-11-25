@@ -10,6 +10,7 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	display: block;
 
 
 	&--details {
@@ -107,6 +108,7 @@
     .news-title {
     	display: block;
     	margin-left: 10px;
+    	margin-right: 10px;
     	font-size: 15px;
     	color: #000;
     	height: 54px;
