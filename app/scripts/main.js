@@ -29,13 +29,7 @@
     		stopOnHover : false,
     		autoHeight : true,
     		transitionStyle: "fade"
-		 
-		    // "singleItem:true" is a shortcut for:
-		    // items : 1, 
-		    // itemsDesktop : false,
-		    // itemsDesktopSmall : false,
-		    // itemsTablet: false,
-		    // itemsMobile : false
+		
 	 
 	  	});
 
@@ -57,7 +51,6 @@
 
     		autoHeight :true,
 		 
-		    // "singleItem:true" is a shortcut for:
 		    items : 3, 
 		    itemsDesktop : [1000, 3],
 		    itemsDesktopSmall : [979,3],
