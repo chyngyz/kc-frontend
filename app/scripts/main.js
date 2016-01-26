@@ -148,10 +148,10 @@
 
 	    // Contact input mask
 	    $("#order-call-num, #order-call-num-mobile").mask("+996 (###) ##-##-##");
-
+		$("#masked-number").mask("0 (###) ##-##-##");
 
 	    // Tabs on section home-1, home-4 and home-7
-	    $('#popular-tabs a,#popular-edu-tabs a, #inbound-tours-tabs a ').click(function (e) {
+	    $('#popular-tabs a,#popular-edu-tabs a,#inbound-tours-tabs a,#job-accounts-tabs a ').click(function (e) {
 		  e.preventDefault()
 		  $(this).siblings().removeClass('active');
 		  $(this).addClass('active').tab('show');
@@ -165,8 +165,8 @@
 			$(this).addClass('active');
 		}); 
 
-		// Checkbox on label click, checkbox assigns checked
-		$('.checkbox label').click(function(){
+		// Checkbox and radio of type checkbox on label click, checkbox and radio of type checkbox assigns checked
+		$('.checkbox label, .checkbox-type-radio label').click(function(){
 			$(this).siblings('input').prop("checked", !$(this).siblings('input').prop("checked"));
 		})
 
@@ -193,18 +193,20 @@
 		});
 		// Date picker
 		var dates = $("#from, #to").datepicker({
-		  	defaultDate: "+1w",
-		  	changeMonth: true,
-		  	numberOfMonths: 1,
-		  	onSelect: function(selectedDate){
-		    	var option = this.id == "from" ? "minDate" : "maxDate",
-		    	instance = $( this ).data( "datepicker" ),
-		    	date = $.datepicker.parseDate(
-		      		instance.settings.dateFormat || $.datepicker._defaults.dateFormat,
-		      		selectedDate, instance.settings);
-		    	dates.not(this).datepicker("option", option, date);
-		  	}
+			defaultDate: "+1w",
+			changeMonth: true,
+			numberOfMonths: 1,
+			onSelect: function(selectedDate){
+				console.log('assd');
+				var option = this.id == "from" ? "minDate" : "maxDate",
+					instance = $( this ).data( "datepicker" ),
+					date = $.datepicker.parseDate(
+						instance.settings.dateFormat || $.datepicker._defaults.dateFormat,
+						selectedDate, instance.settings);
+				dates.not(this).datepicker("option", option, date);
+			}
 		});
+
 
 		// Range slider
 		$("#booking-form-slider").slider({
@@ -255,6 +257,28 @@
 				y: 50
 			}
 	    });
+
+		// Open login popup on Vacancy page
+		$('.kc-job-accounts--login, .kc-apply-to-job').magnificPopup({
+			type:'inline',
+			showCloseBtn: false,
+			midClick: true
+		});
+		// Close on cross click
+		$('.kc-vacancy-login-popup--close').click(function () {
+			$.magnificPopup.close();
+		});
+
+		// Show hide password
+		$('.show-hide').click(function () {
+			var inputPassword = $('.showHidePassword');
+			var type = $(inputPassword).prop('type');
+			if(type == 'password') {
+				$(inputPassword).prop('type', 'text');
+			} else {
+				$(inputPassword).prop('type', 'password');
+			}
+		})
 	});
 
 })(jQuery);

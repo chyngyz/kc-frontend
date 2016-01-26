@@ -1,0 +1,189 @@
+.kc-vacancies,
+.kc-vacancies-hero,
+.kc-vacancies-hero-inner{
+  .container {
+    @include MQ(LG) {
+      width: 1000px;
+    }
+  }
+}
+
+
+
+.kc-vacancies {
+  padding:15px 0 25px;
+
+  h1 {
+    color: $brand-primary;
+    font-weight:bold;
+    margin-bottom:45px;
+  }
+
+  &-prev {
+    background: #fafafa;
+    border-bottom:1px solid #e6e6e6;
+  }
+
+  &-extra {
+    padding-bottom:50px;
+
+    h1 {
+      color: #ff931e;
+    }
+  }
+
+  &-inner {
+    padding-top:30px;
+
+    .btn-success,
+    .btn-orange{
+      margin-top:25px;
+      padding:10px 25px;
+      margin-right:20px;
+    }
+  }
+
+
+
+
+
+}
+
+.kc-vacancies-hero {
+  position: relative;
+  background-image: url("../images/bg/vacancies.jpg");
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: initial;
+  background-color: #FFAD1E;
+  color: #fff;
+  min-height:340px;
+  padding-top: 70px;
+
+  h1 {
+    margin:10px 0;
+    line-height: 48px;
+  }
+}
+
+.kc-vacancies-hero-inner {
+  position: relative;
+  background-size: initial;
+  background-color: #f2f2f2;
+  min-height:300px;
+  padding-top: 100px;
+
+  .kc-vacancy {
+    &--title {
+      margin:10px 0;
+      line-height: 48px;
+      color: $brand-primary;
+    }
+
+    &--desc {
+      width:60%;
+      font-size:14px;
+
+      @include MQM(SM) {
+        width: 100%;
+      }
+    }
+
+    &--category {
+      font-size:14px;
+      display: block;
+      margin-top:10px;
+    }
+  }
+
+}
+
+.kc-vacancy-logo {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin-bottom:10px;
+  &:active, &:focus, &:hover {
+
+    text-decoration: none;
+  }
+
+  &--svg {
+    height: 73px;
+    width: 73px;
+    display: inline-block;
+    position: relative;
+    padding:15px;
+    margin-bottom:7px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+
+  &--text {
+    color: #fff;
+    font-size:18px;
+    display: block;
+    font-weight:bold;
+  }
+}
+
+.kc-vacancy-extra-link {
+  display: inline-block;
+  padding:8px 17px;
+  background: #ff931e;
+  border-radius: 20px;
+  color: #fff;
+  font-size:12px;
+  margin-bottom: 10px;
+
+  &:hover, &:active, &:focus {
+    background-color: #d5891f;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.kc-vacancy-preview {
+  min-height:130px;
+  margin-bottom:20px;
+  &--title {
+    font-size:16px;
+    font-weight:bolder;
+    color: #333;
+    margin-bottom:15px;
+  }
+
+  &--desc {
+    font-size:14px;
+    color: #000;
+    font-weight:400;
+    margin-bottom:3px;
+  }
+
+  &--category {
+    font-size:14px;
+    color: $brand-primary;
+
+  }
+}
+
+.kc-vacancy-event {
+  margin-bottom:35px;
+  display: block;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+
+  &--title {
+    font-size:16px;
+    font-weight:bolder;
+    color: #333;
+  }
+}

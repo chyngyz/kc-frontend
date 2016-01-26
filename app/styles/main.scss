@@ -29,14 +29,17 @@ $icon-font-path: '../fonts/';
 @import "themes/news";
 @import "themes/contacts";
 @import "themes/search-page";
+@import "themes/vacancies";
+@import "themes/cv";
 
 
 
 // Custom vendor libs
 @import "vendor/owl/owl.carousel";
 @import "vendor/owl/owl.transitions";
-@import "vendor/owl/owl.theme"; 
+@import "vendor/owl/owl.theme";
 @import "vendor/lightgallery/lightgallery";
+@import "vendor/magnific-popup/main";
 
 
 @import "vendor/jquery-ui/datepicker-slider";

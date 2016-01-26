@@ -1,0 +1,177 @@
+.kc-vacancies-cv {
+  padding-bottom:25px;
+  .container {
+    @include MQ(MD) {
+      width: 680px;
+
+    }
+  }
+
+  h1 {
+    color: $brand-primary;
+    font-weight:bold;
+  }
+
+  hr.blue {
+    border-top: 1px solid #0091d4;
+  }
+
+  .mb {
+    margin-bottom:15px;
+  }
+
+  .mt {
+    margin-top:35px;
+  }
+
+  .text-red {
+    color: red;
+    font-weight:bold;
+  }
+
+  .form-label {
+    margin-top:10px;
+    margin-bottom:10px;
+    font-weight:bolder;
+  }
+
+  .btn-primary-custom {
+    font-size: 16px;
+    background: $brand-primary;
+    padding:8px 15px;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .checkbox-type-radio {
+    display: inline-block;
+    margin-right:20px;
+  }
+
+  .add-row {
+
+    img {
+      height: 17px;
+      width: 17px;
+      display: inline-block;
+    }
+
+    span {
+      border-bottom:1px dashed $brand-primary;
+    }
+
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+    }
+  }
+  
+  .error-message {
+    font-size:14px;
+    color: red;
+    display: none;
+  }
+
+  .save-btns {
+    margin-top:35px;
+    .btn {
+      padding:12px 20px;
+      margin-right:10px;
+    }
+  }
+
+  hr.custom-divider {
+    margin-top:40px;
+    border-top:none;
+    height: 5px;
+    background-image: url('../images/icons/vacancies/hr.png');
+    background-repeat:repeat-x;
+  }
+  
+  .row.checked {
+    position: relative;
+
+    .form-label {
+      color: #808080;
+
+      &:before {
+        content: '';
+        height: 17px;
+        width: 17px;
+        position: absolute;
+        top:11px;
+        left:-12px;
+        background-image: url('../images/icons/vacancies/check.svg');
+        background-position: center center;
+        background-size:100%;
+      }
+    }
+
+  }
+
+  .padtop {
+    padding-top:8px;
+    margin-bottom: 0;
+  }
+  
+  .hide-rest {
+    border-bottom:1px dashed;
+    &:active, &:focus, &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .row.error {
+    position: relative;
+
+    .error-message {
+      display: block;
+    }
+
+    .form-label {
+
+      &:before {
+        content: '';
+        height: 17px;
+        width: 17px;
+        position: absolute;
+        top:11px;
+        left:-12px;
+        background-image: url('../images/icons/vacancies/error.svg');
+        background-position: center center;
+        background-size:100%;
+      }
+    }
+
+
+  }
+}
+
+
+
+
+.filepicker {
+  position: relative;
+  margin-bottom:10px;
+
+  label {
+    font-size: 16px;
+    background: $brand-primary;
+    padding:8px 15px;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  input {
+    opacity:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+}

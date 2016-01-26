@@ -1,0 +1,20 @@
+.panel-event {
+  display: block;
+  height: 220px;
+  position: relative;
+  line-height: 1;
+  background-position: center center;
+  background-size:cover;
+  margin-bottom:5px;
+
+  .date {
+    position: absolute;
+    bottom:7px;
+    left: 7px;
+    font-size:12px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff931e;
+    padding:4px 6px;
+  }
+}
