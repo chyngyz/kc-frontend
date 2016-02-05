@@ -1,0 +1,110 @@
+.kc-vip-content{
+  .container {
+    @include MQ(LG) {
+      width: 1000px;
+    }
+  }
+}
+
+.kc-vip-hero {
+  position: relative;
+  background-image: url("../images/bg/vip-hero.jpg");
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: initial;
+  background-color: #FFAD1E;
+  color: #fff;
+  min-height:340px;
+  padding-top: 70px;
+
+  h1 {
+    margin:10px 0;
+    line-height: 48px;
+  }
+}
+
+.kc-vip-airport-wrap {
+	padding-top: 30px;
+}
+
+.kc-vip-airport-link, .kc-vip-airport-dropdown-el {
+  display: inline-block;
+  padding:8px 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  color: #fff;
+  font-size:16px;
+  margin-bottom: 10px;
+  margin-right: 18px;
+
+
+  &:hover, &:active, &:focus, &.active {
+    background-color: #0091d4;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.kc-vip-dropdown {
+	display: inline-block;
+	vertical-align: top;
+
+	.dropdown-menu {
+		max-width: 235px;
+		top: 90%;
+		
+		& > li > a{
+			white-space: initial;
+			padding-left: 12px;
+			padding-right: 12px;
+			font-size: 13px;
+
+			&:hover, &:focus {
+				color: #0091d4;
+			}
+		}		
+	}
+}
+
+.kc-vip-content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	.kc-vip-intro-text {
+		p {
+			font-size: 20px;
+		}
+	}
+
+	.kc-vip-heading {
+		margin-top: 25px;
+		font-size: 20px;
+		color: #0091d4;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+
+	.table {
+		width: 735px;
+
+		@include MQM(768) {
+			width: 100%;
+		}
+
+		& > thead > tr > th {
+			font-weight: bold;
+			vertical-align: top;
+		}
+	}
+
+	.kc-vip-banner {
+		width: 100%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
