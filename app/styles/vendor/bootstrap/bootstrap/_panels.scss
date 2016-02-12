@@ -21,6 +21,7 @@
   @include clearfix;
 }
 
+
 // Optional heading
 .panel-heading {
   border-bottom: 1px solid transparent;
@@ -339,6 +340,27 @@
 .panel-warning {
   @include panel-variant($panel-warning-border, $panel-warning-text, $panel-warning-heading-bg, $panel-warning-border);
 }
+
 .panel-danger {
   @include panel-variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border);
+}
+
+.panel-transparent {
+  @include panel-variant(transparent, #000, transparent, transparent);
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid #bdccd4;
+  border-radius: 0 !important;
+
+  .panel-title > a:not(.collapsed) {
+    color: #333;
+  }
+
+  .panel-title > a {
+    padding: 15px 25px 15px 0px;
+  }
+
+  .panel-body {
+    padding-left: 0px;
+  }
 }

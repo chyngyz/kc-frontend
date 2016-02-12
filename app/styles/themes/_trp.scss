@@ -1,13 +1,19 @@
 .kc-trp-hero,
 .kc-trp-content,
 .kc-trp-standarts,
-.kc-trp-testimonials {
+.kc-trp-testimonials,
+.kc-trp-faq,
+.kc-trp-pricelist,
+.kc-trp-transfer,
+.kc-trp-autopark,
+.kc-trp-whitebg {
   .container {
     @include MQ(LG) {
       width: 1000px;
     }
   }
 }
+
 
 .kc-trp-hero {
   position: relative;
@@ -97,7 +103,7 @@
 	}
 }
 
-.kc-trp-autopark {
+.kc-trp-autopark, .kc-trp-whitebg  {
 	margin-bottom: 25px;
 
 	h1 {
@@ -110,7 +116,7 @@
 	}
 }
 
-.kc-trp-standarts {
+.kc-trp-standarts, .kc-trp-transfer  {
 	position: relative;
 	background-image: url("../images/bg/trp-standart.jpg");
 	background-repeat: no-repeat;
@@ -135,63 +141,201 @@
 		color: white;
 		margin-bottom: 30px;
 	}
+}
 
-	.kc-trp-standart-wrap {
-		text-align: center;
-		display: block;
-		text-decoration: none;
-		outline: none;
-		cursor: pointer;
-		height: 165px;
-		margin-bottom: 15px;
+.kc-trp-standart-wrap {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	height: 165px;
+	margin-bottom: 15px;
 
-		&:hover, &:active, &:focus {
+	&:hover, &:active, &:focus {
+		color: white;
+	}
+
+	.icon {
+		width: 110px;
+		height: 110px;
+		border: 1px solid rgba(255, 255, 255, 0.6);
+		border-radius: 6px;
+		position: relative;
+		margin: 10px auto;
+
+
+		&> i {
+			font-size: 60px;
 			color: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include transform(translate(-50%, -50%));
 		}
 
-		.icon {
-			width: 110px;
-			height: 110px;
-			border: 1px solid rgba(255, 255, 255, 0.6);
-			border-radius: 6px;
-			position: relative;
-			margin: 10px auto;
+		.tick {
+			height: 15px;
+			width: 15px;
+			position: absolute;
+			right: 5px;
+			top: 5px;
+			border-radius: 50%;
+			background-color: $green;
 
-
-			&> i {
-				font-size: 60px;
-				color: white;
+			i {
+				font-size: 10px;
 				position: absolute;
 				top: 50%;
 				left: 50%;
+				color: white;
 				@include transform(translate(-50%, -50%));
 			}
-
-			.tick {
-				height: 15px;
-				width: 15px;
-				position: absolute;
-				right: 5px;
-				top: 5px;
-				border-radius: 50%;
-				background-color: $green;
-
-				i {
-					font-size: 10px;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					color: white;
-					@include transform(translate(-50%, -50%));
-				}
-			}
-
 		}
 
-		.text {
-			color: white;
-			font-size: 14px;
-			line-height: 16px;
+	}
+
+	.text {
+		color: white;
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+.kc-trp-testimonials, .kc-trp-pricelist {
+	h1 {
+		margin-top: 45px;
+		color: $green;
+		margin-bottom: 18px;
+	}
+
+	.table {
+		margin-bottom: 50px;
+
+		th, td {
+			font-size: 16px;
 		}
 	}
+
+
+}
+
+.kc-trp-faq {
+	background-color: #fafafa;
+	padding-top: 30px;
+	padding-bottom: 50px;
+
+	.trp-tabs {
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+}
+
+.table > thead > tr.no-border-top > th {
+	border-top: none;
+	vertical-align: top;
+}
+
+.table-head-title {
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;		
+}
+
+.table span.silent {
+	font-size: 14px;
+	color: #4d4d4d;
+}
+
+
+.kc-trp-featblock {
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	margin-bottom: 35px;
+	display: block;
+	min-height: 75px;
+
+	&-wrap {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+		outline: none;
+	}
+
+	&--light {
+		color: white;
+		
+		&:hover, &:focus, &:active {
+			color: white;
+		}
+
+
+		.icon-part {
+			border: 1px solid rgba(255, 255, 255, 0.4);
+
+			i {
+				color: white;
+			}
+		}
+	}
+
+	&--filled {
+		color: #4d4d4d;
+
+		&:hover, &:focus, &:active {
+			color: #4d4d4d;
+		}
+
+		.icon-part {
+			border: none;
+			background-color: rgba(0, 145, 212, 0.1);
+
+			i {
+				color: #0091d4;
+			}
+		}
+
+	}
+
+	&--body {
+		display: block;
+		padding-top: 10px;
+		padding-left: 85px;
+
+		&-title {
+			display: block;
+			margin-bottom: 5px;
+			font-size: 20px;
+		}
+
+		&-text {
+			display: block;
+			font-size: 14px;
+		}
+	}
+
+	.icon-part {
+		height: 75px;
+		width: 75px;
+		border-radius: 50%;
+		position: relative;
+		margin-right: 15px;
+
+		i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40px;
+			@include transform(translate(-50%, -50%));
+		}
+	}
+}
+
+.kc-trp-whitebg  {
+	padding-top: 20px;
 }

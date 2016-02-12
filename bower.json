@@ -7,7 +7,8 @@
     "OwlCarousel": "~1.3.2",
     "lightgallery": "~1.2.6",
     "magnific-popup": "~1.0.1",
-    "fotorama": "^4.6.4"
+    "fotorama": "^4.6.4",
+    "matchHeight": "matchheight#~0.7.0"
   },
   "overrides": {
     "bootstrap-sass": {
