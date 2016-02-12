@@ -9,7 +9,7 @@
   left: 0;
   z-index: $zindex-popover;
   display: none;
-  max-width: $popover-max-width;
+  width: 295px;
   padding: 1px;
   // Our parent element can be arbitrary since popovers are by default inserted as a sibling of their target element.
   // So reset our font and text properties to avoid inheriting weird values.
@@ -18,29 +18,33 @@
 
   background-color: $popover-bg;
   background-clip: padding-box;
-  border: 1px solid $popover-fallback-border-color;
-  border: 1px solid $popover-border-color;
-  border-radius: $border-radius-large;
+  // border: 1px solid $popover-fallback-border-color;
+  // border: 1px solid $popover-border-color;
+  border-radius: 6px;
   @include box-shadow(0 5px 10px rgba(0,0,0,.2));
 
   // Offset the popover to account for the popover arrow
   &.top     { margin-top: -$popover-arrow-width; }
   &.right   { margin-left: $popover-arrow-width; }
-  &.bottom  { margin-top: $popover-arrow-width; }
+  &.bottom  { margin-top:-20px; }
   &.left    { margin-left: -$popover-arrow-width; }
 }
 
 .popover-title {
   margin: 0; // reset heading margin
-  padding: 8px 14px;
-  font-size: $font-size-base;
-  background-color: $popover-title-bg;
-  border-bottom: 1px solid darken($popover-title-bg, 5%);
-  border-radius: ($border-radius-large - 1) ($border-radius-large - 1) 0 0;
+  padding: 12px 12px 5px;
+  font-size: 18px;
+  border-bottom: none;
+  border-radius: none;
+  font-weight: 400;
+  color: #0091d4;
 }
 
 .popover-content {
-  padding: 9px 14px;
+  padding: 0 14px 9px;
+  font-size: 14px;
+  color: #333;
+  line-height: 16px;
 }
 
 // Arrows
@@ -51,7 +55,7 @@
   &,
   &:after {
     position: absolute;
-    display: block;
+    display: none;
     width: 0;
     height: 0;
     border-color: transparent;

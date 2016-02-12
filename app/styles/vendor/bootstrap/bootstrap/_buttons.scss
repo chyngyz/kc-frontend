@@ -323,6 +323,18 @@ a.btn {
   }
 }
 
+.btn-oval-transparent-blue {
+  color: #000;
+  border-color: #fff;
+  background-color: rgba(0,145,212,0.08);
+  @include transition(all 0.3s ease-in-out);
+  
+  &:hover, &:active, &:focus, &.active {
+    color: #fff;
+    background-color: rgba(0,145,212,1);
+  }
+}
+
 .btn-oval-transparent-wh-nb {
   color: #fff;
   border:none;
