@@ -9,9 +9,9 @@
 .kc-vip-hero {
   position: relative;
   background-image: url("../images/bg/vip-hero.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center center;
-  background-size: initial;
+  background-size: cover;
   background-color: #FFAD1E;
   color: #fff;
   min-height:340px;

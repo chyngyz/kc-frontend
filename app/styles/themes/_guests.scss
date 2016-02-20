@@ -1,0 +1,98 @@
+.kc-guests-content,
+.kc-guests-guides {
+  .container {
+    @include MQ(LG) {
+      width: 1000px;
+    }
+  }
+}
+
+.kc-guests-hero {
+  position: relative;
+  background-image: url("../images/bg/guests-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #FFAD1E;
+  color: #fff;
+  min-height:340px;
+  padding-top: 70px;
+
+  h1 {
+    margin:10px 0;
+    line-height: 48px;
+  }
+}
+
+.kc-guests {
+
+
+
+  &-content {
+    position: relative;
+    margin-top: -55px;
+    padding-bottom: 50px;
+  }
+
+  &--card {
+    margin-bottom: 25px;
+    display: block;
+
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+
+      .kc-guests--card-title {
+        color: $blue;
+      }
+    }
+
+
+    &-title {
+      font-size: 16px;
+      color: #333;
+      padding-left: 5px;
+      display: block;
+
+    }
+  }
+
+  &-guides {
+    padding-bottom: 50px;
+
+    h1 {
+      color: $green;
+      margin-bottom: 20px;
+    }
+    
+    &--head {
+      margin-bottom: 35px;
+      p {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+
+    &--item {
+      text-align: center;
+      margin-bottom: 30px;
+
+      img {
+        display: inline-block;
+      }
+
+      &-title {
+        font-weight: bold;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 15px;
+      }
+
+      p, a {
+        font-size: 14px;
+        line-height: 16px;
+
+      }
+    }
+  }
+}
