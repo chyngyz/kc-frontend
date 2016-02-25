@@ -368,6 +368,17 @@ a.btn {
   background-color: #ccc;
 }
 
+.btn-oval-blue {
+  color: #fff;
+  border-color: rgba(0,145,212,1);
+  background-color: rgba(0,145,212,1);
+  @include transition(all 0.3s ease-in-out);
+
+  &:hover, &:active, &:focus, &.active {
+    color: #fff;
+    background-color: lighten(rgba(0,145,212,1), 10%);
+  }
+}
 
 // Button Sizes
 // --------------------------------------------------

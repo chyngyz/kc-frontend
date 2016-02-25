@@ -59,20 +59,37 @@ a {
 .cs-arrow-right {
 	@extend %arrow;
 	@include transform(rotate(135deg));
+
+	&.white {
+		border-color: white;
+	}
 }
 
 .cs-arrow-up {
 	@extend %arrow;
 	@include transform(rotate(45deg));
+
+	&.white {
+		border-color: white;
+	}
 }
 
 .cs-arrow-down {
 	@extend %arrow;
 	@include transform(rotate(225deg));
+
+
+	&.white {
+		border-color: white;
+	}
 }
 .cs-arrow-left {
 	@extend %arrow;
 	@include transform(rotate(-45deg));
+
+	&.white {
+		border-color: white;
+	}
 }
 
 .custom-input {
