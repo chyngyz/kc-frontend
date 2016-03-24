@@ -20,6 +20,18 @@
 		}
 	}
 
+	&--img-hor {
+		height: 100px;
+		width: 200px;
+		display: inline-block;
+		overflow: hidden;
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
 	&--author {
 		font-size: 18px;
 		font-weight: 600;
@@ -78,19 +90,3 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
