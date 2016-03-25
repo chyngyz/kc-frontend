@@ -1,39 +1,39 @@
-$red: #ff5a45;
-$blue: #71bbd2;
-$dark-blue: #3883a3;
-$dark-green:  #69a776;
-$light-green: #97ce7f;
-$dark-gray: #414141;
-$light-gray: #ebebeb;
-$yellow: #ddca9a;
+$mice-blue: #0091D4;
+$mice-dark-blue: #0091D4;
+$mice-white: #fff;
+$mice-light-gray: #fff;
+
 
 #full-clndr {
   width: 100%;
-  background-color: $light-gray;
+  background-color: $mice-light-gray;
   font-weight: 700;
-  -moz-box-shadow: 0px 4px 0 darken($dark-gray, 5%);
-  -webkit-box-shadow: 0px 4px 0 darken($dark-gray, 5%);
-  box-shadow: 0px 4px 0 darken($dark-gray, 5%);
 
   .clndr-controls {
     padding: 14px;
-    background-color: $dark-gray;
-    color: white;
+    background-color: $mice-white;
+    color: $mice-blue;
     text-align: center;
 
     .clndr-previous-button {
       float: left;
-      text-align: left;
     }
 
     .clndr-next-button {
       float: right;
-      text-align: right;
     }
 
     .clndr-previous-button, .clndr-next-button {
-      width: 30px;
+      height: 23px;
+      width: 23px;
+      text-align: center;
+      background-color: rgba(0, 145, 212, 0.1);
+      border-radius: 50%;
+      display: inline-block;
       cursor: pointer;
+      padding: 3px;
+      font-size: 12px;
+      font-weight: bold;
 
       &:hover
       {
@@ -47,9 +47,14 @@ $yellow: #ddca9a;
     width: 65%;
     border-right: 2px solid white;
 
+    @include MQM(SM) {
+      width: 100%;
+      border: none;
+    }
+
     .days-of-the-week {
       width: 100%;
-      background-color: $dark-blue;
+      background-color: $mice-dark-blue;
 
       .header-day {
         float: left;
@@ -66,12 +71,12 @@ $yellow: #ddca9a;
       .day, .empty {
         float: left;
         width: 14.2857%;
-        height: 66px;
-        padding: 24px 0;
+        height: 58px;
+        padding: 18px 0;
 
         text-align: center;
         color: #4f4f4f;
-        background-color: $light-gray;
+        background-color: $mice-light-gray;
         border-bottom: 2px solid white;
 
         background-image: url('../images/triangle.svg');
@@ -79,10 +84,18 @@ $yellow: #ddca9a;
         background-position: center;
 
         &.event {
-          .day-number {
-            padding-bottom: 4px;
-            border-bottom: 2px solid $dark-blue;
+          background-image: url('../images/icons/calendar/full.svg');
+          background-size: 100%;
+          background-repeat: no-repeat;
+
+          &.half-b {
+            background-image: url('../images/icons/calendar/half-b.svg');
           }
+
+          &.half-a {
+            background-image: url('../images/icons/calendar/half-a.svg');
+          }
+
         }
 
         &.adjacent-month {
@@ -104,16 +117,50 @@ $yellow: #ddca9a;
     float: left;
     width: 35%;
 
+    @include MQM(SM) {
+      display: none;
+    }
+
     .event-listing-title {
       padding: 14px;
-      background-color: $blue;
+      background-color: $mice-blue;
       text-align: center;
       color: white;
       letter-spacing: 1px;
     }
     .event-item {
-      padding: 14px;
+      padding: 14px 14px 14px 20px;
       color: #4f4f4f;
+
+      &-name {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+      }
+
+      &-type-half-b {
+        background-image: url('../images/icons/calendar/half-b-sm.svg');
+      }
+      &-type-half-a {
+        background-image: url('../images/icons/calendar/half-a-sm.svg');
+      }
+
+      &-type-full {
+        background-image: url('../images/icons/calendar/full-sm.svg');
+      }
+
+
+      &-type-half-b,
+      &-type-half-a,
+      &-type-full {
+        height: 20px;
+        width: 32px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
     }
     .event-item-location {
       font-weight: 400;

@@ -1,7 +1,8 @@
 .kc-mice-info,
 .kc-mice-team,
 .kc-mice-order,
-.kc-mice-clndr  {
+.kc-mice-clndr,
+.kc-mice-recommend  {
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -141,6 +142,7 @@
   position: relative;
   padding: 100px 0 60px;
 
+
   &:before {
     content: '';
     position: absolute;
@@ -152,6 +154,12 @@
     background-repeat: no-repeat;
     background-size: 100%;
   }
+
+	&.white {
+		&:before {
+			background-image: url('../images/top-white.svg');
+		}
+	}
 
   a, p {
     font-size: 20px;
@@ -222,5 +230,62 @@
 	padding: 25px 0 40px;
 	h1 {
 		color: #0091D4;
+	}
+}
+
+.kc-mice-recommend {
+	padding: 25px 0 40px;
+
+	p {
+		color: rgb(0,145,212);
+		margin-bottom: 15px;
+	}
+
+	&-item {
+		padding: 12px 12px 12px 24px;
+		border-radius: 6px;
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		line-height: 36px;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+
+		img {
+			height: 46px;
+			width: 46px;
+			position: absolute;
+			right: 12px;
+			top: 50%;
+			@include transform(translateY(-50%));
+		}
+
+		&.blue {
+			background-color: rgba(0,145,212,0.1);
+			color: rgb(0,145,212);
+
+			&:hover {
+				background-color: rgba(0,145,212,0.2);
+			}
+		}
+		&.red {
+			background-color: rgba(237,54,43,0.1);
+			color: rgb(237,54,43);
+
+			&:hover {
+				background-color: rgba(237,54,43,0.2);
+			}
+		}
+		&.green {
+			color: rgb(0,184,59);
+			background-color: rgba(0,184,59,0.1);
+
+			&:hover {
+				background-color: rgba(0,184,59,0.2);
+			}
+		}
 	}
 }

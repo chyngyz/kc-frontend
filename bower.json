@@ -10,7 +10,7 @@
     "fotorama": "^4.6.4",
     "matchHeight": "matchheight#~0.7.0",
     "underscore": "^1.8.3",
-    "clndr": "^1.4.1"
+    "clndr": "git://github.com/Chyngyz/CLNDR#672a368e53b5a7f85b7f3596d7a1b1522b183a14"
   },
   "overrides": {
     "bootstrap-sass": {
