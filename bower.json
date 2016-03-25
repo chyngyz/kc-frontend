@@ -8,7 +8,9 @@
     "lightgallery": "~1.2.6",
     "magnific-popup": "~1.0.1",
     "fotorama": "^4.6.4",
-    "matchHeight": "matchheight#~0.7.0"
+    "matchHeight": "matchheight#~0.7.0",
+    "underscore": "^1.8.3",
+    "clndr": "^1.4.1"
   },
   "overrides": {
     "bootstrap-sass": {

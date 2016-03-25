@@ -1,6 +1,7 @@
 .kc-mice-info,
 .kc-mice-team,
-.kc-mice-order {
+.kc-mice-order,
+.kc-mice-clndr  {
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -133,7 +134,9 @@
 }
 
 .kc-mice-order {
-  background-color: #0091D4;
+  background-image: url('../images/bg/order-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
   color: #fff;
   position: relative;
   padding: 100px 0 60px;
@@ -141,7 +144,7 @@
   &:before {
     content: '';
     position: absolute;
-    height: 50px;
+    height: 67px;
     width: 100%;
     background-image: url('../images/top.svg');
     top: 0;
@@ -182,4 +185,42 @@
       }
     }
   }
+}
+
+.kc-mice-menu {
+	padding: 25px 0;
+
+	&-item {
+
+
+		&--title {
+			font-size: 12px;
+			text-transform: uppercase;
+			background-color: #0091D4;
+			border-radius: 4px;
+			color: #fff;
+			display: inline-block;
+			padding: 4px 6px;
+			margin-bottom: 15px;
+		}
+
+		&--list {
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+
+		&--price {
+			color: #0091D4;
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.kc-mice-clndr {
+	padding: 25px 0 40px;
+	h1 {
+		color: #0091D4;
+	}
 }

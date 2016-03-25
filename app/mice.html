@@ -476,6 +476,7 @@
         <p class="kc-mice-info--text">Команда молодых и креативных специалистов, искренне влюбленных в индустрию MICE быстро выполнят Ваш заказ на самом высоком уровне от all inclusive (все включено) до самой скромной просьбы. </p>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-12">
         <div class="fotorama"
@@ -489,6 +490,7 @@
         </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-xs-12">
         <p>Вы можете доверить всю логистику мероприятия одному агенту. Это значительно сэкономит Ваше время и избавит Вас от всех организационных мелочей. Мы выполним любой Ваш заказ быстро и на самом высоком уровне качества. Ведь самое ценное и значимое для нас - доказательство нашего профессионализма.</p>
@@ -507,6 +509,97 @@
             <i class="cs-arrow-right"></i>
           </span>
         </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="tab navigation" class="active">
+            <a href="#cheap" aria-controls="cheap" role="tab" data-toggle="tab">Бюджетные пакеты</a>
+          </li>
+          <li role="tab navigation">
+            <a href="#sweet" aria-controls="sweet" role="tab" data-toggle="tab">Сладкое меню</a>
+          </li>
+          <li role="tab navigation">
+            <a href="#vegan" aria-controls="vegan" role="tab" data-toggle="tab">Меню для вегетарианцев</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+
+        <div class="tab-content kc-mice-menu">
+
+          <!-- Begin cheap tab content -->
+          <div role="tabpanel" class="tab-pane tab-pane--program fade in active" id="cheap">
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <!-- Здесь data-mh определяет группу у которых должна быть одинаковая высота -->
+                <div class="kc-mice-menu-item" data-mh="menu1">
+                  <div class="kc-mice-menu-item--title">МЕНЮ №1</div>
+                  <ul class="kc-mice-menu-item--list">
+                    <li>Бриошь с сыром </li>
+                    <li>Шарлотка яблоки/орехи/джем</li>
+                  </ul>
+                  <div class="kc-mice-menu-item--price">200 сом</div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="kc-mice-menu-item" data-mh="menu1">
+                  <div class="kc-mice-menu-item--title">МЕНЮ №1</div>
+                  <ul class="kc-mice-menu-item--list">
+                    <li>Бриошь с сыром </li>
+                    <li>Шарлотка яблоки/орехи/джем</li>
+                  </ul>
+                  <div class="kc-mice-menu-item--price">200 сом</div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="kc-mice-menu-item" data-mh="menu1">
+                  <div class="kc-mice-menu-item--title">МЕНЮ №1</div>
+                  <ul class="kc-mice-menu-item--list">
+                    <li>Бриошь с сыром </li>
+                    <li>Шарлотка яблоки/орехи/джем</li>
+                  </ul>
+                  <div class="kc-mice-menu-item--price">200 сом</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- end of tab content -->
+
+          <!-- Begin sweet tab content -->
+          <div role="tabpanel" class="tab-pane tab-pane--program fade" id="sweet">
+
+            <div class="row">
+              <div class="col-xs-12">
+                Content
+              </div>
+            </div>
+
+          </div>
+          <!-- end of tab content -->
+
+          <!-- Begin sweet tab content -->
+          <div role="tabpanel" class="tab-pane tab-pane--program fade" id="vegan">
+
+            <div class="row">
+              <div class="col-xs-12">
+                Content
+              </div>
+            </div>
+
+          </div>
+          <!-- end of tab content -->
+        </div>
       </div>
     </div>
   </div>
@@ -645,7 +738,7 @@
 </section>
 <!-- end of section - Testimonials -->
 
-
+<!-- Begin Mice order form -->
 <section class="kc-mice-order">
   <div class="container">
     <div class="row">
@@ -671,6 +764,52 @@
       <div class="col-xs-12 text-center">
         <p>или позвоните нам по номеру 0312 900 883, также можете написать <br> нам на e-mail: <a href="mailto:conference@concept.kg">conference@concept.kg</a></p>
       </div>
+    </div>
+  </div>
+</section>
+<!-- End of mice order form -->
+
+<section class="kc-mice-clndr">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1>График брони конференц-зала</h1>
+      </div>
+
+      <div class="col-xs-12">
+        <div id="full-clndr" class="clearfix">
+          <script type="text/template" id="full-clndr-template">
+            <div class="clndr-controls">
+              <div class="clndr-previous-button">&lt;</div>
+              <div class="clndr-next-button">&gt;</div>
+              <div class="current-month"><%= month %> <%= year %></div>
+
+            </div>
+            <div class="clndr-grid">
+              <div class="days-of-the-week clearfix">
+                <% _.each(daysOfTheWeek, function(day) { %>
+                  <div class="header-day"><%= day %></div>
+                <% }); %>
+              </div>
+              <div class="days">
+                <% _.each(days, function(day) { %>
+                  <div class="<%= day.classes %>" id="<%= day.id %>"><span class="day-number"><%= day.day %></span></div>
+                <% }); %>
+              </div>
+            </div>
+            <div class="event-listing">
+              <div class="event-listing-title">Занято в этом месяце</div>
+              <% _.each(eventsThisMonth, function(event) { %>
+                  <div class="event-item">
+                    <div class="event-item-name"><%= event.title %></div>
+                    <div class="event-item-location"><%= event.location %></div>
+                  </div>
+                <% }); %>
+            </div>
+          </script>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -873,6 +1012,11 @@
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
 <script src="/bower_components/lightgallery/dist/js/lightgallery.js"></script>
 <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="/bower_components/underscore/underscore.js"></script>
+<script src="/bower_components/moment/moment.js"></script>
+<script src="/bower_components/moment/locale/ru.js"></script>
+<script src="/bower_components/clndr/clndr.min.js"></script>
+
 
 <script src="scripts/jquery.maskedinput.js"></script>
 <script src="scripts/owl.carousel.js"></script>
@@ -882,7 +1026,23 @@
 <!-- endbuild -->
 
 <script>
-  $('.kc-mice-team--item').matchHeight();
+  moment.locale('ru');
+
+  var currentMonth = moment().format('YYYY-MM');
+  var nextMonth    = moment().add('month', 1).format('YYYY-MM');
+
+  var events = [
+    { date: currentMonth + '-' + '10', title: 'Persian Kitten Auction', location: 'Center for Beautiful Cats' },
+    { date: currentMonth + '-' + '19', title: 'Cat Frisbee', location: 'Jefferson Park' },
+    { date: currentMonth + '-' + '23', title: 'Kitten Demonstration', location: 'Center for Beautiful Cats' },
+    { date: nextMonth + '-' + '07',    title: 'Small Cat Photo Session', location: 'Center for Cat Photography' }
+  ];
+
+  clndr = $('#full-clndr').clndr({
+    template: $('#full-clndr-template').html(),
+    daysOfTheWeek: ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'],
+    events: events
+  });
 </script>
 
 <!-- build:js scripts/main.js -->
