@@ -1,0 +1,196 @@
+.kc-subscribe,
+.kc-subscribe-email,
+.kc-subscribe-form,
+.kc-subscribe-news {
+  .container {
+    @include MQ(LG) {
+      width: 1000px;
+    }
+  }
+}
+
+.kc-subscribe-hero {
+  position: relative;
+  background-image: url("../images/bg/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #FFAD1E;
+  color: #fff;
+  min-height:440px;
+  padding-top: 70px;
+
+  @include MQM(SM) {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    margin:10px 0;
+    line-height: 48px;
+  }
+
+  p {
+  	font-size: 26px;
+  }
+
+  .kc-subscribe-hero-item {
+  	text-align: center;
+  	display: block;
+  	margin-top: 35px;
+
+  	&:hover, &:active,&:focus {
+  		text-decoration: none;
+  	}
+
+  	&--icon {
+  		display: inline-block;
+  		height: 75px;
+  		width: 75px;
+  		border-radius: 50%;
+  		border: 1px solid rgba(255,255,255,0.4);
+  		position: relative;
+
+  		img {
+  			height: 46px;
+        width: 46px;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    @include transform(translate(-50%, -50%));
+  		}
+  	}
+
+  	&--text {
+  		display: block;
+  		margin-top: 15px;
+  		color: white;
+  		font-size: 16px;
+  	}
+  }
+}
+
+
+
+.kc-subscribe-email {
+  margin-top: -70px;
+  position: relative;
+  z-index: 5;
+
+  & > .container {
+    background-color: $blue;
+  	background-image: url('../images/bg/section-subscribe.jpg');
+  	background-size: cover;
+  	min-height: 235px;
+  	padding-bottom: 20px;
+    border-radius: 6px;
+  }
+
+  @include MQM(SM) {
+    margin-top: 0px;
+
+    & > .container {
+      border-radius: 0;
+    }
+  }
+
+
+	h2 {
+		color: #fff;
+		font-weight: 300;
+		font-size: 28px;
+	}
+
+	h4 {
+		font-size: 18px;
+		color: #fff;
+		font-weight: 300;
+	}
+
+	form {
+		width: 260px;
+		display: inline-block;
+		margin: 22px 0;
+	}
+
+	input.form-control {
+		height: 38px;
+	}
+
+	button {
+		height: 38px;
+		width: 50px;
+		background-color: #00D6CC;
+
+		svg {
+			fill: #ffffff;
+		}
+	}
+
+	.social-icons {
+		text-align: left;
+
+		@include MQ(XS) {
+			text-align: center;
+
+			a {
+				margin-top: 10px;
+			}
+		}
+
+		a {
+			color: #fff;
+			display: inline-block;
+			height: 35px;
+			margin-right: 50px;
+			margin-top: 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			@include MQ(XS) {
+				margin-top: 0;
+			}
+
+		}
+
+		img {
+			height: 100%;
+			margin-right: 10px;
+		}
+	}
+}
+
+.kc-subscribe-form {
+  padding: 25px 0;
+  color: #000;
+
+  h2 {
+    font-weight: 300;
+    font-size: 28px;
+  }
+
+
+  h4 {
+		font-size: 18px;
+		font-weight: 300;
+    margin-bottom: 20px;
+	}
+
+  form {
+    margin-top: 20px;
+    input, textarea, #google-captcha {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.kc-subscribe-news {
+  background-color: #fafafa;
+  padding: 25px 0;
+
+  h1 {
+    margin-bottom: 25px;
+  }
+}
