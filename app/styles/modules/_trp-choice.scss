@@ -1,0 +1,95 @@
+.kc-trp-choice {
+  padding: 20px;
+  border-radius: 6px;
+  border: 3px solid #ccc;
+  position: relative;
+  margin-top: 15px;
+
+  &.active {
+    border-color: $blue;
+  }
+
+  &__img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+
+    .heading {
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .info {
+      display: block;
+      font-size: 14px;
+      color: #808080;
+    }
+  }
+  &__details {
+    display: inline-block;
+    vertical-align: middle;
+    color: #808080;
+    font-size: 14px;
+    padding-top: 16px;
+  }
+
+  &__counts {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 20px;
+
+    input {
+      -webkit-appearance: none;
+      -moz-appearance:none;
+      appearance: none;
+      outline: none;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .inc, .dec {
+      color: $blue;
+      padding: 0 3px;
+      cursor: pointer;
+    }
+  }
+
+  &__submit {
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    @include transform(translateY(-50%));
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+
+  .select-wrap {
+    margin-top: 17px;
+  }
+}

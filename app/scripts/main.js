@@ -29,8 +29,8 @@
     		stopOnHover : false,
     		autoHeight : true,
     		transitionStyle: "fade"
-		
-	 
+
+
 	  	});
 
 	  	// Outbound panels slider
@@ -50,8 +50,8 @@
     		transitionStyle: "fade",
 
     		autoHeight :true,
-		 
-		    items : 3, 
+
+		    items : 3,
 		    itemsDesktop : [1000, 3],
 		    itemsDesktopSmall : [979,3],
 		    itemsTablet: [768,2],
@@ -60,7 +60,7 @@
 		    navigationText : ["prev","next"],
 		    rewindNav : true,
 		    pagination : false
-	 
+
 	  	});
 
 	  	// Outbound testimonials slider
@@ -79,12 +79,12 @@
     		singleItem: true,
 
     		autoHeight :true,
-		 
+
 		    navigation : true,
 		    navigationText : ["prev","next"],
 		    rewindNav : true,
 		    pagination : false
-	 
+
 	  	});
 
 	  	// Outbound tour-hero slider
@@ -105,7 +105,7 @@
 		    navigationText : ["prev","next"],
 		    rewindNav : true,
 		    pagination : false
-	 
+
 	  	});
 
 	  	// Running text
@@ -163,10 +163,10 @@
 			$(target).prop("checked", true);
 			$(this).siblings().removeClass('active');
 			$(this).addClass('active');
-		}); 
+		});
 
 		// Checkbox and radio of type checkbox on label click, checkbox and radio of type checkbox assigns checked
-		$('.checkbox label, .checkbox-type-radio label').click(function(){
+		$('.checkbox label, .checkbox-type-radio label, .radio-custom label').click(function(){
 			$(this).siblings('input').prop("checked", !$(this).siblings('input').prop("checked"));
 		})
 
@@ -243,7 +243,7 @@
 		// Hotel Gallery
 		$("#hotel-gallery").lightGallery({
 			download: 'false'
-		}); 
+		});
 
 
 
@@ -282,29 +282,3 @@
 	});
 
 })(jQuery);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,63 @@
+.kc-trp-order__hero,
+.kc-trp-order__form {
+  .container {
+    @include MQ(LG) {
+      width: 1000px;
+    }
+  }
+}
+
+
+.kc-trp-order {
+  &__hero {
+    background-color: $blue;
+    padding: 20px 0;
+
+    h1 {
+      color: #fff;
+    }
+    .checkbox {
+      margin-top: 34px;
+    }
+
+    label {
+      color: #fff;
+    }
+  }
+
+  &__form {
+    padding: 25px 0;
+
+    .btn-primary {
+      padding: 12px 40px;
+      border: none;
+    }
+
+    &-block {
+      margin-top: 20px;
+
+      .kc-trp-choice__counts {
+        padding-top: 0;
+      }
+
+      .radio-custom, textarea {
+        margin-bottom: 15px;
+      }
+
+      .tel-number {
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 38px;
+        }
+
+        input {
+          display: inline-block;
+          vertical-align: middle;
+          float: right;
+          width: 95%;
+        }
+      }
+    }
+  }
+}
