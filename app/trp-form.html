@@ -457,243 +457,392 @@
       </div>
     </div>
 
-    <!-- First form block -->
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="kc-trp-choice">
-          <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <img src="images/icons/trp-order/1.png" alt="" class="kc-trp-choice__img">
-              <div class="kc-trp-choice__title">
-                <span class="heading">Комфорт</span>
-                <span class="info">4 пассажира, 4 багажа</span>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <p class="kc-trp-choice__details">Mercedes Benz 210, Toyota Camrу, Honda Civic, Mazda 62</p>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <div class="kc-trp-choice__counts">
-                <span class="dec">-</span>
-                <input type="number" placeholder="0" min="0">
-                <span class="inc">+</span>
-              </div>
-              <div class="kc-trp-choice__price">800 сом</div>
-            </div>
-            <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12">
-        <div class="kc-trp-choice">
-          <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <img src="images/icons/trp-order/2.png" alt="" class="kc-trp-choice__img">
-              <div class="kc-trp-choice__title">
-                <span class="heading">Комфорт (минивен)</span>
-                <span class="info">6 пассажиров, 6 багажа</span>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <p class="kc-trp-choice__details">Toyota Estima, Honda Stepwagon, Delica</p>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <div class="kc-trp-choice__counts">
-                <span class="dec">-</span>
-                <input type="number" placeholder="0" min="0">
-                <span class="inc">+</span>
-              </div>
-              <div class="kc-trp-choice__price">800 сом</div>
-            </div>
-            <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12">
-        <div class="kc-trp-choice active">
-          <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <img src="images/icons/trp-order/3.png" alt="" class="kc-trp-choice__img">
-              <div class="kc-trp-choice__title">
-                <span class="heading">VIP</span>
-                <span class="info">4 пассажиров, 4 багажа</span>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <div class="form-group">
-                <div class="select-wrap">
-                  <select name="placement" id="" class="form-control">
-                    <option value="1">Выберите машину</option>
-                    <option value="2">Выберите машину 2</option>
-                    <option value="3">Выберите машину 3</option>
-                  </select>
+    <!-- Main Form -->
+    <form action="">
+
+      <!-- First form block -->
+      <div class="kc-trp-order__form-choices" id="order-form-index-1">
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="kc-trp-choice">
+              <input type="radio" name="car-type" style="display:none;" value="confort-car">
+              <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <img src="images/icons/trp-order/1.png" alt="" class="kc-trp-choice__img">
+                  <div class="kc-trp-choice__title">
+                    <span class="heading">Комфорт</span>
+                    <span class="info">4 пассажира, 4 багажа</span>
+                  </div>
                 </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <p class="kc-trp-choice__details">Mercedes Benz 210, Toyota Camrу, Honda Civic, Mazda 62</p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="kc-trp-choice__counts">
+                    <span class="dec">-</span>
+                    <input type="number" placeholder="0" min="0">
+                    <span class="inc">+</span>
+                  </div>
+                  <div class="kc-trp-choice__price">800 сом</div>
+                </div>
+                <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
               </div>
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-              <div class="kc-trp-choice__counts">
-                <span class="dec">-</span>
-                <input type="number" placeholder="0" min="0">
-                <span class="inc">+</span>
+          </div>
+          <div class="col-xs-12">
+            <div class="kc-trp-choice">
+              <input type="radio" name="car-type" style="display:none;" value="comfort-mini-car">
+              <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <img src="images/icons/trp-order/2.png" alt="" class="kc-trp-choice__img">
+                  <div class="kc-trp-choice__title">
+                    <span class="heading">Комфорт (минивен)</span>
+                    <span class="info">6 пассажиров, 6 багажа</span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <p class="kc-trp-choice__details">Toyota Estima, Honda Stepwagon, Delica</p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="kc-trp-choice__counts">
+                    <span class="dec">-</span>
+                    <input type="number" placeholder="0" min="0">
+                    <span class="inc">+</span>
+                  </div>
+                  <div class="kc-trp-choice__price">800 сом</div>
+                </div>
+                <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
               </div>
-              <div class="kc-trp-choice__price">800 сом</div>
             </div>
-            <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
+          </div>
+          <div class="col-xs-12">
+            <div class="kc-trp-choice active">
+              <input type="radio" name="car-type" style="display:none;" value="vip-car">
+              <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <img src="images/icons/trp-order/3.png" alt="" class="kc-trp-choice__img">
+                  <div class="kc-trp-choice__title">
+                    <span class="heading">VIP</span>
+                    <span class="info">4 пассажиров, 4 багажа</span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="form-group">
+                    <div class="select-wrap">
+                      <select name="placement" id="" class="form-control">
+                        <option value="1">Выберите машину</option>
+                        <option value="2">Выберите машину 2</option>
+                        <option value="3">Выберите машину 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="kc-trp-choice__counts">
+                    <span class="dec">-</span>
+                    <input type="number" placeholder="0" min="0">
+                    <span class="inc">+</span>
+                  </div>
+                  <div class="kc-trp-choice__price">800 сом</div>
+                </div>
+                <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="kc-trp-choice">
+              <input type="radio" name="car-type" style="display:none;" value="vip-car">
+              <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <img src="images/icons/trp-order/4.png" alt="" class="kc-trp-choice__img">
+                  <div class="kc-trp-choice__title">
+                    <span class="heading">VIP</span>
+                    <span class="info">4 пассажиров, 4 багажа</span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="form-group">
+                    <div class="select-wrap">
+                      <select name="placement" id="" class="form-control">
+                        <option value="1">Выберите машину</option>
+                        <option value="2">Выберите машину 2</option>
+                        <option value="3">Выберите машину 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="kc-trp-choice__counts">
+                    <span class="dec">-</span>
+                    <input type="number" placeholder="0" min="0">
+                    <span class="inc">+</span>
+                  </div>
+                  <div class="kc-trp-choice__price">800 сом</div>
+                </div>
+                <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="kc-trp-choice">
+              <input type="radio" name="car-type" style="display:none;" value="comfort-mini-car">
+              <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <img src="images/icons/trp-order/5.png" alt="" class="kc-trp-choice__img">
+                  <div class="kc-trp-choice__title">
+                    <span class="heading">Комфорт (минивен)</span>
+                    <span class="info">6 пассажиров, 6 багажа</span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <p class="kc-trp-choice__details">Toyota Estima, Honda Stepwagon, Delica</p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="kc-trp-choice__counts">
+                    <span class="dec">-</span>
+                    <input type="number" placeholder="0" min="0">
+                    <span class="inc">+</span>
+                  </div>
+                  <div class="kc-trp-choice__price">800 сом</div>
+                </div>
+                <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="kc-trp-choice">
+              <input type="radio" name="car-type" style="display:none;" value="comfort-mini-car">
+              <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <img src="images/icons/trp-order/6.png" alt="" class="kc-trp-choice__img">
+                  <div class="kc-trp-choice__title">
+                    <span class="heading">Комфорт (минивен)</span>
+                    <span class="info">6 пассажиров, 6 багажа</span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <p class="kc-trp-choice__details">Toyota Estima, Honda Stepwagon, Delica</p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="kc-trp-choice__counts">
+                    <span class="dec">-</span>
+                    <input type="number" placeholder="0" min="0">
+                    <span class="inc">+</span>
+                  </div>
+                  <div class="kc-trp-choice__price">800 сом</div>
+                </div>
+                <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="kc-trp-choice">
+              <input type="radio" name="car-type" style="display:none;" value="comfort-mini-car">
+              <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <img src="images/icons/trp-order/7.png" alt="" class="kc-trp-choice__img">
+                  <div class="kc-trp-choice__title">
+                    <span class="heading">Комфорт (минивен)</span>
+                    <span class="info">6 пассажиров, 6 багажа</span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <p class="kc-trp-choice__details">Toyota Estima, Honda Stepwagon, Delica</p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="kc-trp-choice__counts">
+                    <span class="dec">-</span>
+                    <input type="number" placeholder="0" min="0">
+                    <span class="inc">+</span>
+                  </div>
+                  <div class="kc-trp-choice__price">800 сом</div>
+                </div>
+                <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="kc-trp-choice">
+              <input type="radio" name="car-type" style="display:none;" value="comfort-mini-car">
+              <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <img src="images/icons/trp-order/8.png" alt="" class="kc-trp-choice__img">
+                  <div class="kc-trp-choice__title">
+                    <span class="heading">Комфорт (минивен)</span>
+                    <span class="info">6 пассажиров, 6 багажа</span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <p class="kc-trp-choice__details">Toyota Estima, Honda Stepwagon, Delica</p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="kc-trp-choice__counts">
+                    <span class="dec">-</span>
+                    <input type="number" placeholder="0" min="0">
+                    <span class="inc">+</span>
+                  </div>
+                  <div class="kc-trp-choice__price">800 сом</div>
+                </div>
+                <a href="#" class="kc-trp-choice__submit"><img src="images/icons/trp/arrow-r.svg" alt=""></a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- End of firts form block -->
 
-    <!-- Second form block -->
-    <div class="kc-trp-order__form-block">
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Дата встречи*</strong></p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="form-group booking-form--datepicker">
-            <input id="from" class="form-control hasDatepicker" type="text" placeholder="Выберите дату">
-          </div>
-        </div>
       </div>
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Время встречи*</strong></p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="form-group booking-form--datepicker">
-            <input id="from" class="form-control hasDatepicker" type="text" placeholder="Выберите дату">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Место встречи*</strong></p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="form-group">
-            <textarea class="form-control" name="name" rows="8" cols="40" placeholder="Введите"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Количество пассажиров</strong></p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="kc-trp-choice__counts">
-            <span class="dec">-</span>
-            <input type="number" placeholder="0" min="0">
-            <span class="inc">+</span>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Условия отмены</strong></p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <p>Бесплатно за 4 часа до поездки</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <a href="#">Свяжитесь с оператором - место для сообщения</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <a href="#" class="btn btn-primary">Далее</a>
-        </div>
-      </div>
-    </div>
-    <!-- End of second form block -->
+      <!-- End of firts form block -->
 
-    <!-- Third form block -->
-    <div class="kc-trp-order__form-block">
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Имя и фамилия пассажира*</strong></p>
+      <!-- Second form block -->
+      <div class="kc-trp-order__form-block" id="order-form-index-2">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Дата встречи*</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="form-group booking-form--datepicker">
+              <input id="from" class="form-control hasDatepicker" type="text" placeholder="Выберите дату">
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="form-group booking-form--datepicker">
-            <input id="from" class="form-control hasDatepicker" type="text" placeholder="Выберите дату">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Время встречи*</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="form-group booking-form--datepicker">
+              <input id="from" class="form-control hasDatepicker" type="text" placeholder="Выберите дату">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Место встречи*</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="form-group">
+              <textarea class="form-control" name="name" rows="8" cols="40" placeholder="Введите"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Количество пассажиров</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="kc-trp-choice__counts">
+              <span class="dec">-</span>
+              <input type="number" placeholder="0" min="0">
+              <span class="inc">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Условия отмены</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <p>Бесплатно за 4 часа до поездки</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="#">Свяжитесь с оператором - место для сообщения</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <a href="#" id="order-form-check-second" class="btn btn-primary">Далее</a>
           </div>
         </div>
       </div>
+      <!-- End of second form block -->
 
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Контактный мобильный номерпассажира*</strong></p>
+      <!-- Third form block -->
+      <div class="kc-trp-order__form-block" id="order-form-index-3">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Имя и фамилия пассажира*</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="form-group booking-form--datepicker">
+              <input id="from" class="form-control hasDatepicker" type="text" placeholder="Выберите дату">
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="form-group tel-number">
-            <span>0</span>
-            <input class="form-control" type="text" placeholder="XXX-XXX-XXX">
+
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Контактный мобильный номерпассажира*</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="form-group tel-number">
+              <span>0</span>
+              <input class="form-control" type="text" placeholder="XXX-XXX-XXX">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Электронный адрес*</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Выберите">
+            </div>
+          </div>
+          <div class="col-sm-8 col-xs-12">
+            <a href="#" class="pull-right add-more-passenger">+Добавить пассажира</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Примечание</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="form-group">
+              <textarea class="form-control" name="name" rows="6" cols="40" placeholder="Левый/правый руль, информацияо доп.грузе и т.д."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <p><strong>Табличка для встречающего</strong></p>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="radio-custom">
+              <input type="radio" value="" name="radio" checked="true">
+              <label>Ненужна</label>
+            </div>
+            <div class="radio-custom">
+              <input type="radio" value="" name="radio">
+              <label>Табличка с текстом</label>
+            </div>
+            <textarea class="form-control" name="name" rows="3" cols="40" placeholder="Евгений Лапшин (или введите другой)"></textarea>
+            <div class="radio-custom">
+              <input type="radio" value="" name="radio">
+              <label>Логотип или изображение</label>
+            </div>
+            <div class="filepicker">
+              <label for="filepicker">Загрузить</label>
+              <input type="file" class="" id="filepicker">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <a href="#" class="btn btn-primary">Отправить завку</a>
           </div>
         </div>
       </div>
+      <!-- End of third form block -->
 
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Электронный адрес*</strong></p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="form-group">
-            <input class="form-control" type="text" placeholder="Выберите">
-          </div>
-        </div>
-        <div class="col-sm-8 col-xs-12">
-          <a href="#" class="pull-right">+Добавить пассажира</a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Примечание</strong></p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="form-group">
-            <textarea class="form-control" name="name" rows="6" cols="40" placeholder="Левый/правый руль, информацияо доп.грузе и т.д."></textarea>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <p><strong>Табличка для встречающего</strong></p>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="radio-custom">
-            <input type="radio" value="" name="radio" checked="true">
-            <label>Ненужна</label>
-          </div>
-          <div class="radio-custom">
-            <input type="radio" value="" name="radio">
-            <label>Табличка с текстом</label>
-          </div>
-          <textarea class="form-control" name="name" rows="3" cols="40" placeholder="Евгений Лапшин (или введите другой)"></textarea>
-          <div class="radio-custom">
-            <input type="radio" value="" name="radio">
-            <label>Логотип или изображение</label>
-          </div>
-          <div class="filepicker">
-            <label for="filepicker">Загрузить</label>
-            <input type="file" class="" id="filepicker">
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <a href="#" class="btn btn-primary">Отправить завку</a>
-        </div>
-      </div>
-    </div>
-    <!-- End of third form block -->
-
-
+    </form>
+    <!-- End of main form -->
   </div>
 </section>
 <!-- End of kc-trp-order__form -->
@@ -868,8 +1017,69 @@
 <!-- endbuild -->
 
 <script>
-  // Bootstrap Popover
-  $('.kc-subscribe-hero-item').popover();
+  var switchers = $('.kc-arrow-switcher a');
+  var switch1 = switchers[0],
+      switch2 = switchers[1],
+      switch3 = switchers[2];
+
+  // Форма
+
+  // Чекаем первую форму
+  $('.kc-trp-choice').on('click', function (e) {
+    $('.kc-trp-choice').removeClass('active');
+    $(this).addClass('active');
+    $(this).find('input[name="car-type"]').prop('checked', true);
+
+    // Клик на синию стрелку
+    $('.kc-trp-choice__submit').click(function (e) {
+      e.preventDefault();
+
+      // Валидация данного селекта, если ли выборка машин, количество,
+      // и если все есть переход на след форму:
+      $('#order-form-index-1').hide();
+      $('#order-form-index-2').show();
+
+      // Делаем 2ую переключалку активной
+      $(switch2).addClass('active');
+    })
+  });
+
+  // Чекаем вторую форму
+  $('#order-form-check-second').click(function (e) {
+    e.preventDefault();
+    // Валидация формы
+
+    // Если валидно то идем на третью форму
+    $('#order-form-index-2').hide();
+    $('#order-form-index-3').show();
+
+    // Делаем 3ую переключалку активной
+    $(switch3).addClass('active');
+  })
+
+
+
+  // Отключаем ссылки на свитчерах
+  $('.kc-arrow-switcher a').click(function(e) {
+    e.preventDefault();
+    // Сюда можно так же валидацию повесить на данную форму
+  })
+
+  // Amount increment decrement
+  $('.inc').click(function(){
+    var input = $(this).siblings('input[type="number"]');
+    var value = $(input).val();
+
+    $(input).val(+value + 1);
+  });
+
+  $('.dec').click(function(){
+    var input = $(this).siblings('input[type="number"]');
+    var value = $(input).val();
+    if(value > 0) {
+      $(input).val(+value - 1);
+    }
+  });
 </script>
 
 <!-- build:js scripts/main.js -->
