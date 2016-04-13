@@ -24,6 +24,15 @@
       text-align: left;
       margin-right: 23px;
       text-overflow: ellipsis;
+
+      span {
+        @include MQM(XS) {
+          overflow: hidden;
+          width: 100%;
+          display: block;
+          white-space: nowrap;
+        }
+      }
     }
 
     &:first-child {

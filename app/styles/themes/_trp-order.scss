@@ -11,6 +11,8 @@
   display: none;
 }
 
+
+
 .kc-trp-order {
   &__hero {
     background-color: $blue;
@@ -64,5 +66,19 @@
         }
       }
     }
+  }
+}
+
+
+
+.kc-trp-chosen-car-type {
+  .kc-trp-choice {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .kc-trp-choice__counts {
+    margin-bottom: 0;
+    padding-top: 20px;
   }
 }
