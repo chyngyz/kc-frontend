@@ -6,7 +6,9 @@
 .kc-trp-pricelist,
 .kc-trp-transfer,
 .kc-trp-autopark,
-.kc-trp-whitebg {
+.kc-trp-whitebg,
+.kc-trp-car--hero,
+.kc-trp-car--content {
   .container {
     @include MQ(LG) {
       width: 1000px;
@@ -240,7 +242,7 @@
 	font-size: 20px;
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 10px;		
+	margin-right: 10px;
 }
 
 .table span.silent {
@@ -269,7 +271,7 @@
 
 	&--light {
 		color: white;
-		
+
 		&:hover, &:focus, &:active {
 			color: white;
 		}
@@ -338,4 +340,252 @@
 
 .kc-trp-whitebg  {
 	padding-top: 20px;
+}
+
+.kc-trp-car {
+
+  &--hero {
+    height: 205px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include MQM(MD) {
+      height: auto;
+      background-image: none;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .badge:first-child {
+      margin-top: 30px;
+    }
+
+    &-title {
+      color: #fff;
+      line-height: 1;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    &-driver {
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .blurred-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+      background-position: center center;
+      background-size: cover;
+
+      @include MQM(MD) {
+        display: none;
+      }
+    }
+  }
+
+  &--form {
+    margin-bottom: 10px;
+  }
+
+
+  &--infor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 315px;
+    z-index: 5;
+    background-color: #0091d4;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    @include MQM(MD) {
+      position: static;
+      width: 100%;
+
+    }
+
+    &-tel {
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    &-img {
+      position: relative;
+      width: 315px;
+      height: 205px;
+      overflow: hidden;
+
+      @include MQM(MD) {
+        text-align: center;
+        width: 100%;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+      }
+    }
+
+    .form-control {
+      background-color: transparent;
+      border-color: #fff;
+      margin-bottom: 10px;
+
+      @include placeholder {
+        color: #fff;
+      }
+
+      &:focus {
+        background-color: #fff;
+
+        @include placeholder {
+          color: #000;
+        }
+      }
+    }
+
+    &-content {
+      padding: 20px;
+      color: #fff;
+
+      p {
+        font-size: 16px;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+
+    &-title {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 24px;
+      margin-bottom: 10px;
+      line-height: 19px;
+    }
+
+    &-wr {
+      //position: relative;
+    }
+  }
+
+  &--content {
+    padding: 25px 0;
+
+    .title {
+      color: #0091d4;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+    }
+
+    &-features {
+      margin-top: 25px;
+      margin-bottom: 20px;
+      @include transition(all 0.3s ease-in);
+      height: auto;
+      overflow: hidden;
+    }
+
+    &-toggle {
+      text-decoration: none;
+      display: inline-block;
+      border-bottom: 1px dashed;
+      margin-bottom: 25px;
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+      }
+    }
+
+    .fotorama {
+      margin-bottom: 30px;
+    }
+
+    &-feature {
+      padding-left: 45px;
+      position: relative;
+      margin-bottom: 20px;
+      line-height: 1;
+      height: 35px;
+      overflow: hidden;
+
+      i {
+        position: absolute;
+        font-size: 30px;
+        color: #0091d4;
+        left: 4px;
+        top: 50%;
+        @include transform(translateY(-50%));
+      }
+
+      span {
+        position: absolute;
+        left: 45px;
+        top: 50%;
+        @include transform(translateY(-50%));
+      }
+    }
+  }
+  &--testimonial-form {
+    margin-bottom: 35px;
+  }
+
+  &--testimonial {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 20px;
+
+    .testim-img-thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+
+    .testim-title, p {
+      color: #4d4d4d;
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    p {
+      line-height: 1.2;
+    }
+
+    .testim-city, .testim-date {
+      color: #808080;
+      font-size: 12px;
+    }
+
+    .testim-city {
+      margin-bottom: 5px;
+    }
+
+    .testim-date {
+      text-transform: uppercase;
+    }
+  }
+
 }
