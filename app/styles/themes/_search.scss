@@ -1,4 +1,4 @@
-.kc-search { 
+.kc-search {
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -14,12 +14,23 @@
 	padding-top: 40px;
 	padding-bottom: 30px;
 
+
+
+	h5 {
+		color: $blue;
+	}
+
 	&--form-wrap {
 		background-color: $blue;
-		padding: 20px 15px; 
+		padding: 20px 15px;
 		border-radius: 4px;
 		position: relative;
 		z-index: 2;
+
+		p {
+			color: #fff;
+			margin-top: 8px;
+		}
 	}
 
 	.price-stats {

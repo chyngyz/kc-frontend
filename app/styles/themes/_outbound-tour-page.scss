@@ -1,5 +1,5 @@
 .kc-outbound-tour-detail,
-.kc-outbound-tour-tabs { 
+.kc-outbound-tour-tabs {
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -12,11 +12,11 @@
 //
 // Tour Page - Hero slider
 //
-// ===============================================		
+// ===============================================
 
 .kc-outbound-tour-hero {
 	height: 405px;
-	
+
 
 }
 
@@ -25,6 +25,12 @@
 		font-size: 28px;
 		color: $blue;
 		margin-bottom: 20px;
+	}
+
+	.text-primary {
+		font-size: 14px;
+		font-weight: bold;
+		margin: 30px 0 20px;
 	}
 
 	p {
@@ -84,7 +90,7 @@
 //
 // outbound-tour-tabs
 //
-// ===============================================	
+// ===============================================
 
 
 
@@ -105,7 +111,7 @@
 			}
 		}
 
-		
+
 	}
 
 	.tab-pane {
@@ -306,40 +312,3 @@
 .lg-download {
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

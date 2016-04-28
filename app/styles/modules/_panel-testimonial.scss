@@ -1,4 +1,4 @@
-.panel-testimonial {
+.panel-testimonial, .panel-testimonial-inverse {
 	margin-top: 35px;
 	margin-bottom: 35px;
 	position: relative;
@@ -7,24 +7,24 @@
 		background-color: rgba(190, 205, 212, 0.17);
 		padding: 15px 13px;
 		border-radius: 5px;
-		position: relative;	
+		position: relative;
 
 		&:before {
-			position: absolute;	
+			position: absolute;
 			content: "";
-			height: 32px;	
-			width: 32px;	
+			height: 32px;
+			width: 32px;
 			background-image: url('../images/icons/trp/quote.svg');
 			background-repeat: 	no-repeat;
 			background-size: 100%;
-			top: -18px;	
+			top: -18px;
 		}
 
 		&:after {
 			content: "";
-			position: absolute;	
+			position: absolute;
 			bottom:-15px;
-			left: 15px;	
+			left: 15px;
 			width: 0;
 			height: 0;
 			border-style: solid;
@@ -51,6 +51,26 @@
 
 		p {
 			margin-bottom: 0;
+		}
+	}
+}
+
+.panel-testimonial-inverse {
+
+	img.panel-company {
+		margin-bottom: 20px;
+	}
+	.panel-testimonial--body {
+		&:before {
+			background-image: none;
+		}
+
+		&:after {
+			top:-15px;
+			bottom: auto;
+			left: 15px;
+			border-width: 15px 0 0 30px;
+			border-color: transparent transparent transparent rgba(190, 205, 212, 0.33);
 		}
 	}
 }

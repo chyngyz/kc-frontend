@@ -2,7 +2,7 @@
 	position: relative;
 	height: 214px;
 	border: 1px solid #E6E6E6;
-	border-radius: 4px; 
+	border-radius: 4px;
 
 	@include MQM(SM) {
 		height: 400px;
@@ -44,7 +44,7 @@
 			width: 100%;
 			padding: 15px 20px 10px;
 			height: 200px;
-			
+
 		}
 
 		@include MQM(XS) {
@@ -118,6 +118,55 @@
 		}
 	}
 
+	&--star {
+		position: absolute;
+		height: 33px;
+		width: 33px;
+		right: 8px;
+		top: 15px;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	&--testim {
+		text-decoration: none;
+		display: block;
+		margin-top: 2px;
+
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+		span {
+			display: block;
+			font-size: 14px;
+			color: #4D4D4D;
+
+			&.num {
+				color: $blue;
+				font-size: 16px;
+				font-weight: bolder;
+			}
+		}
+	}
+
+	&--hoptions {
+		span {
+			font-size: 14px;
+		}
+		.whats-included-icons li {
+			display: inline-block;
+			margin-left: 0;
+			float: left;
+
+			img {
+
+			}
+		}
+	}
+
 	&--price {
 		display: inline-block;
 		background-color: #FF931E;
@@ -135,6 +184,10 @@
 			}
 		}
 
+		&.blue {
+			background-color: $blue;
+		}
+
 		span.price {
 			font-size: 20px;
 			font-weight: 600;
@@ -143,5 +196,14 @@
 				font-size: 16px;
 			}
 		}
+	}
+}
+
+
+.panel-horiz-hotel {
+	min-height: 248px;
+
+	.panel-horiz--meta {
+		margin-top: 0;
 	}
 }
