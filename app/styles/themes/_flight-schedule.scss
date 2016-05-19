@@ -1,0 +1,145 @@
+.kc-flightsch__content{
+  .container {
+    @include MQ(LG) {
+      width: 1000px;
+    }
+  }
+}
+
+.kc-flightsch {
+  &__hero {
+    position: relative;
+    background-image: url("../images/bg/flight-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #FFAD1E;
+    color: #fff;
+    min-height:340px;
+    padding-top: 70px;
+
+    &__extra {
+      font-size: 14px;
+      color: #fff;
+    }
+
+    h1 {
+      margin:10px 0;
+      line-height: 48px;
+    }
+  }
+
+  &__airport-wrap {
+  	padding-top: 30px;
+  }
+
+  &__airport-link, &__airport-dropdown-el {
+    display: inline-block;
+    padding:8px 30px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    color: #fff;
+    font-size:16px;
+    margin-bottom: 10px;
+    margin-right: 18px;
+
+
+    &:hover, &:active, &:focus, &.active {
+      background-color: #0091d4;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &__dropdown {
+  	display: inline-block;
+  	vertical-align: top;
+
+  	.dropdown-menu {
+  		max-width: 235px;
+  		top: 90%;
+
+  		& > li > a{
+  			white-space: initial;
+  			padding-left: 12px;
+  			padding-right: 12px;
+  			font-size: 13px;
+
+  			&:hover, &:focus {
+  				color: #0091d4;
+  			}
+  		}
+  	}
+  }
+
+  &__notification {
+    background-color: rgba(0, 145, 212, 0.1);
+    font-size: 14px;
+    padding: 10px 10px 10px 50px;
+    text-align: center;
+    color: $blue;
+    border-radius:4px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 14px;
+      width: 32px;
+      height: 32px;
+      background-image: url('../images/icons/flight/info.svg');
+      background-size: 100%;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__table-title {
+    font-size: 20px;
+
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+
+  &__table {
+    margin-bottom: 30px;
+
+    .days, .time {
+      margin-right: 3px;
+    }
+    th, td {
+      padding: 10px !important;
+    }
+
+    &.blue {
+      th {
+        color: $blue;
+        border-top: 2px solid #0091d4 !important;
+      }
+    }
+
+    &.green {
+      th {
+        color: $green;
+        border-top: 2px solid $green !important;
+        border-bottom: 2px solid $green !important;
+      }
+    }
+
+    tr:last-child {
+      td {
+        border-bottom: 1px solid #ddd;
+      }
+    }
+
+  }
+}

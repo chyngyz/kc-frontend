@@ -17,6 +17,11 @@
   min-height:340px;
   padding-top: 70px;
 
+  &__extra {
+    font-size: 14px;
+    color: #fff;
+  }
+
   h1 {
     margin:10px 0;
     line-height: 48px;
@@ -52,7 +57,7 @@
 	.dropdown-menu {
 		max-width: 235px;
 		top: 90%;
-		
+
 		& > li > a{
 			white-space: initial;
 			padding-left: 12px;
@@ -62,7 +67,7 @@
 			&:hover, &:focus {
 				color: #0091d4;
 			}
-		}		
+		}
 	}
 }
 
