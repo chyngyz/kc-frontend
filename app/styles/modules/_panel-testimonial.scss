@@ -3,6 +3,10 @@
 	margin-bottom: 35px;
 	position: relative;
 
+	&--img {
+
+	}
+
 	&--body {
 		background-color: rgba(190, 205, 212, 0.17);
 		padding: 15px 13px;
@@ -57,10 +61,15 @@
 
 .panel-testimonial-inverse {
 
-	img.panel-company {
-		margin-bottom: 20px;
+	.panel-testimonial--img {
+		width: 150px;
+		height: 100px;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
+
 	.panel-testimonial--body {
+		margin-top: 20px;
 		&:before {
 			background-image: none;
 		}
