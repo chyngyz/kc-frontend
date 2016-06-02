@@ -1,0 +1,105 @@
+.kc-insurance__hero,
+.kc-insurance__body {
+  .container {
+    @include MQ(LG) {
+      width: 1000px;
+    }
+  }
+}
+
+
+.kc-insurance {
+
+  &__hero {
+    position: relative;
+    background-image: url("../images/bg/insurance-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #FFAD1E;
+    color: #fff;
+    min-height:320px;
+    padding-top: 80px;
+  }
+
+  &__body {
+    padding: 40px 0;
+
+    .tab-content {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__tablist {
+    margin-bottom: 20px;
+
+    &-wr {
+      text-align: center;
+    }
+
+    li {
+      padding: 7px;
+      display: inline-block;
+      border-radius: 4px;
+      width: 450px;
+      border: 1px solid transparent;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+
+      &.blue {
+        .kc-insurance__tab {
+          background-color: $blue;
+        }
+      }
+
+      &.green {
+        .kc-insurance__tab {
+          background-color: $green;
+        }
+      }
+
+      &.active {
+        &.blue {
+          border-color: $blue;
+        }
+
+        &.green {
+          border-color: $green;
+        }
+      }
+    }
+    .kc-insurance__tab {
+      color: #fff;
+      padding: 21px 25px 22px 100px;
+      display: block;
+      border-radius: 4px;
+      position: relative;
+      text-align: left;
+      text-decoration: none;
+      font-size: 14px;
+
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+      }
+
+      img {
+        width: 75px;
+        height: 70px;
+        position: absolute;
+        left: 16px;
+        top: 17px;
+      }
+    }
+  }
+
+  &__tabcontent {
+
+    &__body {
+      background-color: rgba(189,204, 212, 0.1);
+    }
+  }
+}
