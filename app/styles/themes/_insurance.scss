@@ -46,8 +46,16 @@
       width: 450px;
       border: 1px solid transparent;
 
+      @include MQM(SM) {
+        width: 100%;
+      }
+
       &:first-child {
         margin-right: 20px;
+
+        @include MQM(MD) {
+          margin-right: 0;
+        }
       }
 
       &.blue {
@@ -82,6 +90,10 @@
       text-decoration: none;
       font-size: 14px;
 
+      @include MQM(SM) {
+        min-height: 100px;
+      }
+
       &:hover, &:focus, &:active {
         text-decoration: none;
       }
@@ -96,10 +108,54 @@
     }
   }
 
+  &__info-icon {
+    margin-top: -2px;
+  }
+
+  &-calc {
+    .row-to-copy {
+      margin-bottom: 10px;
+    }
+
+    &__results {
+      .results {
+        .text-right {
+          @include MQM(SM) {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
   &__tabcontent {
 
+    &__head {
+      padding-bottom: 25px;
+    }
+
     &__body {
+      padding: 20px 0 35px;
       background-color: rgba(189,204, 212, 0.1);
+
+
+      .kc-insurance-calc {
+        .btn-success {
+          border-width: 0px;
+          padding: 15px 25px;
+        }
+      }
+    }
+
+    &__footer {
+
+      ul {
+        padding: inherit;
+      }
+      li {
+        list-style: disc;
+        font-size: 16px;
+      }
     }
   }
 }

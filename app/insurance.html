@@ -453,36 +453,357 @@
 
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane fade in active" id="insurance-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 text-center">
-              <p>В отпуске вы планируете хорошо отдохнуть, набраться новых впечатлений, привезти много фотографий и новый магнит на холодильник.</p>
-              <p>Когда вы едете за границу, то единственное, о чем хочется думать, — это чтобы отдых или командировка удались на славу. Но иногда что-то идет не так: непривычная еда, плохое качество питьевой воды, жара за сорок, опасные аттракционы, морские хищники и дикие животные — да мало ли что может случиться в незнакомой стране. А если в чужой стране вам понадобится медицинская помощь?</p>
-              <br>
-              <a href="#">
-                <img src="images/icons/insurance/pdf.svg" width="25px" height="25px" alt=""> Скачать правила страхования
-              </a>
+
+        <div class="kc-insurance__tabcontent__head">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <p>В отпуске вы планируете хорошо отдохнуть, набраться новых впечатлений, привезти много фотографий и новый магнит на холодильник.</p>
+                <p>Когда вы едете за границу, то единственное, о чем хочется думать, — это чтобы отдых или командировка удались на славу. Но иногда что-то идет не так: непривычная еда, плохое качество питьевой воды, жара за сорок, опасные аттракционы, морские хищники и дикие животные — да мало ли что может случиться в незнакомой стране. А если в чужой стране вам понадобится медицинская помощь?</p>
+                <br>
+                <a href="#">
+                  <img src="images/icons/insurance/pdf.svg" width="25px" height="25px" alt=""> Скачать правила страхования
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="kc-insurance__tabcontent__body">
           <div class="container">
+            <div class="row mb-20">
+              <div class="col-xs-12 text-center">
+                <h1 class="text-blue">Калькулятор стоимости</h1>
+                <p>Данный калькулятор рассчитан только для однократных поездок</p>
+              </div>
+            </div>
+
+            <form action="" id="kc-insurance-calc" class="kc-insurance-calc">
+
+              <div class="row">
+                <div class="col-xs-12 col-md-4 col-md-offset-2">
+                  <div class="form-group">
+                    <label for="kc-ins-direction">Выберите направление</label>
+                    <div class="select-wrap">
+                      <select name="direction" id="kc-ins-direction" class="form-control">
+                        <option value="1">Шенген</option>
+                        <option value="2">Шенген</option>
+                        <option value="3">Шенген</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group booking-form--datepicker">
+                    <input id="from" name="date-of-end" class="form-control hasDatepicker" type="text" placeholder="Дата окончания">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                  <div class="form-group">
+                    <label for="kc-ins-purpose">Цель поездки</label>
+                    <div class="select-wrap">
+                      <select name="insurance-purpose" id="kc-ins-purpose" class="form-control">
+                        <option value="1">Туризм</option>
+                        <option value="2">Туризм</option>
+                        <option value="3">Туризм</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group booking-form--datepicker">
+                    <input id="to" class="form-control hasDatepicker" name="date-of-start" type="text" placeholder="Дата начала">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-md-4 col-md-offset-2">
+                  <div class="form-group">
+                    <label for="kc-ins-amount">Количество человек</label>
+                    <input type="number" name="number-of-people" class="form-control" id="kc-ins-amount" placeholder="1" style="width: 70px;" min="1" max="10">
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                  <div class="form-group">
+                    <label for="">Дата рождения</label>
+
+                    <div class="kc-insurance-calc__dateofbirth">
+
+                      <div class="row row-to-copy">
+                        <div class="col-xs-3">
+                          <div class="select-wrap">
+                            <select name="day-of-birth" id="kc-ins-dob-day" class="form-control">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-xs-5">
+                          <div class="select-wrap">
+                            <select name="month-of-birth" id="kc-ins-dob-month" class="form-control">
+                              <option value="1">ЯНВ</option>
+                              <option value="2">ФЕВ</option>
+                              <option value="3">МАР</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <div class="select-wrap">
+                            <select name="year-of-birth" id="kc-ins-dob-year" class="form-control">
+                              <option value="1">1990</option>
+                              <option value="2">1991</option>
+                              <option value="3">1992</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-md-4 col-md-offset-2">
+                  <div class="form-group">
+                    <label for="kc-ins-currency">Валюта</label>
+                    <div class="select-wrap">
+                      <select name="insurance-currency" id="kc-ins-currency" class="form-control">
+                        <option value="1">EURO</option>
+                        <option value="2">US DOLLAR</option>
+                        <option value="3">GBF</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                  <div class="form-group">
+                    <label for="kc-ins-money">Страховая сумма</label>
+                    <div class="select-wrap">
+                      <select name="insurance-money" id="kc-ins-money" class="form-control">
+                        <option value="30 000">30 000</option>
+                        <option value="40 000">40 000</option>
+                        <option value="50 000">50 000</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                  <div class="form-group">
+                    <label for="kc-ins-risk-ratio">Выберите коэффициент риска</label>
+                    <div class="select-wrap">
+                      <select name="risk-ratio" id="kc-ins-risk-ratio" class="form-control">
+                        <option value="1">Никакой</option>
+                        <option value="2">Никакой</option>
+                        <option value="3">Никакой</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <input type="submit" class="btn btn-success" value="Расчитать стоимость">
+                </div>
+              </div>
+
+            </form>
+
+            <div class="kc-insurance-calc__results">
+              <hr>
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h1 class="text-blue">Результат стоимости</h1>
+                </div>
+              </div>
+              <div class="results">
+                <div class="row mb-10">
+                  <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                    <strong>asdfasdfasdf:</strong>
+                  </div>
+                  <div class="col-md-6 col-sm-6col-xs-12 ">
+                    asdfasdfasdf
+                  </div>
+                </div>
+                <div class="row mb-10">
+                  <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                    <strong>asdfasdfasdf:</strong>
+                  </div>
+                  <div class="col-md-6 col-sm-6col-xs-12 ">
+                    asdfasdfasdf
+                  </div>
+                </div>
+                <div class="row mb-10">
+                  <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                    <strong>asdfasdfasdf:</strong>
+                  </div>
+                  <div class="col-md-6 col-sm-6col-xs-12 ">
+                    asdfasdfasdf
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="kc-insurance__tabcontent__footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <h1 class="text-blue">Полезная информация</h1>
+              </div>
+            </div>
             <div class="row">
               <div class="col-xs-12">
-                <h1>Калькулятор стоимости</h1>
+                <h3 class="text-blue">Зачем нужен данный полис?</h3>
+                <p>В отпуске вы планируете хорошо отдохнуть, набраться новых впечатлений, привезти много фотографий и новый магнит на холодильник. <br>Когда вы едете за границу, то единственное, о чем хочется думать, — это чтобы отдых или командировка удались на славу. Но иногда что-то идет не так: непривычная еда, плохое качество питьевой воды, жара за сорок, опасные аттракционы, морские хищники и дикие животные — да мало ли что может случиться в незнакомой стране. А если в чужой стране вам понадобится медицинская помощь? <br>В такой ситуации важно быть уверенным в том, что не придется искать деньги на решение непредвиденных проблем. Страховая компания поможет организовать своевременную и качественную медицинскую помощь и покроет ваши расходы на лечение, транспортировку и лекарства. <br>К тому же для получения визы в страны Шенгенской зоны обязательным требованием является наличие действующего страхового полиса Страхования Медицинских Расходов, выезжающих за рубеж.</p>
+                <h3 class="text-blue">Как работает данный полис?</h3>
+                <p>При наличии страхового полиса, Вам не нужно самостоятельно оплачивать дорогостоящие услуги врачей, покупки медикаментов и транспортировки. Достаточно будет позвонить по телефонам, указанным в полисе, и представители Сервисного Центра круглосуточно будут содействовать оказанию медицинской помощи во всех уголках планеты.<br>Сроком действия полиса страхования может быть любой период от 1 дня до 1 года.</p>
+                <h3 class="text-blue">Какие расходы покрываются?</h3>
+                <p>Полис по страхованию медицинских расходов покрывает следующие медицинские и медико-транспортные расходы:</p>
+                <ul>
+                  <li>по пребыванию и лечению в стационаре, включая расходы на врачебные услуги, на проведение операций, диагностических исследований, а также по оплате назначенных врачом медикаментов, перевязочных средств и средств фиксации (гипс, бандаж);</li>
+                  <li>по амбулаторному лечению, включая расходы на врачебные услуги, диагностические исследования, назначенные врачом медикаменты, перевязочные средства и средства фиксации (гипс, бандаж);</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="insurance-2">Abi</div>
+      <div role="tabpanel" class="tab-pane fade" id="insurance-2">
+
+
+        <div class="kc-insurance__tabcontent__head">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <p>В отпуске вы планируете хорошо отдохнуть, набраться новых впечатлений, привезти много фотографий и новый магнит на холодильник.</p>
+                <p>Когда вы едете за границу, то единственное, о чем хочется думать, — это чтобы отдых или командировка удались на славу. Но иногда что-то идет не так: непривычная еда, плохое качество питьевой воды, жара за сорок, опасные аттракционы, морские хищники и дикие животные — да мало ли что может случиться в незнакомой стране. А если в чужой стране вам понадобится медицинская помощь?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="kc-insurance__tabcontent__body">
+          <div class="container">
+            <div class="row mb-20">
+              <div class="col-xs-12 text-center">
+                <h1 class="text-blue">Тарифы</h1>
+              </div>
+              <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Описание</th>
+                        <th>Стандартная <br>стоимость, сом</th>
+                        <th>Стоимость для клиентов <br>Kyrgyz Concept, сом</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Международные рейсы: вылет/прилет</td>
+                        <td>5 000 с</td>
+                        <td>4 000 с</td>
+                      </tr>
+                      <tr>
+                        <td>Международные рейсы: вылет/прилет для детей 3-12 лет </td>
+                        <td>5 000 с</td>
+                        <td>4 000 с</td>
+                      </tr>
+                      <tr>
+                        <td>Внутренние рейсы: вылет/прилет </td>
+                        <td>5 000 с</td>
+                        <td>4 000 с</td>
+                      </tr>
+                      <tr>
+                        <td>На все рейсы для детей до 3-х лет </td>
+                        <td>Бесплатно</td>
+                        <td>2 000 с</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <hr>
+                <a href="#">
+                  <img src="images/icons/insurance/info.svg" width="20px" height="20px" alt="" class="kc-insurance__info-icon"> Максимальный возраст застрахованного лица не старше 55 лет.</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="kc-insurance__tabcontent__footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <h1 class="text-blue">Полезная информация</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <h3 class="text-blue">Зачем нужен данный полис?</h3>
+                <p>В отпуске вы планируете хорошо отдохнуть, набраться новых впечатлений, привезти много фотографий и новый магнит на холодильник. <br>Когда вы едете за границу, то единственное, о чем хочется думать, — это чтобы отдых или командировка удались на славу. Но иногда что-то идет не так: непривычная еда, плохое качество питьевой воды, жара за сорок, опасные аттракционы, морские хищники и дикие животные — да мало ли что может случиться в незнакомой стране. А если в чужой стране вам понадобится медицинская помощь? <br>В такой ситуации важно быть уверенным в том, что не придется искать деньги на решение непредвиденных проблем. Страховая компания поможет организовать своевременную и качественную медицинскую помощь и покроет ваши расходы на лечение, транспортировку и лекарства. <br>К тому же для получения визы в страны Шенгенской зоны обязательным требованием является наличие действующего страхового полиса Страхования Медицинских Расходов, выезжающих за рубеж.</p>
+                <h3 class="text-blue">Как работает данный полис?</h3>
+                <p>При наличии страхового полиса, Вам не нужно самостоятельно оплачивать дорогостоящие услуги врачей, покупки медикаментов и транспортировки. Достаточно будет позвонить по телефонам, указанным в полисе, и представители Сервисного Центра круглосуточно будут содействовать оказанию медицинской помощи во всех уголках планеты.<br>Сроком действия полиса страхования может быть любой период от 1 дня до 1 года.</p>
+                <h3 class="text-blue">Какие расходы покрываются?</h3>
+                <p>Полис по страхованию медицинских расходов покрывает следующие медицинские и медико-транспортные расходы:</p>
+                <ul>
+                  <li>по пребыванию и лечению в стационаре, включая расходы на врачебные услуги, на проведение операций, диагностических исследований, а также по оплате назначенных врачом медикаментов, перевязочных средств и средств фиксации (гипс, бандаж);</li>
+                  <li>по амбулаторному лечению, включая расходы на врачебные услуги, диагностические исследования, назначенные врачом медикаменты, перевязочные средства и средства фиксации (гипс, бандаж);</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
 
   </div>
 
 </section>
 <!-- End of insurance body -->
+
+<!-- Begin Mice order form -->
+<section class="kc-mice-order white">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1>Хотите заказать услугу или обсудить детали?</h1>
+        <p>Закажите звонок, и наши специалисты свяжутся с вами в течение 3х минут</p>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <div class="row">
+          <form class="form-inline kc-mice-order--form" id="mice-order-form">
+            <div class="col-xs-12 col-md-4 col-sm-4">
+              <input type="text" class="form-control" placeholder="Ваше имя">
+            </div>
+            <div class="col-xs-12 col-md-5 col-sm-4">
+              <input type="text" class="form-control" placeholder="E-mail или телефон">
+            </div>
+            <div class="col-xs-12 col-md-3 col-sm-4">
+              <input type="submit" class="btn btn-orange" value="Отправить заявку">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xs-12 text-center">
+        <p>или позвоните нам по номеру 0312 900 883, также можете написать <br> нам на e-mail: <a href="mailto:conference@concept.kg">conference@concept.kg</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of mice order form -->
 
 <!-- Begin Footer -->
 <footer>
@@ -660,7 +981,48 @@
 <!-- endbuild -->
 
 <script>
+  var $wrapper = $('.kc-insurance-calc__dateofbirth');
 
+  $('#kc-ins-amount').on('blur', function() {
+    var inputVal = $(this).val(),
+        row = $wrapper.find('.row-to-copy'),
+        startNum = $(row).length;
+
+    if($(row).length < inputVal) {
+      var diffNum = inputVal - $(row).length;
+
+      for (var i = 0; i < diffNum; i++) {
+        var rowToClone = $(row)[0];
+        var newRow = $(rowToClone).clone(true),
+            modRow = modifyInputNames(newRow, startNum + i);
+
+        $($wrapper).append(modRow);
+      }
+      //console.log(modifyInputNames(newRow, 1));
+    } else if ($(row).length > inputVal) {
+      var diffNum = $(row).length - inputVal;
+
+      for (var i = 0; i < diffNum; i++) {
+        var row = $wrapper.find('.row-to-copy'),
+            lastItem = $(row)[$(row).length - 1];
+
+        $(lastItem).remove();
+      }
+    }
+  })
+
+  function modifyInputNames(el, prefix) {
+    $(el).addClass('row-num-' + prefix);
+    var selectItems = $(el).find('select');
+    $.each(selectItems, function(index) {
+      var nameAttr = $(selectItems[index]).attr('name'),
+          idAttr = $(selectItems[index]).attr('id');
+      $(selectItems[index]).attr('name', nameAttr + "-" + prefix);
+      $(selectItems[index]).attr('id', idAttr + "-" + prefix);
+    });
+
+    return el;
+  }
 </script>
 
 <!-- build:js scripts/main.js -->
