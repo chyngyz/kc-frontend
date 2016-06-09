@@ -1,0 +1,200 @@
+.kc-travelsim__hero,
+.kc-travelsim__sms,
+.kc-travelsim__infolinks {
+  .container {
+    @include MQ(LG) {
+      width: 1000px;
+    }
+  }
+}
+
+.kc-travelsim {
+
+    &__hero {
+        background-image: url('../images/bg/travelsim.jpg');
+        background-size: cover;
+        position: relative;
+        color: white;
+        padding: 45px 0;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        &-title {
+            margin-bottom: 35px;
+        }
+
+        &-desc {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn-oval {
+            .cs-arrow-right {
+                border-color: white;
+            }
+        }
+    }
+
+    &__feature {
+        text-align: center;
+        margin-bottom: 25px;
+
+        p {
+            font-size: 14px;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            margin:0 auto 10px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    &__sms {
+        padding: 45px 0;
+        background-image: url('../images/bg/order-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        textarea {
+            resize: none;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        &-left {
+            float: right;
+            font-size: 14px;
+            color: white;
+            margin-top: 3px;
+
+            .left {
+                font-size: 16px;
+                display: inline-block;
+                margin-left: 15px;
+                width: 35px;
+                color: #f9c42f;
+            }
+        }
+
+        &-send {
+            text-align: center;
+
+            .btn {
+                background-color: #f96d2f;
+                color: white;
+                height: 45px;
+                padding: 12px 30px;
+            }
+        }
+    }
+
+    &__infolinks {
+        background-color: #f96d2f;
+        padding: 60px 0 40px;
+        color: white;
+
+        a {
+            color: white;
+            text-decoration: none;
+            
+            .cs-arrow-right {
+                border-color: white;
+            }
+        }
+
+        &-ul {
+            margin-top: 20px;
+            a {
+                display: inline-block;
+                position: relative;
+                padding: 5px 0 5px 35px;
+                margin-bottom: 10px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    height: 26px;
+                    width: 26px;
+                    background-size: 100%;
+                    @include transform(translateY(-50%));
+                }
+
+                .extra {
+                    font-size: 13px;
+                    display: block;
+                }
+
+                &.link-linked {
+                    &:before {
+                        background-image: url('../images/icons/travelsim/link-ic.svg');
+                    }
+                }
+
+                &.pdf-linked {
+                    &:before {
+                        background-image: url('../images/icons/travelsim/pdf-ic.svg');
+                    }
+                }
+            }
+        }
+    }
+
+    $font-size: 16px;
+    $line-height: 1.2;
+    $lines-to-show: 2;
+
+
+    &__newsbl {
+        padding: 45px 0;
+        
+        &__item {
+            margin-top: 15px;
+            margin-bottom: 35px;
+
+            .date-badge {
+                background-color: $blue;
+                border-radius: 3px;
+                font-size: 10px;
+                color:white;
+                padding: 2px 4px;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+            a {
+                display: block;
+                display: -webkit-box;
+                max-width: 500px;
+                height: $font-size*$line-height*$lines-to-show;
+                font-size: $font-size;
+                line-height: $line-height;
+                -webkit-line-clamp: $lines-to-show;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #333;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
