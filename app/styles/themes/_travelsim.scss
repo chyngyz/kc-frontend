@@ -1,11 +1,23 @@
 .kc-travelsim__hero,
 .kc-travelsim__sms,
-.kc-travelsim__infolinks {
+.kc-travelsim__infolinks,
+.kc-travelsim__features,
+.kc-travelsim__details__hero,
+.kc-travelsim__details,
+.kc-travelsim__banner {
   .container {
     @include MQ(LG) {
       width: 1000px;
     }
   }
+}
+
+.kc-travelsim__news {
+	.container {
+		@include MQ(LG) {
+			width: 720px;
+		}
+	}
 }
 
 .kc-travelsim {
@@ -112,7 +124,7 @@
         a {
             color: white;
             text-decoration: none;
-            
+
             .cs-arrow-right {
                 border-color: white;
             }
@@ -164,7 +176,7 @@
 
     &__newsbl {
         padding: 45px 0;
-        
+
         &__item {
             margin-top: 15px;
             margin-bottom: 35px;
@@ -196,5 +208,84 @@
                 }
             }
         }
+    }
+
+    &__details {
+      padding: 50px 0;
+      background-color: rgba(189, 204, 212, 0.1);
+
+      .table {
+        th, td {
+          &:not(:first-child) {
+            text-align: right;
+          }
+        }
+      }
+
+      &__hero {
+        padding: 35px 0;
+        &--orange {
+          background-color: #f96d2f;
+          color: #fff;
+        }
+
+        &--blue {
+          background-color: #0091d4;
+          color: #fff;
+
+          .news-date {
+            background-color: rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+    }
+
+    &__banner {
+      background-image: url('../images/bg/travelsim.jpg');
+      background-size: cover;
+      position: relative;
+      color: white;
+      padding: 150px 0;
+
+      @include MQM(XS) {
+        padding: 45px 0;
+      }
+
+      &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: rgba(0,0,0,0.5);
+      }
+
+    }
+
+    &__features {
+      padding: 50px 0;
+
+      &__list {
+        li {
+          position: relative;
+          padding-left: 15px;
+          font-size: 14px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 0;
+            height: 5px;
+            width: 5px;
+            background-color: #0091d4;
+          }
+        }
+      }
+    }
+
+    &__news {
+      padding: 45px 0;
     }
 }

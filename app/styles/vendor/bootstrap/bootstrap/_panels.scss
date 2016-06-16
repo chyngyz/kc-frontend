@@ -61,7 +61,7 @@
     &:not(.collapsed) {
       color: #0091D4;
 
-      & ~ .tabular-arrow {
+      & ~ .tabular-arrow, & ~ .tabular-arrow-oval {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -116,6 +116,45 @@
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+  }
+
+  .tabular-arrow-oval {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0091d4;
+
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 55%;
+      left: 55%;
+      height: 6px;
+      width: 6px;
+      border-top: 1px solid;
+      border-left: 1px solid;
+      border-color: #fff;
+
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
   }
 }
 

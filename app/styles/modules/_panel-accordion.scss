@@ -1,0 +1,26 @@
+.panel-accordion-straight {
+  .panel {
+    margin-top: 0!important;
+    border-radius: 0;
+    border-top: 0;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid #bdccd4;
+    background-color: transparent;
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .panel-heading {
+    background-color: transparent;
+  }
+
+  .panel-title > a {
+    padding: 15px 25px 15px 0;
+  }
+
+  .panel-body {
+    padding: 15px 25px 15px 0;
+  }
+}
