@@ -1,0 +1,244 @@
+.kc-acad-content,
+.kc-acad-order,
+.kc-acad-books,
+.kc-acad-teamb {
+  .container {
+    @include MQ(LG) {
+      width: 1000px;
+    }
+  }
+}
+
+.kc-acad-inner-hero,
+.kc-acad-inner-content {
+  .container {
+    @include MQ(LG) {
+      width: 740px;
+    }
+  }
+}
+
+.kc-acad-hero {
+  position: relative;
+  background-image: url("../images/bg/academy-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #FFAD1E;
+  color: #fff;
+  padding: 60px 0;
+
+  &:before {
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .container {
+    @include MQ(LG) {
+      width: 800px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 65px;
+  }
+
+  &__icon {
+    width: 76px;
+    height: 76px;
+    display: inline-block;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__desc {
+    margin-top: 20px;
+  }
+}
+
+
+.kc-acad-library {
+  position: relative;
+  background-image: url("../images/bg/academy-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.kc-acad-content {
+  padding: 50px 0;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+.kc-acad__ed-title {
+  font-size: 24px;
+  padding-left: 100px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.kc-acad-order {
+  padding: 40px 0;
+  background-color: rgba(184, 209, 212, 0.2);
+
+  &__form {
+    .btn-success {
+      width: 100%;
+      border-width: 0;
+      height: 38px;
+    }
+  }
+}
+
+.kc-acad-books {
+  padding: 40px 0;
+
+  &__book {
+    width: 195px;
+    margin-bottom: 30px;
+
+    &--taken {
+      .kc-acad-books__book__poster,
+      .kc-acad-books__book__title,
+      .kc-acad-books__book__author {
+        opacity: 0.6;
+      }
+
+      .kc-acad-books__book__status {
+        display: block;
+      }
+    }
+
+    &__status {
+      display: none;
+      color: $green;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    &__poster {
+      width: 195px;
+      height: 280px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      margin-bottom: 10px;
+
+      span {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        padding: 2px 5px;
+        background-color: #000;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+
+    &__title {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    &__author {
+      font-size: 12px;
+      color: #808080;
+    }
+  }
+}
+
+.kc-acad-teamb {
+
+  &__type {
+    @include clearfix();
+    margin-bottom: 30px;
+
+    &__img {
+      width: 310px;
+      height: 200px;
+      float: left;
+      margin-right: 20px;
+
+      @include MQM(XS) {
+        float: none;
+      }
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &__content {
+      padding-top: 5px;
+      position: relative;
+      overflow: hidden;
+      height: auto;
+      @include transition(all 0.3s ease);
+      width: 635px;
+      width: calc(100% - 330px);
+
+      @include MQM(XS) {
+        width: auto;
+      }
+
+
+      &.shrink {
+        height: 200px;
+
+        &:after {
+          content: " ";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100px;
+          background: url('../images/icons/academy/gradient.png') repeat-x;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    &__toggle {
+      float: right;
+      font-weight: bold;
+      border-bottom: 1px dashed $blue;
+      text-decoration: none;
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.kc-acad-inner-hero {
+  background: $blue;
+  padding: 40px 0;
+}
+
+.kc-acad-inner-content {
+  padding: 40px 0;
+}

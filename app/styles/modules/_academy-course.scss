@@ -1,0 +1,91 @@
+.academy-course {
+  position: relative;
+  @include display(flex);
+  @include align-items(center);
+  text-decoration: none;
+  margin-bottom: 30px;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+
+  &--prim {
+    .academy-course__date {
+      color: #39b54a;
+    }
+    .academy-course__cat,
+    .academy-course__duration {
+      color: #0091d4;
+    }
+  }
+
+  &--orange {
+    .academy-course__date {
+      color: #f96d2f;
+    }
+    .academy-course__cat,
+    .academy-course__duration {
+      color: #808080;
+    }
+  }
+
+  &--white {
+    margin-bottom: 0;
+    
+    .academy-course__date,
+    .academy-course__cat,
+    .academy-course__title,
+    .academy-course__duration {
+      color: #fff;
+    }
+
+    .academy-course__text {
+      border-left: 2px solid #fff;
+    }
+  }
+
+  &__date {
+    @include flex-basis(100px);
+    @include flex-shrink(0);
+    font-weight: bold;
+
+    @include MQM(XS) {
+      @include flex-basis(70px);
+    }
+
+    &__title {
+      font-size: 12px;
+      display: block;
+    }
+
+    &__day {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    padding: 10px 0px 10px 15px;
+    border-left: 2px solid #0091d4;
+  }
+
+  &__cat {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    color: #000;
+    margin-bottom: 5px;
+  }
+
+  &__duration {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+  }
+}
