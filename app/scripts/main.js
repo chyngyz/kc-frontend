@@ -1,4 +1,12 @@
 (function($){
+	iFrameResize({
+		log: true,
+		heightCalculationMethod: 'documentElementScroll',
+		resizedCallback: function(messageData){ 
+          	console.log(messageData.iframe.id, messageData.height, messageData.width, messageData.type)
+		}
+	});
+
 	$(document).ready(function() {
 
 		// Main menu mobile trigger

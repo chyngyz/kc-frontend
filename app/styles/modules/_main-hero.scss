@@ -5,19 +5,36 @@
 		}
 	}
 
+	iframe{
+		width: 100%;
+		border: none;
+	}
+
 
 
 	&--slider {
 		width: 100%;
-		height: auto;
-		overflow: hidden;
+		// height: auto;
+		// overflow: hidden;
 		position: relative;
-		@include MQ(MD) {
-			height: 490px;
+		background-color: rgba(0,0,0,.7);
+
+		& > h2 {
+			color: #fff;
+			font-size: 27px;
+			margin: 0;
+			padding: 10px 0;
+			text-align: center;
+
+			@include MQM(XS) {
+				font-size: 18px;
+				margin-top: 20px;
+			}
 		}
+
 		.item {
 			position: relative;
-			height: 490px;
+			min-height: 490px;
 		}
 
 		img {
@@ -32,7 +49,7 @@
 
 	&--ticket-search-form {
 		position: static;
-		top: 280px;
+		top: 0;
 		height: auto;
 		padding-bottom: 5px;
 		width: 100%;
@@ -42,7 +59,7 @@
 
 
 		@include MQ(SM) {
-			height: 200px;
+			min-height: 200px;
 			position: absolute;
 			padding-bottom: 0;
 			z-index: 20;
@@ -75,6 +92,7 @@
 
 .hot-tickets--block {
 	position: relative;
+	margin-top: -5px;
 	
 	.flaggy {
 		position: absolute;
@@ -88,6 +106,7 @@
 	height: 27px;
 	line-height: 27px;
 	font-weight: 300;
+	text-align: center;
 
 	&:before {
 		content: "";
@@ -120,7 +139,7 @@
 }
 
 .running-text {
-	margin-top: 4px;
+	margin-top: 0;
 	height: 27px;
 	width: 100%;
 	overflow: hidden;
