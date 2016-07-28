@@ -1,0 +1,31 @@
+.kc-search-widget {
+    height: 120px;
+
+    .ksw {
+        
+        &-top {
+            background-color: rgba(25,146,218,1);
+            color: #fff;
+            padding: 15px;
+        }
+
+        &-bottom {
+            background-color: #fff;
+            padding: 15px;
+            position: relative;
+
+            input {
+                border-radius: 0;
+                padding: 6px 12px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+            }
+        }
+
+        &-search-btn {
+            background-image: linear-gradient(90deg,#1380d3 0,#69c 100%);
+            background-image: -moz-linear-gradient(90deg,#1380d3 0,#69c 100%);
+            background-image: -webkit-linear-gradient(90deg,#1380d3 0,#69c 100%);
+        }
+    }
+}
