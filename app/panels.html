@@ -441,43 +441,16 @@
             </div>
            
           </div>
-
+        
+          
+            
           <div class="kc-hero--ticket-search-form">
             <div class="container">
               <h2>Быстрый поиск авиабилетов</h2>
-
-              <!-- Begin kc-search-widget -->
-              <div class="kc-search-widget">
-                <div class="ksw-top">
-                  <div class="row">
-                    <div class="col-xs-12 col-md-3">
-                      one
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                      two
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      three
-                    </div>
-                  </div>
-                </div>
-                <div class="ksw-bottom">
-                  <div class="row">
-                    <div class="col-xs-12 col-md-3">
-                      <input type="text" class="">
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                      <input type="text" class="">
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="ksw-bottom-r">
-                        <a class="btn ksw-search-btn">Поиск</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              
+              <div id="search-widget">              
+                <ksw-widget></ksw-widget>  
               </div>
-              <!-- End of kc-search-widget -->
 
               <div class="hot-tickets--block">
                 <div class="flaggy flaggy-orange">
@@ -505,6 +478,9 @@
               </div>
             </div>
           </div>
+
+          
+
       </div>
       <!-- End of kc-hero-slider -->
     </section>
@@ -535,28 +511,18 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="/bower_components/lightgallery/dist/js/lightgallery.js"></script>
-
-    <script src="scripts/jquery.maskedinput.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="scripts/ui-bootstrap-custom-tpls-2.0.0.js"></script>
     <script src="scripts/owl.carousel.js"></script>
+    <script src="scripts/jquery.maskedinput.js"></script>
     <script src="scripts/jquery.datepickerAndSlider.js"></script>
+    <script src="/bower_components/lightgallery/dist/js/lightgallery.js"></script>
     <script src="scripts/blur.js"></script>
-    <script src="scripts/map.js"></script>
+
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
+    <script src="scripts/widget.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/marquee.js"></script>
     <!-- endbuild -->
