@@ -27,6 +27,36 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <style>
+      .history {
+        color: inherit !important;
+        float: none !important;
+        margin: 0 !important;
+        font-size: inherit !important;
+      }
+
+      .navbar-fixed-top.main-nav {
+        display: none !important;
+      }
+
+      .no-paddings {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .kc-header-top--nav a:hover, .kc-header-top--nav a:active, .kc-header-top--nav-sm a:hover, .kc-header-top--nav-sm a:active {
+        background-color: #445863;
+        color: white;
+        text-decoration: none;
+        border: none;
+      }
+
+      .kc-header-mainnav--item.green {
+        border: none;
+        padding: inherit;
+        font-size: inherit; 
+      }
+    </style>
 
 
 
@@ -405,226 +435,9 @@
     </header>
 
 
+    <div id="etm_system_widget_outer" wid="f4db656f34" service="https://crm.etm-system.com/site" ng-app="etmWidgetApp"></div>
+    <script type="text/javascript" src="https://crm.etm-system.com/site/build/js/widget-builded.js"></script>
+    <script type="text/javascript" src="iframeResizer.contentWindow.js"></script>
 
-    <section class="kc-hero">
-      <!-- Begin  kc-hero-slider -->
-      <div class="kc-hero--slider">
-          <div id="hero-slider" class="owl-carousel owl-theme hidden-xs">
-
-            <div class="item">
-              <div class="item-img"><img src="images/demo/slide/slide.jpg" alt=""></div>
-              <div class="item-content">
-                <h1>25 лет искренней заботы о путешественниках</h1>
-                <p>Мы можем подготовить для путешествия всё — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-img"><img src="images/demo/slide/slide2.jpg" alt=""></div>
-              <div class="item-content">
-                <h1>Мы можем подготовить для путешествия всё</h1>
-                <p>25 лет искренней заботы о путешественниках — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-img"><img src="images/demo/slide/slide3.jpg" alt=""></div>
-              <div class="item-content">
-                <h1>25 лет искренней заботы о путешественниках</h1>
-                <p>Мы можем подготовить для путешествия всё — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-img"><img src="images/demo/slide/slide4.jpg" alt=""></div>
-              <div class="item-content">
-                <h1>Мы можем подготовить для путешествия всё</h1>
-                <p>25 лет искренней заботы о путешественниках — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
-              </div>
-            </div>
-
-          </div>
-
-
-
-          <div class="kc-hero--ticket-search-form">
-            <div class="container">
-              <h2>Быстрый поиск авиабилетов</h2>
-
-              <div id="search-widget">
-                <ksw-widget></ksw-widget>
-
-
-                <script type="text/ng-template" id="passengers.html">
-                  <div class="ksw__dropdown ksw__passengers" uib-dropdown auto-close="outsideClick">
-                    <a href="#" class="text-center" uib-dropdown-toggle>
-
-                      <span class="ksw__passengers-icon" ng-repeat="(key, val) in $ctrl.options.passengers" ng-if="val > 0">
-                        <span ng-class="{'ksw-icon-male':key==='adult','ksw-icon-child':key==='child','ksw-icon-baby':key==='baby'}"></span>
-                        <span>{{val}}</span>
-                      </span>
-
-                    </a>
-                    <ul class="" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-                      <li role="menuitem" class="ksw__passengers-list" ng-repeat="(key, val) in $ctrl.options.passengers">
-                        <span class="ksw__passengers-icon-bg" ng-class="{'ksw-icon-male':key==='adult','ksw-icon-child':key==='child','ksw-icon-baby':key==='baby'}"></span>
-                        <span ng-if="key == 'adult'">12+</span>
-                        <span ng-if="key == 'child'">2-12</span>
-                        <span ng-if="key == 'baby'">0-2</span>
-                        <span class="ksw__passengers-inc">
-                          <span class="ksw-icon-minus" ng-click="$ctrl.dec(key)"></span>
-                          <span>{{val}}</span>
-                          <span class="ksw-icon-plus" ng-click="$ctrl.inc(key)"></span>
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </script>
-
-                <script type="text/ng-template" id="typeDropdown.html">
-                  <div class="ksw__dropdown" uib-dropdown>
-                    <a href="#" class="" uib-dropdown-toggle>
-                      <span ng-if="$ctrl.options.type == 'oneway'">
-                        <span class="ksw-icon-arrow-right"></span>В одну сторону
-                      </span>
-                      <span ng-if="$ctrl.options.type == 'complicated'">
-                        <span class="ksw-icon-list"></span> Сложный маршрут
-                      </span>
-                      <span ng-if="$ctrl.options.type == 'back'">
-                        <span class="ksw-icon-refresh"></span> Туда и обратно
-                      </span>
-                      <span class="caret"></span>
-                    </a>
-                    <ul class="" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.type = 'oneway';$ctrl.resizeBlock();"><span class="ksw-icon-arrow-right"></span> В одну сторону</a></li>
-                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.type = 'complicated'; $ctrl.resizeBlock();"><span class="ksw-icon-list"></span> Сложный маршрут</a></li>
-                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.type = 'back';$ctrl.resizeBlock();"><span class="ksw-icon-refresh"></span> Туда и обратно</a></li>
-                    </ul>
-                  </div>
-                </script>
-
-                <script type="text/ng-template" id="classDropdown.html">
-                  <div class="ksw__dropdown" uib-dropdown>
-                    <a href="#" class="" uib-dropdown-toggle>
-                      <span>
-                        <span ng-class="{'ksw-icon-arrow-right':$ctrl.options.type == 'oneway','ksw-icon-list':$ctrl.options.type == 'complicated','ksw-icon-refresh':$ctrl.options.type == 'back'}"></span>
-                        <span ng-if="$ctrl.options.class == 'E'">Эконом</span>
-                        <span ng-if="$ctrl.options.class == 'B'">Бизнес</span>
-                        <span ng-if="$ctrl.options.class == 'F'">Первый</span>
-                        <span ng-if="$ctrl.options.class == 'A'">Все классы</span>
-                      </span>
-                      <span class="caret"></span>
-                    </a>
-                    <ul class="" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.class = 'E'">Эконом</a></li>
-                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.class = 'B'">Бизнес</a></li>
-                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.class = 'F'">Первый</a></li>
-                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.class = 'A'">Все классы</a></li>
-                    </ul>
-                  </div>
-                </script>
-
-                <script type="text/ng-template" id="typeahead.html">
-                  <input type="text"
-                    ng-model="$ctrl.selected"
-                    id="{{'ksw-' + $ctrl.fromOrTo}}"
-                    uib-typeahead="state.names['RU'] + ' (' + state.iata + ')' as state.names['RU'] + ' (' + state.iata + ')' for state in $ctrl.list | filter:$viewValue | limitTo:5"
-
-                    typeahead-on-select="$ctrl.onSelect($item, $model, $label);">
-                </script>
-
-
-                <script type="text/ng-template" id="datePicker.html">
-                  <div class="ksw__datepicker">
-                    <input type="text" readonly="readonly"
-                      uib-datepicker-popup="{{$ctrl.format}}"
-                      ng-model="$ctrl.dt"
-                      is-open="$ctrl.popup1.opened"
-                      datepicker-options="$ctrl.dateOptions"
-                      ng-required="true"
-                      ng-change="$ctrl.dateChanged()"
-                      alt-input-formats="$ctrl.altInputFormats"
-                      show-button-bar="false"/>
-                    <a href="" class="ksw__datepicker__trigger" ng-click="$ctrl.popup1.opened = true;"><span class="ksw-icon-calendar"></span> {{$ctrl.dt?$ctrl.dt:'__.__.____' | date: 'dd.MM.yyyy'}}</a>
-                  </div>
-                </script>
-
-              </div>
-
-              <div class="hot-tickets--block">
-                <div class="flaggy flaggy-orange">
-                  Лучшие предложения:
-                </div>
-                <div id="marquee" class="running-text marquee">
-                  <ul>
-                    <li>
-                      <a href="#">Бишкек &rarr; Алматы — $259</a>
-                    </li>
-                    <li>
-                      <a href="#">Бишкек &rarr; Коста Рика  — $1429</a>
-                    </li>
-                    <li>
-                      <a href="#">Бишкек &rarr; Ош  — 800 с.</a>
-                    </li>
-                    <li>
-                      <a href="#">Бишкек &rarr; Алматы — $259</a>
-                    </li>
-                    <li>
-                      <a href="#">Бишкек &rarr; Коста Рика  — $1429</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-      </div>
-      <!-- End of kc-hero-slider -->
-    </section>
-
-
-
-
-
-
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/angular/angular.min.js"></script>
-    <script src="scripts/ui-bootstrap-custom-tpls-2.0.0.js"></script>
-    <script src="scripts/owl.carousel.js"></script>
-    <script src="scripts/jquery.maskedinput.js"></script>
-    <script src="scripts/jquery.datepickerAndSlider.js"></script>
-    <script src="/bower_components/lightgallery/dist/js/lightgallery.js"></script>
-    <script src="scripts/blur.js"></script>
-
-    <!-- endbuild -->
-
-
-    <script type="text/javascript">
-
-    </script>
-
-
-
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/widget.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/marquee.js"></script>
-    <!-- endbuild -->
   </body>
 </html>

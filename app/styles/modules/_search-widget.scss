@@ -92,7 +92,7 @@
     .ksw {
 
         &-top {
-            background-color: rgba(25,146,218,1);
+            background-color: rgb(111, 196, 247);
             color: #fff;
             padding: 15px;
         }
@@ -115,6 +115,31 @@
             }
         }
 
+        &__exchange-btn {
+          cursor: pointer;
+          display: inline-block;
+          height: 24px;
+          width: 15px;
+          position: absolute;
+          top: 50%;
+          right: -7px;
+          @include transform(translateY(-50%));
+          z-index: 20;
+
+          @include MQM(SM) {
+            display: none;
+          }
+          img {
+            position: static;
+            top: auto;
+            display: inline-block;
+            height: 24px;
+            width: 15px;
+            right: auto;
+            @include transform(translateY(0));
+          }
+        }
+
         &__clear-btn {
           display: inline-block;
           margin-top: 6px;
@@ -131,6 +156,10 @@
           margin-left: 15px;
           width: 180px;
           position: relative;
+
+          .uib-daypicker {
+            outline: none !important;
+          }
 
           input {
             border: none;

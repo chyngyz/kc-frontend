@@ -170,6 +170,7 @@ app.component('kswWidget', {
                     '<div class="row">' +
                       '<div class="col-xs-12 col-md-3">' +
                         '<ksw-from-to options="$ctrl.options" from-or-to="from2"></ksw-from-to>' +
+                        '<span class="ksw__exchange-btn" ng-click="$ctrl.swapFromTo2()"><img src="images/icons/widget/plane_reserve.png" /></span>' +
                       '</div>' +
                       '<div class="col-xs-12 col-md-3">' +
                         '<ksw-from-to options="$ctrl.options" from-or-to="to2"></ksw-from-to>' +
@@ -185,6 +186,7 @@ app.component('kswWidget', {
                     '<div class="row">' +
                       '<div class="col-xs-12 col-md-3">' +
                         '<ksw-from-to options="$ctrl.options" from-or-to="from"></ksw-from-to>' +
+                        '<span class="ksw__exchange-btn" ng-click="$ctrl.swapFromTo()"><img src="images/icons/widget/plane_reserve.png" /></span>' +
                       '</div>' +
                       '<div class="col-xs-12 col-md-3">' +
                         '<ksw-from-to options="$ctrl.options" from-or-to="to"></ksw-from-to>' +
@@ -219,9 +221,46 @@ app.component('kswWidget', {
 
           $rootScope.$broadcast('resetData');
 
+
           angular.element('#hero-slider').removeClass('block-resized');
           var owl = angular.element(".owl-carousel").data('owlCarousel');
           owl.next();
+        }
+
+        this.swapFromTo2 = function () {
+          if(!this.options.from2 && !this.options.to2) {
+            alert('Пожалуйста, заполните все поля.');
+          } else {
+            var temp = this.options.from2,
+                tempTitle = this.options.fromTitle2;
+
+            this.options.from2 = this.options.to2;
+            this.options.fromTitle2 = this.options.toTitle2;
+
+            angular.element('#ksw-from2').val(this.options.toTitle2);
+
+            this.options.to2 = temp;
+            this.options.toTitle2 = tempTitle;
+            angular.element('#ksw-to2').val(tempTitle);
+          }
+        }
+
+        this.swapFromTo = function () {
+          if(!this.options.from && !this.options.to) {
+            alert('Пожалуйста, заполните все поля.');
+          } else {
+            var temp = this.options.from,
+                tempTitle = this.options.fromTitle;
+
+            this.options.from = this.options.to;
+            this.options.fromTitle = this.options.toTitle;
+
+            angular.element('#ksw-from').val(this.options.toTitle);
+
+            this.options.to = temp;
+            this.options.toTitle = tempTitle;
+            angular.element('#ksw-to').val(tempTitle);
+          }
         }
 
         this.directFlight = function () {
@@ -306,12 +345,16 @@ app.component('kswFromTo', {
       this.onSelect = function($item, $model, $label) {
         if(this.fromOrTo == 'from') {
           this.options.from = $item.iata;
+          this.options.fromTitle = this.selected;
         } else if(this.fromOrTo == 'from2') {
           this.options.from2 = $item.iata;
+          this.options.fromTitle2 = this.selected;
         } else if(this.fromOrTo == 'to2') {
           this.options.to2 = $item.iata;
+          this.options.toTitle2 = this.selected;
         } else {
           this.options.to = $item.iata;
+          this.options.toTitle = this.selected;
         }
       }
 
@@ -319,6 +362,7 @@ app.component('kswFromTo', {
       var resetListener = $rootScope.$on('resetData', function () {
         vm.selected = '';
       });
+
 
       $scope.$on('$destroy', resetListener);
     }
