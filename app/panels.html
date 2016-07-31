@@ -18,7 +18,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -27,12 +27,12 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    
 
-    
+
+
+
     <header>
-      
+
       <!-- Begin  kc-header-top -->
       <div class="kc-header-top">
           <div class="container">
@@ -65,7 +65,7 @@
                       </nav>
                   </div>
                   <!-- End of kc-header-top-nav-wrap -->
-                  
+
               </div>
               <!-- End of left -->
 
@@ -97,7 +97,7 @@
                         <li>
                           <a href="#" class="tw social-icon">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"   viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-                            
+
                             <g id="XMLID_7_">
                               <path id="XMLID_8_" class="st0" d="M8,9.7c0.9,0,1.5-0.7,1.5-1.5S8.9,6.7,8,6.7S6.5,7.4,6.5,8.2S7.1,9.7,8,9.7z"/>
                               <rect id="XMLID_9_" x="9.9" y="5.1" class="st0" width="1.2" height="1.2"/>
@@ -183,7 +183,7 @@
                 c0.1,0,0.3,0,0.4,0.1c0.2-0.3,0.6-0.5,0.9-0.5h0.1C23.7,6.1,24.4,5.6,25.1,5.6 M16.3,10l2.6,4.5l-2.1,1.1l1-2.1l-2.4,1.4l0.8-1.8
                 l-2.4,1.3L16.3,10z M0.2,26.1h31.6l-1-1.6h-1.1l-7.1-10.7L21.4,16l1-1l1.4,2.3L22.7,16l0.2,1.2l-0.7-0.7l2.7,5.9L16.3,8.5l-9,13.7
                 l2.8-5.5l-0.8,0.5l0.4-1.1l-1,0.6l1.1-2l0.8,1.1l-0.9-2L2.4,24.4H1.3L0.2,26.1z"/>
-              </symbol>  
+              </symbol>
 
               <symbol id="visa" viewBox="0 0 32 32">
                 <path   d="M9.5,6.4c2.3,0.4,4.3,0.7,6.3,1.2v8.9v9c-2,0.2-4.1,0.3-6.3,0.5c-2.4,0.2-5.1,0.5-7.9,0.8V15.9V5
@@ -262,7 +262,7 @@
                 <li class="col-sm-6 col-xs-6 no-paddings kc-header-mainnav--sm-logo">
                   <img class="pull-right" src="images/header-top/kyrgyz-concept-logo.svg" alt="Kyrgyz Concept Logo">
                 </li>
-                
+
               </ul>
 
               <ul id="main-menu" class="kc-header-mainnav--lg clearfix">
@@ -336,7 +336,7 @@
                 </li>
                 <!-- end of main logo -->
 
-                
+
                 <!-- begin nav item -->
                 <li class="col-md-1 col-xs-6 col-sm-4 no-paddings kc-header-mainnav--item-wrap">
                   <a href="#" class="kc-header-mainnav--item pink">
@@ -396,7 +396,7 @@
                     <span class="title">Поиск</span>
                   </a>
                 </li>
-                <!-- end of nav item -->                
+                <!-- end of nav item -->
               </ul>
             </nav>
           </div>
@@ -405,12 +405,12 @@
     </header>
 
 
-    
+
     <section class="kc-hero">
       <!-- Begin  kc-hero-slider -->
       <div class="kc-hero--slider">
           <div id="hero-slider" class="owl-carousel owl-theme hidden-xs">
- 
+
             <div class="item">
               <div class="item-img"><img src="images/demo/slide/slide.jpg" alt=""></div>
               <div class="item-content">
@@ -439,22 +439,117 @@
                 <p>25 лет искренней заботы о путешественниках — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
               </div>
             </div>
-           
+
           </div>
-        
-          
-            
+
+
+
           <div class="kc-hero--ticket-search-form">
             <div class="container">
               <h2>Быстрый поиск авиабилетов</h2>
-              
-              <div id="search-widget">              
-                <ksw-widget></ksw-widget>  
+
+              <div id="search-widget">
+                <ksw-widget></ksw-widget>
+
+
+                <script type="text/ng-template" id="passengers.html">
+                  <div class="ksw__dropdown ksw__passengers" uib-dropdown auto-close="outsideClick">
+                    <a href="#" class="text-center" uib-dropdown-toggle>
+
+                      <span class="ksw__passengers-icon" ng-repeat="(key, val) in $ctrl.options.passengers" ng-if="val > 0">
+                        <span ng-class="{'ksw-icon-male':key==='adult','ksw-icon-child':key==='child','ksw-icon-baby':key==='baby'}"></span>
+                        <span>{{val}}</span>
+                      </span>
+
+                    </a>
+                    <ul class="" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                      <li role="menuitem" class="ksw__passengers-list" ng-repeat="(key, val) in $ctrl.options.passengers">
+                        <span class="ksw__passengers-icon-bg" ng-class="{'ksw-icon-male':key==='adult','ksw-icon-child':key==='child','ksw-icon-baby':key==='baby'}"></span>
+                        <span ng-if="key == 'adult'">12+</span>
+                        <span ng-if="key == 'child'">2-12</span>
+                        <span ng-if="key == 'baby'">0-2</span>
+                        <span class="ksw__passengers-inc">
+                          <span class="ksw-icon-minus" ng-click="$ctrl.dec(key)"></span>
+                          <span>{{val}}</span>
+                          <span class="ksw-icon-plus" ng-click="$ctrl.inc(key)"></span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </script>
+
+                <script type="text/ng-template" id="typeDropdown.html">
+                  <div class="ksw__dropdown" uib-dropdown>
+                    <a href="#" class="" uib-dropdown-toggle>
+                      <span ng-if="$ctrl.options.type == 'oneway'">
+                        <span class="ksw-icon-arrow-right"></span>В одну сторону
+                      </span>
+                      <span ng-if="$ctrl.options.type == 'complicated'">
+                        <span class="ksw-icon-list"></span> Сложный маршрут
+                      </span>
+                      <span ng-if="$ctrl.options.type == 'back'">
+                        <span class="ksw-icon-refresh"></span> Туда и обратно
+                      </span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.type = 'oneway';$ctrl.resizeBlock();"><span class="ksw-icon-arrow-right"></span> В одну сторону</a></li>
+                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.type = 'complicated'; $ctrl.resizeBlock();"><span class="ksw-icon-list"></span> Сложный маршрут</a></li>
+                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.type = 'back';$ctrl.resizeBlock();"><span class="ksw-icon-refresh"></span> Туда и обратно</a></li>
+                    </ul>
+                  </div>
+                </script>
+
+                <script type="text/ng-template" id="classDropdown.html">
+                  <div class="ksw__dropdown" uib-dropdown>
+                    <a href="#" class="" uib-dropdown-toggle>
+                      <span>
+                        <span ng-class="{'ksw-icon-arrow-right':$ctrl.options.type == 'oneway','ksw-icon-list':$ctrl.options.type == 'complicated','ksw-icon-refresh':$ctrl.options.type == 'back'}"></span>
+                        <span ng-if="$ctrl.options.class == 'E'">Эконом</span>
+                        <span ng-if="$ctrl.options.class == 'B'">Бизнес</span>
+                        <span ng-if="$ctrl.options.class == 'F'">Первый</span>
+                        <span ng-if="$ctrl.options.class == 'A'">Все классы</span>
+                      </span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.class = 'E'">Эконом</a></li>
+                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.class = 'B'">Бизнес</a></li>
+                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.class = 'F'">Первый</a></li>
+                      <li role="menuitem"><a href="#" ng-click="$ctrl.options.class = 'A'">Все классы</a></li>
+                    </ul>
+                  </div>
+                </script>
+
+                <script type="text/ng-template" id="typeahead.html">
+                  <input type="text"
+                    ng-model="$ctrl.selected"
+                    uib-typeahead="state.names['RU'] + ' (' + state.iata + ')' as state.names['RU'] + ' (' + state.iata + ')' for state in $ctrl.list | filter:$viewValue | limitTo:5"
+
+                    typeahead-on-select="$ctrl.onSelect($item, $model, $label);">
+                </script>
+
+
+                <script type="text/ng-template" id="datePicker.html">
+                  <div class="ksw__datepicker">
+                    <input type="text" readonly="readonly"
+                      uib-datepicker-popup="{{$ctrl.format}}"
+                      ng-model="$ctrl.dt"
+                      is-open="$ctrl.popup1.opened"
+                      datepicker-options="$ctrl.dateOptions"
+                      ng-required="true"
+                      ng-change="$ctrl.dateChanged()"
+                      alt-input-formats="$ctrl.altInputFormats"
+                      show-button-bar="false"/>
+                    <a href="" class="ksw__datepicker__trigger" ng-click="$ctrl.popup1.opened = true;"><span class="ksw-icon-calendar"></span> {{$ctrl.dt?$ctrl.dt:'__.__.____' | date: 'dd.MM.yyyy'}}</a>
+                  </div>
+                </script>
+
               </div>
 
               <div class="hot-tickets--block">
                 <div class="flaggy flaggy-orange">
-                  Лучшие предложения: 
+                  Лучшие предложения:
                 </div>
                 <div id="marquee" class="running-text marquee">
                   <ul>
@@ -479,12 +574,11 @@
             </div>
           </div>
 
-          
+
 
       </div>
       <!-- End of kc-hero-slider -->
     </section>
-    
 
 
 
@@ -492,8 +586,6 @@
 
 
 
-
-  
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -509,7 +601,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="scripts/ui-bootstrap-custom-tpls-2.0.0.js"></script>
@@ -520,7 +612,14 @@
     <script src="scripts/blur.js"></script>
 
     <!-- endbuild -->
-    
+
+
+    <script type="text/javascript">
+
+    </script>
+
+
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/widget.js"></script>
     <script src="scripts/main.js"></script>

@@ -19,6 +19,31 @@
 			min-height: 490px;
 		}
 
+		.block-resized {
+			.item {
+				min-height: 555px !important;
+			}
+
+			.owl-controls {
+				top: 48% !important;
+			}
+		}
+
+		.owl-theme  {
+
+			& .owl-controls {
+				margin-top: 0;
+				height: 22px;
+				top: 54%;
+			}
+
+			& .owl-pagination {
+				top: 0;
+			}
+		}
+
+
+
 		img {
 			position: absolute;
 			top: 50%;
@@ -31,7 +56,7 @@
 
 	&--ticket-search-form {
 		position: static;
-		top: 280px;
+		bottom: 0;
 		height: auto;
 		padding-bottom: 5px;
 		width: 100%;
@@ -74,7 +99,7 @@
 
 .hot-tickets--block {
 	position: relative;
-	
+
 	.flaggy {
 		position: absolute;
 	}
@@ -110,7 +135,7 @@
 		border-style: solid;
 		border-width: 13px 0 0 4px;
 		border-color: transparent transparent transparent #ED471F;
-		
+
 	}
 
 	&-orange {
@@ -124,7 +149,7 @@
 	width: 100%;
 	overflow: hidden;
 	text-align: left;
-	
+
 	ul {
 		width: 200%;
 	}
@@ -146,4 +171,3 @@
 		}
 	}
 }
-
