@@ -201,8 +201,10 @@ app.component('kswWidget', {
                     '</div>' +
                   '</div>'+
                 '</div>',
-    controller: function($rootScope, $window) {
-        this.WIDGETLOCATION = 'http://diza.concept.kg/#/results/import/'
+    controller: function($rootScope, $window, $location) {
+        //this.WIDGETLOCATION = 'http://diza.concept.kg/#/results/import/'
+        this.WIDGETLOCATION = $location.protocol() + '://' + $location.host() + '/ru/tickets/#/results/import/';
+
         this.resetData = function () {
           this.options = {
             type: 'oneway',
