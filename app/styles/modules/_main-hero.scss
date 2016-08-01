@@ -13,23 +13,23 @@
 		position: relative;
 
 		@include MQ(MD) {
-			min-height: 465px;
+			min-height: 415px;
 		}
 		.item {
 			position: relative;
 
 			@include MQ(MD) {
-				min-height: 465px;
+				min-height: 415px;
 			}
 		}
 
 		.block-resized {
 			.item {
-				min-height: 555px !important;
+				min-height: 520px !important;
 			}
 
 			.owl-controls {
-				top: 48% !important;
+				top: 45% !important;
 			}
 		}
 
@@ -38,7 +38,7 @@
 			& .owl-controls {
 				margin-top: 0;
 				height: 22px;
-				top: 52%;
+				top: 47%;
 			}
 
 			& .owl-pagination {
