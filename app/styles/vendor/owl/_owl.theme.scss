@@ -1,5 +1,5 @@
 /*
-* 	Owl Carousel Owl Demo Theme 
+* 	Owl Carousel Owl Demo Theme
 *	v1.3.2
 */
 .owl-item {
@@ -26,17 +26,17 @@
 		text-align: center;
 		max-width: 1000px;
 		@include transform(translateX(-50%));
-		
+
 		@include MQ(SM) {
 			width: 750px;
 		}
 
 		@include MQ(MD) {
-			top: 80px;
+			top: 50px;
 			width: 970px;
 		}
-		
-		
+
+
 		h1 {
 			font-size: 44px;
 			color: #fff;

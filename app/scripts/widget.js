@@ -202,8 +202,8 @@ app.component('kswWidget', {
                   '</div>'+
                 '</div>',
     controller: function($rootScope, $window, $location) {
-        //this.WIDGETLOCATION = 'http://diza.concept.kg/#/results/import/'
-        this.WIDGETLOCATION = $location.protocol() + '://' + $location.host() + '/ru/tickets/#/results/import/';
+        this.WIDGETLOCATION = 'http://diza.concept.kg/#/results/import/'
+        //this.WIDGETLOCATION = $location.protocol() + '://' + $location.host() + '/ru/tickets/#/results/import/';
 
         this.resetData = function () {
           this.options = {
@@ -310,7 +310,7 @@ app.component('kswWidget', {
                         '&Date2=' + this.options.startDateComp;
             }
 
-            $window.location = this.WIDGETLOCATION + query;
+            $window.open(this.WIDGETLOCATION + query, '_blank');
           }
 
         }
