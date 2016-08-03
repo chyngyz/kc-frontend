@@ -19,7 +19,7 @@
 
 	.item-content {
 		position: absolute;
-		top: 30px;
+		top: 20px;
 		left: 50%;
 		z-index: 25;
 		width: 100%;
@@ -32,7 +32,6 @@
 		}
 
 		@include MQ(MD) {
-			top: 50px;
 			width: 970px;
 		}
 
