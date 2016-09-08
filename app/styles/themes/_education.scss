@@ -122,6 +122,11 @@
 .advice-list {
 	margin-top: 10px;
 	padding: 0;
+
+	ul {
+		padding: 0;
+	}
+	
 	li {
 		padding-left: 55px;
 		position: relative;
