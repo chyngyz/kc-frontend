@@ -1,11 +1,16 @@
 .news-list {
 	max-height: 90%;
-    overflow: hidden;
+  overflow: hidden;
+
+	ul {
+		padding: 0;
+	}
 
 	&--item {
 		max-height: 60px;
 		overflow: hidden;
 		margin-bottom: 10px;
+		list-style: none;
 
 		.date {
 			display: block;

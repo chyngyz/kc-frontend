@@ -132,6 +132,11 @@
 
         &-ul {
             margin-top: 20px;
+            padding: 0;
+
+            li {
+              list-style: none;
+            }
             a {
                 display: inline-block;
                 position: relative;
@@ -267,10 +272,13 @@
       padding: 50px 0;
 
       &__list {
+        padding: 0;
+
         li {
           position: relative;
           padding-left: 15px;
           font-size: 14px;
+          list-style: none;
 
           &:before {
             content: "";

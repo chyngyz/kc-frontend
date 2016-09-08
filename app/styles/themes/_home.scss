@@ -4,10 +4,10 @@
 	}
 }
 
-.kc-home-1, 
-.kc-home-3, 
-.kc-home-4, 
-.kc-home-5, 
+.kc-home-1,
+.kc-home-3,
+.kc-home-4,
+.kc-home-5,
 .kc-home-6,
 .kc-home-7,
 .kc-home-8,
@@ -16,7 +16,7 @@
 .kc-home-11,
 .kc-home-12,
 .kc-home-13,
-.kc-home-14 { 
+.kc-home-14 {
 	.container {
 		@include MQ(LG) {
 			width: 1000px;
@@ -28,7 +28,7 @@
 //
 // Section 1 - Outbound tours
 //
-// ===============================================		
+// ===============================================
 
 
 .kc-home-1 {
@@ -66,7 +66,7 @@
 //
 // Section 2 - Visa
 //
-// ===============================================		
+// ===============================================
 
 
 
@@ -128,7 +128,7 @@
 		text-align: center;
 		font-weight: 300;
 		margin: 5px 0 15px 10px;
-	
+
 
 		@include MQ(SM) {
 			text-align: left;
@@ -188,7 +188,7 @@
 //
 // Section 3 - Features
 //
-// ===============================================		
+// ===============================================
 
 
 
@@ -212,13 +212,13 @@
 //
 // Section 4 - Education
 //
-// ===============================================		
+// ===============================================
 
 
 .kc-home-4 {
 	padding-bottom: 20px;
 
-	
+
 
 	h1 {
 		color: #1AB7AC;
@@ -242,8 +242,8 @@
 		@include flex-wrap(wrap);
 		@include justify-content(space-around);
 		@include flex-direction(row);
-		
-		
+
+
 		width: 100%;
 		margin: 37px 25px;
 
@@ -268,7 +268,7 @@
 //
 // Section 5 - subscribe
 //
-// ===============================================		
+// ===============================================
 
 
 .kc-home-5 {
@@ -299,7 +299,7 @@
 	input.form-control {
 		height: 38px;
 	}
-	
+
 	button {
 		height: 38px;
 		width: 50px;
@@ -320,7 +320,7 @@
 				margin-top: 10px;
 			}
 		}
-		
+
 		a {
 			color: #fff;
 			display: inline-block;
@@ -351,7 +351,7 @@
 //
 // Section 6 -  Logistics
 //
-// ===============================================		
+// ===============================================
 
 
 
@@ -367,7 +367,7 @@
 		max-width: 70%;
 		margin: 0 auto 25px;
 	}
-	
+
 	.radio-btns {
 		text-align: center;
 		margin-bottom: 10px;
@@ -439,7 +439,7 @@
 			font-size: 14px;
 			text-align: center;
 		}
-	} 
+	}
 }
 
 
@@ -447,7 +447,7 @@
 //
 // Section 7 - Inbound tours
 //
-// ===============================================		
+// ===============================================
 
 .kc-home-7 {
 	position: relative;
@@ -491,7 +491,7 @@
 //
 // Section 8 - Booking form
 //
-// ===============================================		
+// ===============================================
 
 .kc-home-8 {
 	padding: 20px 0;
@@ -507,7 +507,7 @@
 //
 // Section 9 - Mice
 //
-// ===============================================		
+// ===============================================
 
 .kc-home-9 {
 	position: relative;
@@ -525,7 +525,7 @@
 		bottom: 0;
 		background-color: rgba(102,45, 145, .7);
 	}
-	
+
 	h1 {
 		width: 70%;
 		margin: 20px auto 20px;
@@ -565,7 +565,7 @@
 		}
 	}
 
-	
+
 
 	.btn-yellow {
 		padding: 13px 55px;
@@ -578,7 +578,7 @@
 //
 // Section 10 - Tourist guide
 //
-// ===============================================		
+// ===============================================
 
 
 .kc-home-10 {
@@ -632,7 +632,7 @@
 //
 // Section 11 - KC Features
 //
-// ===============================================		
+// ===============================================
 
 .kc-home-11 {
 	position: relative;
@@ -654,7 +654,7 @@
 		bottom: 0;
 		background-color: rgba(0,145, 212, .8);
 	}
-	
+
 	h1 {
 		width: 70%;
 		margin: 20px auto 20px;
@@ -699,7 +699,7 @@
 		}
 	}
 
-	
+
 
 	.btn-oval {
 		margin: 20px 10px;
@@ -711,7 +711,7 @@
 //
 // Section 12 - About KC
 //
-// ===============================================		
+// ===============================================
 
 .kc-home-12 {
 	padding-bottom: 30px;
@@ -746,7 +746,7 @@
 			font-size: 18px;
 			margin-bottom: 10px;
 		}
-		
+
 		.read-more {
 			position: absolute;
 			bottom: 15px;
@@ -826,7 +826,7 @@
 //
 // Section 13 - Why us
 //
-// ===============================================	
+// ===============================================
 
 
 
@@ -838,7 +838,7 @@
 	background-color: #FFAD1E;
 	color: #fff;
 	padding: 20px 0;
-	
+
 	h1 {
 		width: 70%;
 		margin: 20px auto 20px;
@@ -898,7 +898,7 @@
 //
 // Section 14 - Partners
 //
-// ===============================================	
+// ===============================================
 
 .kc-home-14 {
 	padding: 20px 0;
@@ -906,7 +906,7 @@
 	h1 {
 		margin-bottom: 30px;
 	}
-	
+
 	.partners--icon {
 		height: 62px;
 		width: 62px;
@@ -923,7 +923,7 @@
 //
 // Section 15 - Footer
 //
-// ===============================================	
+// ===============================================
 
 .kc-footer {
 	background-color: #E6E6E6;
@@ -967,6 +967,14 @@
 	&--nav {
 		text-align: center;
 
+		ul {
+			padding: 0;
+		}
+
+		li {
+			list-style: none;
+		}
+
 		@include MQ(SM) {
 			text-align: left;
 		}
@@ -978,7 +986,7 @@
 		}
 
 	}
-	
+
 	&-subscribe-message {
 		font-size: 15px;
 		font-weight: 400;
@@ -1028,7 +1036,7 @@
 	input.form-control {
 		height: 38px;
 	}
-	
+
 	button {
 		height: 38px;
 		width: 50px;
@@ -1047,36 +1055,23 @@
 //
 // 	Mobile-call-back
 //
-// ===============================================	
+// ===============================================
 
 .kc-mobile-call-back {
 	padding: 	20px;
 
 	.kc-contacts--online {
-		margin-bottom: 15px;	
+		margin-bottom: 15px;
 	}
 	a {
 		color: 	$blue;
 	}
 
 	.row {
-		margin-bottom: 15px;	
+		margin-bottom: 15px;
 	}
 
 	form {
-		width: auto;	
+		width: auto;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -20,11 +20,11 @@
     text-align: left;
     border: none;
     z-index: 1;
-    -webkit-font-smoothing: antialiased; 
-    
+    -webkit-font-smoothing: antialiased;
+
     @include transition(all 0.2s ease-in-out);
 
-    
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -73,7 +73,7 @@
 
     &--title {
     	display: block;
-    	padding: 0 12px; 
+    	padding: 0 12px;
     	line-height: 21px;
     	width: 70%;
     	max-height: 45px;
@@ -173,23 +173,25 @@
 		}
 
 		.footer-icons {
-			
-
 			width: 100%;
 			overflow: hidden;
 			height: 28px;
+
+			ul {
+				padding: 0;
+			}
 
 			li {
 				display: inline-block;
 				list-style: none;
 				width: 28px;
 				height: 28px;
-			}	
+			}
 
 			img {
 				height: 100%;
 			}
-		
+
 
 		}
 	}
@@ -226,21 +228,3 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

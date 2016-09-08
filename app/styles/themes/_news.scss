@@ -110,7 +110,7 @@
 .kc-news-item-content {
 	margin-top: -60px;
 	padding-bottom: 20px;
-	
+
 	@include MQM(MD) {
 		margin-top: 10px;
 	}
@@ -151,6 +151,14 @@
 }
 
 .similar-news {
+	ul {
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+
 	h4 {
 		margin-top: 25px;
 		margin-bottom: 20px;

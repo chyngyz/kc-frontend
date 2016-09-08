@@ -8,6 +8,10 @@
 
 
 	&--nav, &--nav-sm {
+		ul {
+			padding: 0;
+		}
+
 		a {
 			display: inline-block;
 			padding: 0 15px;
@@ -32,13 +36,14 @@
 		position: absolute;
 		top: 30px;
 		z-index: 20;
-		
+
 		&.show {
 			display: block;
 		}
 
 		li {
 			display: block;
+			list-style: none;
 
 			a {
 				line-height: 40px;
@@ -52,7 +57,7 @@
 				}
 			}
 		}
-	
+
 		@include MQ(LG) {
 			display: block;
 			background-color: transparent;
@@ -68,6 +73,7 @@
 		li {
 			display: inline-block;
 			vertical-align: top;
+			list-style: none;
 
 			&:nth-of-type(2) {
 				// @include MQM(360) {
@@ -90,7 +96,7 @@
 		    }
 
   			svg {
-  				fill: #fff; 
+  				fill: #fff;
   				width: 100%;
   			}
 
@@ -108,27 +114,32 @@
 	}
 
 	&--right {
-		
+
+		ul {
+			padding: 0;
+		}
+
 		li {
 			display: inline-block;
 			vertical-align: middle;
+			list-style: none;
 		}
 
 		svg {
 			width: 100%;
 			fill: #fff;
-			
+
 		}
 
 		.social-icon{
 			display: block;
 		    height: 18px;
 		    width: 16px;
-		    margin-right: 10px; 
-		    
+		    margin-right: 10px;
+
 		    @include MQM(SM) {
 		    	margin-top: 2px;
-		    }  
+		    }
 
 		    &:hover svg {
 				fill: #DBE0E3
@@ -154,7 +165,7 @@
 		cursor: pointer;
 		height: 30px;
 
-		
+
 
 		svg {
 			display: inline-block;
@@ -181,8 +192,8 @@
 				position: absolute;
 				top: 7px;
 				right: 0px;
-				width: 0; 
-				height: 0; 
+				width: 0;
+				height: 0;
 				border-left: 3px solid transparent;
 				border-right: 3px solid transparent;
 				border-top: 3px solid #fff;
@@ -201,14 +212,14 @@
 		}
 	}
 
-		
+
 
 	&--dropdown {
 		display: none;
 		position: absolute;
 		top: 30px;
 		background-color: $header_dark_grey;
-		right: 1px; 
+		right: 1px;
 		z-index: 20;
 
 		li {

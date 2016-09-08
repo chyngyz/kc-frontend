@@ -1,5 +1,5 @@
 .kc-header-mainnav {
-	
+
 	background-color: #F2F2F2;
 
 	@include MQ(MD) {
@@ -15,11 +15,23 @@
 		text-align: left;
 	}
 
+	&--sm {
+		padding: 0;
+
+		li {
+			list-style: none;
+		}
+	}
+
 	&--lg {
 		display: none;
 		background-color: #fff;
 		padding: 20px 30px;
 		margin-bottom: 20px;
+
+		li {
+			list-style: none;
+		}
 
 		&.show {
 			display: block;
@@ -27,7 +39,7 @@
 
 		@include MQ(SM) {
 			padding: 40px 50px;
-			
+
 		}
 
 		@include MQ(MD) {
@@ -42,7 +54,7 @@
 			margin-left: 8px;
 		}
 	}
-	
+
 
 	&--item {
 		text-align: center;
@@ -86,7 +98,7 @@
 
 				}
 			}
-			
+
 			.icon-wrap.tickets, .icon-wrap.search {
 				@include bg-gradient-l2r(#005CD9, #008CD9);
 				.icon {
@@ -100,7 +112,7 @@
 					fill: #fff;
 				}
 			}
-			
+
 			.icon-wrap.education, .icon-wrap.hotels {
 				@include bg-gradient-l2r(#00A99D, #00D6CC);
 				.icon {
@@ -160,7 +172,7 @@
 			fill: #F15A24;
 		}
 	}
-	
+
 	.icon-wrap.education, .icon-wrap.hotels {
 		border: 1px solid #00D6CC;
 
@@ -211,25 +223,3 @@
 .red.kc-header-mainnav--item:after {
 	background-color: #F15A24;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
