@@ -38,9 +38,9 @@
     color: #fff;
     text-align: left;
     border: none;
-    -webkit-font-smoothing: antialiased; 
-    
-    
+    -webkit-font-smoothing: antialiased;
+
+
     @include transition(all 0.2s ease-in-out);
 
     &--in {
@@ -52,10 +52,10 @@
     	z-index: 5;
     	padding: 18px 12px;
     }
-    
-    
 
-    
+
+
+
 
 	&:hover {
 		color: #fff;
@@ -95,7 +95,8 @@
 
     &--badge {
 		position: absolute;
-		width: 81px;
+		padding: 0 5px;
+		width: auto;
 		height: 26px;
 		line-height: 25px;
 		font-size: 14px;
@@ -164,6 +165,3 @@
 		border-color: transparent transparent transparent #ED1C24;
 	}
 }
-
-
-

@@ -39,7 +39,16 @@
 		}
 
     &--foot {
-    	text-align: center;
+			text-align: center;
+	    position: absolute;
+	    bottom: 10px;
+	    left: 0;
+	    width: 100%;
+	    height: 90px;
+			@include display(flex);
+			@include flex-direction(column);
+			@include align-items(center);
+			@include justify-content(space-around);
 
     	.hot, .best-price {
     		color: #fff;
