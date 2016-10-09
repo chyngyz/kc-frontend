@@ -194,3 +194,71 @@
 }
 
 
+@font-face {
+  font-family: 'hero-icons';
+  src:  url('../fonts/hero-icons.eot?hqicui');
+  src:  url('../fonts/hero-icons.eot?hqicui#iefix') format('embedded-opentype'),
+    url('../fonts/hero-icons.ttf?hqicui') format('truetype'),
+    url('../fonts/hero-icons.woff?hqicui') format('woff'),
+    url('../fonts/hero-icons.svg?hqicui#hero-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="mainico-"], [class*=" mainico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hero-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mainico-vac-contact:before {
+  content: "\e900";
+}
+.mainico-vac-cv:before {
+  content: "\e901";
+}
+.mainico-vac-test:before {
+  content: "\e902";
+}
+.mainico-vac-user:before {
+  content: "\e903";
+}
+.mainico-main-acad-1:before {
+  content: "\e904";
+}
+.mainico-main-acad-2:before {
+  content: "\e905";
+}
+.mainico-main-acad-3:before {
+  content: "\e906";
+}
+.mainico-main-acad-4:before {
+  content: "\e907";
+}
+.mainico-mice-main-1:before {
+  content: "\e908";
+}
+.mainico-mice-main-2:before {
+  content: "\e909";
+}
+.mainico-mice-main-3:before {
+  content: "\e90a";
+}
+.mainico-mice-main-4:before {
+  content: "\e90b";
+}
+.mainico-mice-main-5:before {
+  content: "\e90c";
+}
+.mainico-mice-main-6:before {
+  content: "\e90d";
+}

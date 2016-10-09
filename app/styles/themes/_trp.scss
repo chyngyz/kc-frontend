@@ -46,6 +46,16 @@
   		text-decoration: none;
   	}
 
+    &.active {
+      .kc-trphero-logo--icon {
+        background: #fff;
+      }
+
+      i {
+        color: #3a3a3a;
+      }
+    }
+
   	&--icon {
   		display: inline-block;
   		height: 75px;

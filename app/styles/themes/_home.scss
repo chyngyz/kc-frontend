@@ -557,6 +557,27 @@
 			width: 80px;
 			height: 80px;
 			margin: 0 auto;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+    	border-radius: 50%;
+			position: relative;
+
+			&.active {
+				background: #fff;
+
+				[class^="mainico-"], [class*=" mainico-"] {
+					color: #3a3a3a;
+				}
+			}
+
+
+			[class^="mainico-"], [class*=" mainico-"] {
+				font-size: 80px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				color: #fff;
+				@include transform(translate(-50%, -50%));
+			}
 
 			img {
 				height: 100%;

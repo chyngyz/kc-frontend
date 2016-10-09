@@ -30,7 +30,7 @@ gulp.task('html', ['styles'], () => {
 
   return gulp.src('app/index.html')
     .pipe(assets)
-    .pipe($.if('*.js', $.uglify()))
+    // .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
     .pipe(assets.restore())
     .pipe($.useref())
@@ -39,17 +39,17 @@ gulp.task('html', ['styles'], () => {
 
 gulp.task('images', () => {
   return gulp.src('app/images/**/*')
-    .pipe($.if($.if.isFile, $.cache($.imagemin({
-      progressive: true,
-      interlaced: true,
-      // don't remove IDs from SVGs, they are often used
-      // as hooks for embedding and styling
-      svgoPlugins: [{cleanupIDs: false}]
-    }))
-    .on('error', function (err) {
-      console.log(err);
-      this.end();
-    })))
+    // .pipe($.if($.if.isFile, $.cache($.imagemin({
+    //   progressive: true,
+    //   interlaced: true,
+    //   // don't remove IDs from SVGs, they are often used
+    //   // as hooks for embedding and styling
+    //   svgoPlugins: [{cleanupIDs: false}]
+    // }))
+    // .on('error', function (err) {
+    //   console.log(err);
+    //   this.end();
+    // })))
     .pipe(gulp.dest('dist/images'));
 });
 

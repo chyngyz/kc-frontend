@@ -119,11 +119,11 @@
 			//'left', 'right', 'up' or 'down'
 			direction: 'left',
 			//true or false - should the marquee be duplicated to show an effect of continues flow
-			duplicated: false,
+			duplicated: true,
 			//speed in milliseconds of the marquee in milliseconds
 			duration: 15000,
 			//gap in pixels between the tickers
-			gap: 20,
+			gap: 0,
 			//on cycle pause the marquee
 			pauseOnCycle: false,
 			//on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
