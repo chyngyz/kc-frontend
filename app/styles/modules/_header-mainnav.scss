@@ -9,6 +9,12 @@
 
 	&--item-logo {
 		text-align: center;
+
+		svg {
+			width: 140px;
+			height: 90px;
+			@include transition(height 0.1s ease);
+		}
 	}
 
 	&--sm-logo {
@@ -62,6 +68,7 @@
 		height: 115px;
 		outline: none;
 		position: relative;
+		@include transition(height .2s ease);
 
 
 		.title {
@@ -71,6 +78,7 @@
 			color: #000;
 			display: block;
 			margin-top: 10px;
+			@include transition(margin-top 0.1s ease);
 		}
 
 		&:after {
@@ -88,7 +96,7 @@
 
 		}
 
-		&:hover, &:active, &.active {
+		&:hover, &:active, &.active, &:focus {
 			text-decoration: none;
 
 			@include MQ(MD) {
@@ -99,7 +107,12 @@
 				}
 			}
 
+			.title {
+				color: #000 !important;
+			}
+
 			.icon-wrap.tickets, .icon-wrap.search {
+				border-color: #008CD9;
 				@include bg-gradient-l2r(#005CD9, #008CD9);
 				.icon {
 					fill: #fff;
@@ -107,6 +120,7 @@
 			}
 
 			.icon-wrap.outbound-tours, .icon-wrap.menu {
+				border-color: #F15A24;
 				@include bg-gradient-l2r(#F15A24, #F7A81E);
 				.icon {
 					fill: #fff;
@@ -114,6 +128,7 @@
 			}
 
 			.icon-wrap.education, .icon-wrap.hotels {
+				border-color: #00D6CC;
 				@include bg-gradient-l2r(#00A99D, #00D6CC);
 				.icon {
 					fill: #fff;
@@ -121,6 +136,7 @@
 			}
 
 			.icon-wrap.inbound-tours, .icon-wrap.conf {
+				border-color: #26CF33;
 				@include bg-gradient-l2r(#129E4A, #26CF33);
 				.icon {
 					fill: #fff;
@@ -128,6 +144,7 @@
 			}
 
 			.icon-wrap.visa, .icon-wrap.transport {
+				border-color: #A12D91;
 				@include bg-gradient-l2r(#662D91, #A12D91);
 				.icon {
 					fill: #fff;
@@ -144,7 +161,8 @@
 		border-radius: 100%;
 		position: relative;
 		display: inline-block;
-		@include transition(all .2s ease-in-out);
+		@include transition(all .1s ease-in-out);
+		@include transition-delay(.1s);
 
 
 		.icon {
@@ -154,11 +172,13 @@
 			top: 50%;
 			left: 50%;
 			@include transform(translate(-50%, -50%));
+			@include transition(all .1s ease-in-out);
 		}
 	}
 
 	.icon-wrap.tickets, .icon-wrap.search {
-		border: 1px solid #008CD9;
+		border: 1px solid;
+		border-color: #008CD9;
 
 		.icon {
 			fill: #008CD9;
@@ -166,7 +186,8 @@
 	}
 
 	.icon-wrap.outbound-tours, .icon-wrap.menu {
-		border: 1px solid #F15A24;
+		border: 1px solid;
+		border-color: #F15A24;
 
 		.icon {
 			fill: #F15A24;
@@ -174,7 +195,8 @@
 	}
 
 	.icon-wrap.education, .icon-wrap.hotels {
-		border: 1px solid #00D6CC;
+		border: 1px solid;
+		border-color: #00D6CC;
 
 		.icon {
 			fill: #00D6CC;
@@ -182,7 +204,8 @@
 	}
 
 	.icon-wrap.inbound-tours, .icon-wrap.conf {
-		border: 1px solid #26CF33;
+		border: 1px solid;
+		border-color: #26CF33;
 
 		.icon {
 			fill: #26CF33;
@@ -190,7 +213,8 @@
 	}
 
 	.icon-wrap.visa, .icon-wrap.transport {
-		border: 1px solid #A12D91;
+		border: 1px solid;
+		border-color: #A12D91;
 
 		.icon {
 			fill: #A12D91;
@@ -222,4 +246,22 @@
 
 .red.kc-header-mainnav--item:after {
 	background-color: #F15A24;
+}
+
+
+.kc-header-mainnav--item {
+	&.not-active {
+		.icon-wrap {
+			background: transparent;
+			border-color: #828282;
+
+			.icon {
+				fill: #828282;
+			}
+		}
+
+		.title {
+			color: #505050;
+		}
+	}
 }

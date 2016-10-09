@@ -1,0 +1,49 @@
+.kc-main-header {
+  @include MQ(MD) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
+
+.kc-body {
+  @include MQ(MD) {
+    padding-top: 185px;
+
+    &.scrolling {
+      .kc-header-mainnav {
+        padding-top: 0;
+
+        &--item {
+          height: 70px;
+        }
+        .icon-wrap {
+          height: 0;
+          width: 0;
+          opacity: 0;
+
+          .icon {
+            height: 0;
+            width: 0;
+            opacity: 0;
+          }
+        }
+
+        .title {
+          margin-top: -15px;
+        }
+      }
+
+      path.logo-text {
+        display: none;
+      }
+
+      svg#kc-logo {
+        height: 60px;
+      }
+
+    }
+  }
+}
