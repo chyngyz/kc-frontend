@@ -411,14 +411,34 @@
 <!-- Begin of Garanties hero -->
 <section class="kc-vacancies-hero-inner">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1 class="kc-vacancy--title">Ассистент Управляющего</h1>
-        <p  class="kc-vacancy--desc">Ты молод? Красив? А главное мечтаешь о карьере ассистента управляющего? Тебя ждет незабываемая работа у нас ага</p>
-        <a href="#"  class="kc-vacancy--category">Офис управляющего</a>
+    <div class="row kc-vacancy--header-lg">
+      <div class="col-xs-12 col-sm-9">
+        <div class="kc-vacancy--head-details">
+          <h1 class="kc-vacancy--title">Английский язык</h1>
+          <p  class="kc-vacancy--desc">Тест 1 из 4</p>
+          <a href="#" id="start-test" class="btn btn-success">Начать тест</a>
+        </div>
+        <div class="kc-vacancy--head-results">
+          <h1 class="kc-vacancy--title">Спасибо!</h1>
+          <p  class="kc-vacancy--desc">Все тесты пройдены. Ожидайте пока с вами свяжутся.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 hidden-xs text-right">
+        <div class="kc-vacancy--profile-img">
+          <img src="http://media-portal.net/role_files/profile1.jpg" alt="">
+        </div>
       </div>
     </div>
-
+    <div class="row kc-vacancy--header-sm">
+      <div class="col-xs-12 col-sm-2">
+        <div id="clock" class="kc-vacancy--clock"></div>
+        <p class="kc-vacancy--time-left">Осталось времени</p>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <h5 class="kc-vacancy--head-title">Тест по английскому языку</h5>
+        <p class="kc-vacancy--time-left">1 / 4</p>
+      </div>
+    </div>
   </div>
   <div class="kc-job-accounts">
     <div class="dropdown kc-job-accounts--dropdown">
@@ -441,62 +461,410 @@
 </section>
 <!-- End of Garanties hero -->
 
-<!-- Begin kc-garanties -->
+<!-- Begin start test -->
 <section class="kc-vacancies kc-vacancies-inner">
   <div class="container">
+    <div class="kc-test--starter">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <div class="kc-vacancy--test-heading">
+            <p>Нажмите кнопку начать тест что бы увидеть вопросы. <br>Помните, на прохождение теста будет 20 минут. Остановить таймер нельзя.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Test form -->
+    <form action="" class="kc-test-form">
 
-    <div class="row">
-      <div class="col-md-5 col-sm-6">
-        <p><strong>Задачи</strong></p>
-        <ol class="ordered">
-          <li>Ведение графика встреч;</li>
-          <li>Ведение телефонных переговоров;</li>
-          <li>Организация командировок;</li>
-          <li>Бронирование отелей, билетов, подготовка документов к получению виз и др.</li>
-          <li>Выполнение поручений руководства;</li>
-          <li>Слежение за порядком и чистотой в офисе.</li>
-        </ol>
+      <div class="kc-test--test-1">
+        <div class="row">
+          <div class="col-xs-12">
+            <ol>
+              <li class="test-error">
+                <p><strong>I work ______ Kyrgyz Concept</strong></p>
+                <span class="error-message">Ответ на этот вопрос обязателен</span>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="checkbox-type-radio">
+                          <input type="radio" value="No" name="question-1-answer-1" required>
+                          <label>of</label>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="checkbox-type-radio">
+                          <input type="radio" value="No" name="question-1-answer-1" required>
+                          <label>in</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="checkbox-type-radio">
+                          <input type="radio" value="No" name="question-1-answer-1" required>
+                          <label>about</label>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="checkbox-type-radio">
+                          <input type="radio" value="No" name="question-1-answer-1" required>
+                          <label>at</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="test-error">
+                <p><strong>I work ______ Kyrgyz Concept</strong></p>
+                <span class="error-message">Ответ на этот вопрос обязателен</span>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="checkbox-type-radio">
+                          <input type="radio" value="No" name="question-1-answer-2" required>
+                          <label>of</label>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="checkbox-type-radio">
+                          <input type="radio" value="No" name="question-1-answer-2" required>
+                          <label>in</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="checkbox-type-radio">
+                          <input type="radio" value="No" name="question-1-answer-2" required>
+                          <label>about</label>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="checkbox-type-radio">
+                          <input type="radio" value="No" name="question-1-answer-2" required>
+                          <label>at</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+
+            <button id="test-submit-btn-1" class="btn btn-success">Завершить данный тест</button>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 col-sm-6">
-        <p><strong>Ожидания</strong></p>
-        <ol class="ordered">
-          <li>Аналитический склад ума;</li>
-          <li>Опыт работы в сфере маркетинга;</li>
-          <li>Понимание принципов интернет-маркетинга; </li>
-          <li>Знания в области веб-аналитики, контекстной и медийной рекламы, рекламы в социальных сетях, SMM, SEO;</li>
-        </ol>
+
+      <div class="kc-test--test-2">
+        <div class="row">
+          <div class="col-xs-12">
+            <ol>
+              <li class="test-error">
+                <p><strong>C другой стороны дальнейшее развитие различных форм деятельности позволяет оценить значение новых предложений. </strong></p>
+                <span class="error-message">Ответ на этот вопрос обязателен</span>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox-type-radio">
+                      <input type="radio" value="No" name="question-2-answer-1" required>
+                      <label>Товарищи! постоянный количественный рост и сфера нашей активности позволяет</label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="checkbox-type-radio">
+                      <input type="radio" value="No" name="question-2-answer-1" required>
+                      <label>Важные задания по разработке дальнейших направлений развития</label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="test-error">
+                <p><strong>C другой стороны дальнейшее развитие различных форм деятельности позволяет оценить значение новых предложений. </strong></p>
+                <span class="error-message">Ответ на этот вопрос обязателен</span>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox-type-radio">
+                      <input type="radio" value="No" name="question-2-answer-2" required>
+                      <label>Товарищи! постоянный количественный рост и сфера нашей активности позволяет</label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="checkbox-type-radio">
+                      <input type="radio" value="No" name="question-2-answer-2" required>
+                      <label>Важные задания по разработке дальнейших направлений развития</label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+
+            <button id="test-submit-btn-2" class="btn btn-success">Завершить данный тест</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <a href="#jobapply-popup" class="btn btn-success kc-apply-to-job">Подать на данную позицию</a>
-        <a href="#jobapplied-popup" class="btn btn-orange kc-apply-to-job">Посмотреть другие вакансии</a>
+
+
+      <div class="kc-test--test-3">
+        <!-- test item -->
+        <div class="kc-test--item">
+          <div class="row">
+            <div class="col-xs-12">
+              <p><strong>Задание</strong></p>
+              <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
+              <br>
+              <p><strong>Пример</strong></p>
+              <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. </p>
+              <br>
+              <p><strong>Возможные ответы</strong></p>
+              <div class="row kc-test--option">
+                <div class="col-xs-8">
+                  С другой стороны постоянное информационно-пропагандистское
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" id="" class="form-control kc-test--w50" placeholder="">
+                </div>
+              </div>
+              <div class="row kc-test--option">
+                <div class="col-xs-8">
+                  С другой стороны постоянное информационно-пропагандистское
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" id="" class="form-control kc-test--w50" placeholder="">
+                </div>
+              </div>
+              <div class="row kc-test--option">
+                <div class="col-xs-8">
+                  С другой стороны постоянное информационно-пропагандистское
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" id="" class="form-control kc-test--w50" placeholder="">
+                </div>
+              </div>
+              <div class="row kc-test--option">
+                <div class="col-xs-8">
+                  С другой стороны постоянное информационно-пропагандистское
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" id="" class="form-control kc-test--w50" placeholder="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-8">
+                  <textarea class="form-control" rows="5" placeholder="Объясните свой выбор"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of test item -->
+
+        <!-- test item -->
+        <div class="kc-test--item">
+          <div class="row">
+            <div class="col-xs-12">
+              <p><strong>Задание</strong></p>
+              <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
+              <br>
+              <p><strong>Пример</strong></p>
+              <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. </p>
+              <br>
+              <p><strong>Возможные ответы</strong></p>
+              <div class="row kc-test--option">
+                <div class="col-xs-8">
+                  С другой стороны постоянное информационно-пропагандистское
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" id="" class="form-control kc-test--w50" placeholder="">
+                </div>
+              </div>
+              <div class="row kc-test--option">
+                <div class="col-xs-8">
+                  С другой стороны постоянное информационно-пропагандистское
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" id="" class="form-control kc-test--w50" placeholder="">
+                </div>
+              </div>
+              <div class="row kc-test--option">
+                <div class="col-xs-8">
+                  С другой стороны постоянное информационно-пропагандистское
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" id="" class="form-control kc-test--w50" placeholder="">
+                </div>
+              </div>
+              <div class="row kc-test--option">
+                <div class="col-xs-8">
+                  С другой стороны постоянное информационно-пропагандистское
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" id="" class="form-control kc-test--w50" placeholder="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-8">
+                  <textarea class="form-control" rows="5" placeholder="Объясните свой выбор"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of test item -->
+
+        <button id="test-submit-btn-3" class="btn btn-success">Завершить данный тест</button>
       </div>
-    </div>
+
+      <div class="kc-test--test-4">
+        <div class="kc-test--item">
+          <div class="row">
+            <div class="col-xs-12">
+              <p><strong>Рис. А-1</strong></p>
+              <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                  <div class="checkbox-type-radio">
+                    <input type="radio" value="No" name="question-2-answer-2" required>
+                    <label>
+                      <img src="https://sevidi.ru/flash/images/flash2.png" alt="">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <div class="checkbox-type-radio">
+                    <input type="radio" value="No" name="question-2-answer-2" required>
+                    <label>
+                      <img src="https://sevidi.ru/flash/images/flash2.png" alt="">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <div class="checkbox-type-radio">
+                    <input type="radio" value="No" name="question-2-answer-2" required>
+                    <label>
+                      <img src="https://sevidi.ru/flash/images/flash2.png" alt="">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <div class="checkbox-type-radio">
+                    <input type="radio" value="No" name="question-2-answer-2" required>
+                    <label>
+                      <img src="https://sevidi.ru/flash/images/flash2.png" alt="">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="kc-test--item">
+          <div class="row">
+            <div class="col-xs-12">
+              <p><strong>Рис. А-1</strong></p>
+              <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                  <div class="checkbox-type-radio">
+                    <input type="radio" value="No" name="question-2-answer-2" required>
+                    <label>
+                      <img src="https://sevidi.ru/flash/images/flash2.png" alt="">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <div class="checkbox-type-radio">
+                    <input type="radio" value="No" name="question-2-answer-2" required>
+                    <label>
+                      <img src="https://sevidi.ru/flash/images/flash2.png" alt="">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <div class="checkbox-type-radio">
+                    <input type="radio" value="No" name="question-2-answer-2" required>
+                    <label>
+                      <img src="https://sevidi.ru/flash/images/flash2.png" alt="">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <div class="checkbox-type-radio">
+                    <input type="radio" value="No" name="question-2-answer-2" required>
+                    <label>
+                      <img src="https://sevidi.ru/flash/images/flash2.png" alt="">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="test-submit-btn-4" class="btn btn-success">Завершить данный тест</button>
+      </div>
+
+      <div class="kc-test--results">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="kc-test--results-title">
+              18%
+            </div>
+            <div class="kc-test--results-label">Английский язык</div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="kc-test--results-title">
+              0/7
+            </div>
+            <div class="kc-test--results-label">Ситуационный тест</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="kc-test--results-title">
+              25%
+            </div>
+            <div class="kc-test--results-label">Английский язык</div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="kc-test--results-title">
+              5/10
+            </div>
+            <div class="kc-test--results-label">Ситуационный тест</div>
+          </div>
+        </div>
+      </div>
+      
+    </form>
+    <!-- End test form -->
+    
+    
 
   </div>
 </section>
-<!-- End of kc-garanties -->
+<!-- End of start test -->
 
-<!-- Begin Apply popup -->
-<div id="jobapply-popup" class="kc-vacancy-jobapply-popup mfp-hide">
-
-  <div class="kc-vacancy-jobapply-popup--title">Мы очень рады, что Вы хотитестать частью нашей команды!</div>
-  <p>Для того чтобы мы могли рассмотреть вашу кандидатуру, необходимо: <br>
-    1. Заполнить анкету строго по нашей форме <br>2. Пройти тестирование <br>И мы свяжемся с Вами в течение 3 рабочих дней.</p>
-  <a href="#" class="btn btn-primary">Начать заполнять анкету</a>
+<!-- Begin Apply popup test -->
+<div id="jobapply-popup-test" class="kc-vacancy-test-start mfp-hide">
+  <p><strong>Уважаемый кандидат,</strong></p>
+  <p>Сейчас Вы пройдете второй этап отбора - тестирование. Каждый из четырех этапов имеет ограничение по времени. Максимальное время прохождения тестирования: 80 мин. Пожалуйста, обратите внимание, что счетчик времени остановить невозможно. Тестирование можно пройти только 1 раз. </p>
+  <p><strong>Обязательные условия для успешной сдачи тестов: </strong></p>
+  <p>1. Стабильный беспрерывный интернет (при разрыве связи дополнительное время не предоставляется);<br>2. Включенная веб-камера.</p>
+  <p>Во время прохождения тестирования Ваша веб-камера будет делать периодические снимки, чтобы убедиться, что Вы проходите тестирование лично и без помощи посторонних. В случае, если Вы не согласны с предложенными условиями, пожалуйста,позвоните на ресепшн по телефону 906262, чтобы записаться на прохождение тестирования в офисе Компании.</p>
+  <form action="">
+    <div class="checkbox">
+      <input type="checkbox" value="" required>
+      <label><strong>Я согласен / согласна с условиями</strong></label>
+    </div>
+    <button class="btn btn-primary" type="submit">Начать тестирование</button>
+    <button class="btn btn-default">Отмена</button>
+  </form>
 </div>
 <!-- end of popup -->
 
-<!-- Begin Applied popup -->
-<div id="jobapplied-popup" class="kc-vacancy-jobapplied-popup mfp-hide">
-
-  <div class="kc-vacancy-jobapply-popup--title">Спасибо, мы получили твое CV.</div>
-  <p>Осталось всего 2 шага. На тест нужно 1 час 20 минут.</p>
-  <a href="#" class="btn btn-primary">Пройти тест</a>
-  <a href="#" class="btn btn-outline-default">Позже</a>
-</div>
-<!-- end of popup -->
 
 
 <!-- Begin Footer -->
@@ -658,6 +1026,7 @@
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
 <script src="/bower_components/lightgallery/dist/js/lightgallery.js"></script>
 <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="/bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
 
 <script src="scripts/jquery.maskedinput.js"></script>
 <script src="scripts/owl.carousel.js"></script>
@@ -672,5 +1041,62 @@
 <script src="scripts/main.js"></script>
 <script src="scripts/marquee.js"></script>
 <!-- endbuild -->
+
+<script>
+$(document).ready(function() {
+  var $clock = $('#clock');
+
+  $.magnificPopup.open({
+    items: {
+      src: '#jobapply-popup-test' 
+    },
+    type: 'inline'
+  });
+
+  $('#start-test').click(function() {
+    $('.kc-vacancies-hero-inner').addClass('shrink');
+    $('.kc-test--test-1').show();
+    $('.kc-test--starter').hide();
+    $clock.countdown(getTimeFromNow(), function(event) {
+      $(this).html(event.strftime('%M:%S'));
+    });
+  });
+
+  function getTimeFromNow() {
+    var currentDate = new Date();
+    return currentDate.setTime(currentDate.getTime() + 20*60*1000);
+  }
+
+  
+
+
+  $('#test-submit-btn-1').click(function (e) {
+    e.preventDefault();
+    $('.kc-test--test-1').hide();
+    $('.kc-test--test-2').show();
+  });
+
+  $('#test-submit-btn-2').click(function (e) {
+    e.preventDefault();
+    $('.kc-test--test-2').hide();
+    $('.kc-test--test-3').show();
+  });
+
+  $('#test-submit-btn-3').click(function (e) {
+    e.preventDefault();
+    $('.kc-test--test-3').hide();
+    $('.kc-test--test-4').show();
+  });
+
+  $('#test-submit-btn-4').click(function (e) {
+    e.preventDefault();
+    $('.kc-test--test-4').hide();
+    $('.kc-vacancies-hero-inner').removeClass('shrink');
+    $('.kc-vacancy--head-results').show();
+    $('.kc-vacancy--head-details').hide();
+    $('.kc-test--results').show();
+  });
+});
+</script>
 </body>
 </html>

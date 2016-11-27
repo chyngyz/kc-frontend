@@ -248,15 +248,15 @@
 
 
 		// Blurred image in news page
-		$('#blurred-image').blurjs({
-	        source: '#kc-news--hero',
-	        radius: 30,
-	        overlay: 'rgba(255, 255, 255, .2)',
-	        offset: {
-				x: 50,
-				y: 50
-			}
-	    });
+		// $('#blurred-image').blurjs({
+	 	//      source: '#kc-news--hero',
+	 	//      radius: 30,
+	 	//      overlay: 'rgba(255, 255, 255, .2)',
+	 	//      offset: {
+		// 		x: 50,
+		// 		y: 50
+		// 	}
+	 	//  });
 
 		// Open login popup on Vacancy page
 		$('.kc-job-accounts--login, .kc-apply-to-job').magnificPopup({
