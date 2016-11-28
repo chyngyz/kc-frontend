@@ -1,14 +1,14 @@
 .panel-tour-info {
-		border-radius: 6px;
+	border-radius: 6px;
     border: 3px solid #0091d4;
     min-height: 185px;
 
     &--head {
     	position: relative;
 	    background: rgba(0, 145, 212, 0.8);
-	    padding: 15px 0 25px;
+	    padding: 15px 0 34px;
 	    color: #ffffff;
-	    height: 80px;
+	    height: 90px;
 	    text-align: center;
 
 	    span:first-of-type {
@@ -39,12 +39,10 @@
 		}
 
     &--foot {
-			text-align: center;
-	    position: absolute;
-	    bottom: 10px;
-	    left: 0;
+		text-align: center;
+	    position: relative;
 	    width: 100%;
-	    height: 90px;
+	    padding-bottom: 20px;
 			@include display(flex);
 			@include flex-direction(column);
 			@include align-items(center);
